@@ -1,0 +1,2911 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dirigenția XI D · 2026–2027</title>
+<meta name="description" content="Toate temele orelor de dirigenție ale clasei a XI-a D, Liceul Teoretic „Panait Cerna” Brăila, 2026–2027.">
+<meta name="theme-color" content="#070914">
+<script>
+  // aplică tema salvată înainte de randare, ca să nu clipească pagina
+  (function () {
+    try {
+      var t = JSON.parse(localStorage.getItem("xid-theme"));
+      if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
+    } catch (e) {}
+  })();
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+/* ============ TOKENS ============ */
+:root {
+  --bg: #070914;
+  --bg-2: #0d1124;
+  --ink: #eef1fb;
+  --muted: #a9b1cd;
+  --faint: #7a82a3;
+  --glass: rgba(255, 255, 255, .045);
+  --glass-2: rgba(255, 255, 255, .08);
+  --line: rgba(255, 255, 255, .1);
+  --line-2: rgba(255, 255, 255, .2);
+  --A: #b39afd;  /* violet */
+  --B: #ff8a7a;  /* coral */
+  --C: #45e1f5;  /* cyan */
+  --D: #ffcf5c;  /* galben-auriu */
+  --E: #b8f04d;  /* verde lime */
+  --F: #c7cfdf;  /* gri-argintiu */
+  --pause: #59607e;
+  --special: #ff6fb5;
+  --focus: #ffe08a;
+  --on-accent: #0b0e1c;
+  --grain: .07;
+  --font-h: "Space Grotesk", ui-sans-serif, system-ui, "Segoe UI", sans-serif;
+  --font-b: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --r: 22px;
+  --r-sm: 14px;
+  --max: 1200px;
+  color-scheme: dark;
+}
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) {
+    --bg: #f4f2ec; --bg-2: #ffffff; --ink: #12162b; --muted: #4a5272; --faint: #666d8a;
+    --glass: rgba(255, 255, 255, .7); --glass-2: rgba(255, 255, 255, .92);
+    --line: rgba(18, 22, 43, .11); --line-2: rgba(18, 22, 43, .24);
+    --A: #6b3fd9; --B: #cf3f2a; --C: #06799a; --D: #946000; --E: #437006; --F: #555f75;
+    --pause: #a3a8bb; --special: #c2327a; --focus: #6b3fd9; --on-accent: #ffffff; --grain: .05;
+    color-scheme: light;
+  }
+}
+:root[data-theme="light"] {
+  --bg: #f4f2ec; --bg-2: #ffffff; --ink: #12162b; --muted: #4a5272; --faint: #666d8a;
+  --glass: rgba(255, 255, 255, .7); --glass-2: rgba(255, 255, 255, .92);
+  --line: rgba(18, 22, 43, .11); --line-2: rgba(18, 22, 43, .24);
+  --A: #6b3fd9; --B: #cf3f2a; --C: #06799a; --D: #946000; --E: #437006; --F: #555f75;
+  --pause: #a3a8bb; --special: #c2327a; --focus: #6b3fd9; --on-accent: #ffffff; --grain: .05;
+  color-scheme: light;
+}
+
+/* ============ BAZĂ ============ */
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+html.lock { overflow: hidden; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font: 400 17px/1.6 var(--font-b);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+body::after { /* granulație */
+  content: "";
+  position: fixed; inset: 0;
+  pointer-events: none;
+  z-index: 200;
+  opacity: var(--grain);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .5 0 0 0 0 .5 0 0 0 0 .5 0 0 0 1 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+h1, h2, h3, h4 { font-family: var(--font-h); letter-spacing: -.02em; line-height: 1.1; margin: 0; }
+p { margin: 0; }
+a { color: inherit; }
+button, input, select, textarea { font: inherit; color: inherit; }
+button { cursor: pointer; }
+:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; border-radius: 8px; }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+.wrap { width: 100%; max-width: var(--max); margin: 0 auto; padding: 0 16px; }
+@media (min-width: 700px) { .wrap { padding: 0 32px; } }
+.skip { position: absolute; left: 16px; top: -60px; z-index: 300; background: var(--ink); color: var(--bg); padding: 10px 16px; border-radius: 10px; text-decoration: none; font-weight: 600; }
+.skip:focus { top: 12px; }
+
+.glass {
+  background: var(--glass);
+  border: 1px solid var(--line);
+  border-radius: var(--r);
+  -webkit-backdrop-filter: blur(16px) saturate(140%);
+  backdrop-filter: blur(16px) saturate(140%);
+}
+
+/* butoane */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+  min-height: 48px; padding: 12px 22px;
+  border-radius: 999px;
+  border: 1px solid var(--line-2);
+  background: var(--glass-2);
+  font-weight: 600; font-size: 16px;
+  text-decoration: none;
+  transition: transform .2s ease, background .2s ease, border-color .2s ease, box-shadow .2s ease;
+}
+.btn:hover { transform: translateY(-2px); border-color: var(--ink); }
+.btn-primary {
+  background: var(--ink); color: var(--bg); border-color: var(--ink);
+}
+.btn-primary:hover { box-shadow: 0 10px 34px -12px var(--A); }
+.btn-sm { min-height: 40px; padding: 8px 16px; font-size: 15px; }
+.btn[aria-pressed="true"] { background: color-mix(in srgb, var(--E) 22%, transparent); border-color: var(--E); }
+.icon-btn {
+  width: 44px; height: 44px; border-radius: 50%;
+  display: inline-grid; place-items: center;
+  border: 1px solid var(--line-2); background: var(--glass-2);
+  font-size: 19px; line-height: 1;
+  transition: transform .2s ease, border-color .2s ease;
+}
+.icon-btn:hover { transform: rotate(-8deg) scale(1.05); border-color: var(--ink); }
+
+/* ============ NAV ============ */
+.nav {
+  position: sticky; top: 0; z-index: 50;
+  background: color-mix(in srgb, var(--bg) 72%, transparent);
+  -webkit-backdrop-filter: blur(14px); backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--line);
+}
+.nav .wrap { display: flex; align-items: center; gap: 16px; height: 64px; }
+.brand { font-family: var(--font-h); font-weight: 700; font-size: 20px; text-decoration: none; display: flex; align-items: center; gap: 10px; }
+.brand-dot { width: 12px; height: 12px; border-radius: 50%; background: conic-gradient(var(--A), var(--B), var(--C), var(--D), var(--E), var(--F), var(--A)); }
+.nav-links { display: flex; gap: 4px; margin-left: auto; list-style: none; padding: 0; margin-top: 0; margin-bottom: 0; }
+.nav-links a { display: block; padding: 8px 12px; border-radius: 999px; text-decoration: none; font-size: 15px; color: var(--muted); font-weight: 500; }
+.nav-links a:hover { color: var(--ink); background: var(--glass-2); }
+.nav .icon-btn { margin-left: 8px; }
+@media (max-width: 860px) {
+  .nav-links { display: none; }
+  .nav .icon-btn { margin-left: auto; }
+}
+
+/* ============ HERO ============ */
+.hero { position: relative; overflow: hidden; padding: 72px 0 88px; isolation: isolate; }
+.hero-bg {
+  position: absolute; inset: -20%; z-index: -1;
+  background:
+    radial-gradient(40% 50% at 20% 30%, color-mix(in srgb, var(--A) 55%, transparent), transparent 70%),
+    radial-gradient(35% 45% at 80% 20%, color-mix(in srgb, var(--B) 40%, transparent), transparent 70%),
+    radial-gradient(40% 50% at 70% 85%, color-mix(in srgb, var(--C) 35%, transparent), transparent 70%),
+    radial-gradient(30% 40% at 15% 90%, color-mix(in srgb, var(--D) 25%, transparent), transparent 70%);
+  background-size: 160% 160%;
+  filter: blur(30px);
+  opacity: .75;
+  animation: drift 26s ease-in-out infinite alternate;
+}
+.hero::after { /* estompare spre fundal */
+  content: ""; position: absolute; inset: auto 0 0 0; height: 160px; z-index: -1;
+  background: linear-gradient(to bottom, transparent, var(--bg));
+}
+@keyframes drift {
+  0% { background-position: 0% 0%; transform: rotate(0deg) scale(1); }
+  50% { background-position: 100% 40%; }
+  100% { background-position: 40% 100%; transform: rotate(6deg) scale(1.08); }
+}
+.hero-grid { display: grid; gap: 48px; align-items: center; }
+@media (min-width: 980px) { .hero-grid { grid-template-columns: 1.35fr 1fr; } }
+.kicker {
+  display: inline-flex; align-items: center; gap: 10px;
+  font-size: 15px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase;
+  color: var(--muted);
+}
+.kicker::before { content: ""; width: 28px; height: 2px; background: currentColor; }
+.hero h1 {
+  font-size: clamp(3.2rem, 11vw, 7.6rem);
+  font-weight: 700; letter-spacing: -.05em; line-height: .88;
+  margin: 18px 0 20px;
+}
+.hero h1 .xi {
+  background: linear-gradient(100deg, var(--A), var(--B) 40%, var(--D) 70%, var(--E));
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+.hero-sub { font-family: var(--font-h); font-size: clamp(1.25rem, 3vw, 1.7rem); font-weight: 500; max-width: 26ch; line-height: 1.25; }
+.hero-sub em { font-style: normal; color: var(--C); }
+.meta { display: flex; flex-wrap: wrap; gap: 8px; margin: 26px 0 30px; padding: 0; list-style: none; }
+.meta li { padding: 7px 14px; border-radius: 999px; border: 1px solid var(--line-2); background: var(--glass); font-size: 15px; }
+.meta b { font-weight: 600; }
+.counters { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; max-width: 520px; margin-bottom: 30px; }
+.counter { padding: 16px 18px; }
+.counter b { display: block; font-family: var(--font-h); font-size: clamp(2.2rem, 6vw, 3.2rem); line-height: 1; font-weight: 700; font-variant-numeric: tabular-nums; }
+.counter span { font-size: 15px; color: var(--muted); }
+.hero-cta { display: flex; flex-wrap: wrap; gap: 12px; }
+
+/* notificări */
+.notifs { position: relative; display: grid; gap: 14px; }
+.notifs-label { font-size: 14px; color: var(--muted); letter-spacing: .06em; text-transform: uppercase; font-weight: 600; margin-bottom: 2px; }
+.notif {
+  display: grid; grid-template-columns: 48px 1fr; gap: 14px; align-items: center;
+  width: 100%; text-align: left; padding: 14px 16px;
+  border-radius: 20px; border: 1px solid var(--line);
+  background: var(--glass); -webkit-backdrop-filter: blur(18px); backdrop-filter: blur(18px);
+  transition: transform .25s ease, border-color .25s ease, box-shadow .25s ease;
+  animation: pop .7s cubic-bezier(.2, .9, .3, 1.2) both;
+}
+.notif:nth-child(3) { animation-delay: .15s; }
+.notif:nth-child(4) { animation-delay: .3s; }
+.notif:hover { transform: translateY(-3px) scale(1.01); border-color: color-mix(in srgb, var(--c) 60%, transparent); box-shadow: 0 16px 40px -22px var(--c); }
+.notif-ico { width: 48px; height: 48px; border-radius: 14px; display: grid; place-items: center; font-size: 26px; background: color-mix(in srgb, var(--c) 20%, transparent); }
+.notif-top { display: flex; justify-content: space-between; gap: 8px; font-size: 14px; color: var(--muted); }
+.notif-top b { color: var(--ink); font-weight: 600; }
+.notif-title { font-weight: 600; font-size: 16px; line-height: 1.3; }
+@keyframes pop { from { opacity: 0; transform: translateY(18px) scale(.97); } to { opacity: 1; transform: none; } }
+
+/* ============ SECȚIUNI ============ */
+section { scroll-margin-top: 76px; }
+.sec { padding: 72px 0; }
+.sec-head { display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 16px 32px; margin-bottom: 32px; }
+.eyebrow { font-family: var(--font-h); font-size: 15px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin-bottom: 10px; }
+.sec-head h2 { font-size: clamp(2rem, 5vw, 3.4rem); font-weight: 700; letter-spacing: -.04em; }
+.sec-head p { color: var(--muted); max-width: 46ch; }
+
+/* reveal */
+.reveal { opacity: 0; transform: translateY(24px); transition: opacity .7s ease, transform .7s cubic-bezier(.2, .8, .2, 1); }
+.reveal.in { opacity: 1; transform: none; }
+
+/* ============ TEMA SĂPTĂMÂNII ============ */
+.week {
+  --c: var(--A);
+  position: relative; overflow: hidden;
+  padding: clamp(24px, 5vw, 56px);
+  display: grid; gap: 28px;
+  border-color: color-mix(in srgb, var(--c) 45%, transparent);
+}
+.week::before {
+  content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none;
+  background: radial-gradient(60% 80% at 100% 0%, color-mix(in srgb, var(--c) 28%, transparent), transparent 70%);
+}
+@media (min-width: 900px) { .week { grid-template-columns: 1.4fr 1fr; align-items: center; } }
+.week-status {
+  grid-column: 1 / -1;
+  display: flex; gap: 12px; align-items: flex-start;
+  padding: 14px 18px; border-radius: var(--r-sm);
+  background: var(--glass-2); border: 1px dashed var(--line-2);
+  font-size: 16px;
+}
+.week-status[hidden] { display: none; }
+.week-emoji { font-size: clamp(4rem, 10vw, 6.5rem); line-height: 1; margin-bottom: 14px; display: inline-block; animation: float 6s ease-in-out infinite; }
+@keyframes float { 50% { transform: translateY(-8px) rotate(-4deg); } }
+.week h3 { font-size: clamp(2rem, 5.5vw, 3.6rem); font-weight: 700; letter-spacing: -.035em; margin: 10px 0 12px; }
+.week .sub { color: var(--muted); font-size: 18px; max-width: 52ch; }
+.hook {
+  margin: 22px 0 0; padding: 16px 20px;
+  border-left: 4px solid var(--c);
+  background: color-mix(in srgb, var(--c) 10%, transparent);
+  border-radius: 0 var(--r-sm) var(--r-sm) 0;
+  font-family: var(--font-h); font-size: clamp(1.1rem, 2.4vw, 1.35rem); font-weight: 500; line-height: 1.35;
+}
+.hook small { display: block; font-family: var(--font-b); font-size: 14px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin-bottom: 4px; font-weight: 600; }
+.countdown { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; }
+.countdown div { text-align: center; padding: 16px 6px; border-radius: var(--r-sm); background: var(--glass-2); border: 1px solid var(--line); }
+.countdown b { display: block; font-family: var(--font-h); font-size: clamp(2rem, 6vw, 3rem); font-weight: 700; line-height: 1; font-variant-numeric: tabular-nums; }
+.countdown span { font-size: 14px; color: var(--muted); }
+.cd-label { font-size: 16px; color: var(--muted); margin-bottom: 12px; }
+.cd-label b { color: var(--ink); }
+.week-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
+.week-end { text-align: center; grid-column: 1 / -1; padding: 20px 0; }
+.week-end .big { font-size: clamp(2.4rem, 7vw, 4.6rem); font-family: var(--font-h); font-weight: 700; letter-spacing: -.04em; }
+
+/* ============ HARTA ANULUI ============ */
+.tl-card { padding: 24px 20px 20px; }
+.tl-scroll { overflow-x: auto; padding: 56px 8px 4px; margin: -8px -8px 0; scrollbar-width: thin; }
+.tl-track { position: relative; height: 230px; min-width: 860px; }
+.tl-line { position: absolute; left: 0; right: 0; top: 118px; height: 2px; background: var(--line-2); border-radius: 2px; }
+.tl-seg {
+  position: absolute; left: var(--s); width: var(--w); top: 20px; height: 34px;
+  border-radius: 10px; background: var(--glass-2); border: 1px solid var(--line-2);
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--font-h); font-weight: 600; font-size: 14px; white-space: nowrap; overflow: hidden;
+}
+.tl-seg::after { content: ""; position: absolute; left: 50%; top: 100%; width: 1px; height: 64px; background: var(--line); }
+.tl-seg span { position: relative; }
+.tl-block {
+  position: absolute; left: var(--s); width: var(--w); top: 0; bottom: 38px;
+  border-radius: 8px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 12px; font-weight: 600; letter-spacing: .04em;
+  writing-mode: vertical-rl; transform: rotate(180deg);
+  overflow: hidden; white-space: nowrap;
+}
+.tl-block.pause { background: repeating-linear-gradient(45deg, color-mix(in srgb, var(--pause) 35%, transparent) 0 6px, color-mix(in srgb, var(--pause) 18%, transparent) 6px 12px); color: var(--muted); }
+.tl-block.special { background: color-mix(in srgb, var(--special) 22%, transparent); border: 1px solid color-mix(in srgb, var(--special) 60%, transparent); color: var(--special); }
+.tl-dot {
+  position: absolute; left: var(--p); top: 119px; transform: translate(-50%, -50%);
+  width: 20px; height: 20px; padding: 0; border-radius: 50%;
+  background: var(--c); border: 3px solid var(--bg);
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--c) 60%, transparent);
+  transition: transform .2s ease, box-shadow .2s ease;
+  z-index: 2;
+}
+.tl-dot:hover, .tl-dot:focus-visible { transform: translate(-50%, -50%) scale(1.35); box-shadow: 0 0 0 4px color-mix(in srgb, var(--c) 35%, transparent), 0 0 24px var(--c); z-index: 5; }
+.tl-dot.done::after { content: "✓"; position: absolute; inset: 0; display: grid; place-items: center; font-size: 10px; font-weight: 800; color: var(--on-accent); color: #0b0e1c; }
+.tl-dot.past:not(.done) { opacity: .6; }
+.tl-tip {
+  position: absolute; bottom: calc(100% + 12px); left: 50%; transform: translateX(-50%) translateY(4px);
+  background: var(--bg-2); color: var(--ink); border: 1px solid color-mix(in srgb, var(--c) 60%, transparent);
+  padding: 8px 12px; border-radius: 12px; font-size: 14px; font-weight: 500; line-height: 1.3;
+  width: max-content; max-width: 240px; text-align: left;
+  opacity: 0; pointer-events: none; transition: opacity .15s ease, transform .15s ease;
+  box-shadow: 0 12px 30px -12px rgba(0, 0, 0, .5);
+}
+.tl-tip b { display: block; font-size: 12px; color: var(--c); letter-spacing: .04em; text-transform: uppercase; }
+.tl-dot.edge-l .tl-tip { left: -6px; transform: translateY(4px); }
+.tl-dot.edge-r .tl-tip { left: auto; right: -6px; transform: translateY(4px); }
+.tl-dot:hover .tl-tip, .tl-dot:focus-visible .tl-tip { opacity: 1; transform: translateX(-50%); }
+.tl-dot.edge-l:hover .tl-tip, .tl-dot.edge-l:focus-visible .tl-tip, .tl-dot.edge-r:hover .tl-tip, .tl-dot.edge-r:focus-visible .tl-tip { transform: none; }
+.tl-month { position: absolute; left: var(--p); bottom: 0; font-size: 14px; color: var(--muted); transform: translateX(-2px); padding-left: 6px; border-left: 1px solid var(--line-2); line-height: 1.2; height: 22px; display: flex; align-items: end; }
+.tl-today { position: absolute; left: var(--p); top: -6px; bottom: 30px; width: 2px; background: var(--ink); z-index: 4; pointer-events: none; }
+.tl-today span {
+  position: absolute; top: -30px; left: 50%; transform: translateX(-50%);
+  background: var(--ink); color: var(--bg); font-size: 13px; font-weight: 700; padding: 3px 10px; border-radius: 999px; white-space: nowrap;
+}
+.tl-legend { display: flex; flex-wrap: wrap; gap: 8px 18px; margin-top: 22px; padding: 0; list-style: none; font-size: 15px; color: var(--muted); }
+.tl-legend li { display: inline-flex; align-items: center; gap: 8px; }
+.tl-legend i { width: 14px; height: 14px; border-radius: 50%; background: var(--c); display: inline-block; }
+.tl-legend i.sq { border-radius: 4px; }
+.tl-legend i.pause { background: repeating-linear-gradient(45deg, var(--pause) 0 3px, transparent 3px 6px); border: 1px solid var(--pause); }
+.tl-legend i.special { background: color-mix(in srgb, var(--special) 35%, transparent); border: 1px solid var(--special); }
+
+@media (max-width: 720px) {
+  .tl-scroll { overflow: visible; padding: 20px 0 0; margin: 0; }
+  .tl-track { height: 1500px; min-width: 0; }
+  .tl-line { left: 104px; right: auto; top: 0; bottom: 0; width: 2px; height: auto; }
+  .tl-seg { left: 50px; width: 28px; top: var(--s); height: var(--w); writing-mode: vertical-rl; transform: rotate(180deg); }
+  .tl-seg::after { display: none; }
+  .tl-block { left: 72px; right: 0; width: auto; top: var(--s); height: var(--w); bottom: auto; writing-mode: horizontal-tb; transform: none; justify-content: flex-end; padding-right: 12px; font-size: 13px; }
+  .tl-dot { left: 105px; top: var(--p); }
+  .tl-tip {
+    opacity: 1; pointer-events: none; bottom: auto; top: 50%; left: calc(100% + 10px); transform: translateY(-50%);
+    background: none; border: 0; box-shadow: none; padding: 0; font-size: 15px;
+    max-width: calc(100vw - 150px); white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  }
+  .tl-tip b { display: inline; font-size: 13px; margin-right: 6px; }
+  .tl-dot:hover .tl-tip, .tl-dot:focus-visible .tl-tip,
+  .tl-dot.edge-l .tl-tip, .tl-dot.edge-r .tl-tip,
+  .tl-dot.edge-l:hover .tl-tip, .tl-dot.edge-r:hover .tl-tip,
+  .tl-dot.edge-l:focus-visible .tl-tip, .tl-dot.edge-r:focus-visible .tl-tip { left: calc(100% + 10px); right: auto; transform: translateY(-50%); }
+  .tl-month { left: 0; top: var(--p); bottom: auto; border-left: 0; border-top: 1px solid var(--line-2); padding: 2px 0 0; height: auto; transform: none; width: 44px; }
+  .tl-today { left: 44px; right: 0; top: var(--p); bottom: auto; width: auto; height: 2px; }
+  .tl-today span { top: 50%; left: auto; right: 0; transform: translateY(-50%); }
+}
+
+/* ============ FILTRE ============ */
+.filters { padding: 18px; display: grid; gap: 16px; margin-bottom: 22px; position: sticky; top: 72px; z-index: 20; }
+.filters-row { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip {
+  --c: var(--F);
+  display: inline-flex; align-items: center; gap: 8px;
+  min-height: 40px; padding: 6px 14px 6px 8px;
+  border-radius: 999px; border: 1px solid var(--line-2); background: transparent;
+  font-size: 15px; font-weight: 500;
+  transition: background .2s ease, border-color .2s ease;
+}
+.chip .k { width: 26px; height: 26px; border-radius: 50%; display: grid; place-items: center; font-size: 13px; font-weight: 700; background: color-mix(in srgb, var(--c) 25%, transparent); color: var(--c); font-family: var(--font-h); }
+.chip:hover { border-color: var(--c); }
+.chip[aria-pressed="true"] { background: color-mix(in srgb, var(--c) 20%, transparent); border-color: var(--c); }
+.chip[aria-pressed="true"] .k { background: var(--c); color: #0b0e1c; }
+.search { position: relative; flex: 1 1 240px; min-width: 0; display: block; }
+@media (max-width: 560px) { .select { width: 100%; } }
+.search input {
+  width: 100%; min-height: 46px; padding: 10px 16px 10px 44px;
+  border-radius: 999px; border: 1px solid var(--line-2); background: var(--glass-2); font-size: 16px;
+}
+.search input::placeholder { color: var(--faint); }
+.search svg { position: absolute; left: 16px; top: 50%; transform: translateY(-50%); width: 18px; height: 18px; color: var(--muted); pointer-events: none; }
+.select {
+  min-height: 46px; padding: 10px 40px 10px 16px; border-radius: 999px;
+  border: 1px solid var(--line-2); background: var(--glass-2); font-size: 16px;
+  appearance: none; -webkit-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23999' stroke-width='2.5'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat; background-position: right 14px center; background-size: 16px;
+  max-width: 100%;
+}
+.select option { background: var(--bg-2); color: var(--ink); }
+.views { display: inline-flex; border: 1px solid var(--line-2); border-radius: 999px; padding: 3px; gap: 2px; }
+.views button { border: 0; background: transparent; min-height: 38px; padding: 6px 14px; border-radius: 999px; font-size: 15px; font-weight: 500; color: var(--muted); display: inline-flex; gap: 6px; align-items: center; }
+.views button[aria-pressed="true"] { background: var(--ink); color: var(--bg); }
+.count { font-size: 16px; color: var(--muted); margin-right: auto; }
+.count b { color: var(--ink); font-family: var(--font-h); font-size: 18px; }
+.link-btn { background: none; border: 0; padding: 6px 4px; text-decoration: underline; text-underline-offset: 3px; color: var(--muted); font-size: 15px; }
+.link-btn:hover { color: var(--ink); }
+.link-btn[hidden] { display: none; }
+@media (max-width: 720px) { .filters { position: static; } }
+
+/* ============ CARDURI ============ */
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 272px), 1fr)); gap: 18px; }
+.card {
+  --c: var(--F);
+  position: relative;
+  display: grid; grid-template-columns: 1fr auto;
+  grid-template-areas: "nr date" "emoji emoji" "title title" "sub sub" "tag done";
+  align-content: start; gap: 10px 12px;
+  padding: 22px;
+  border-radius: var(--r);
+  background: var(--glass); border: 1px solid var(--line);
+  -webkit-backdrop-filter: blur(14px); backdrop-filter: blur(14px);
+  transition: transform .25s ease, box-shadow .3s ease, border-color .3s ease, opacity .6s ease;
+}
+.card::before { content: ""; position: absolute; left: 22px; right: 22px; top: 0; height: 2px; border-radius: 2px; background: linear-gradient(90deg, var(--c), transparent); opacity: .8; }
+.card:hover, .card:focus-within {
+  transform: translateY(-5px);
+  border-color: color-mix(in srgb, var(--c) 55%, transparent);
+  box-shadow: 0 22px 50px -28px color-mix(in srgb, var(--c) 85%, transparent), inset 0 0 40px -30px var(--c);
+}
+.card[hidden] { display: none; }
+.card-nr { grid-area: nr; font-family: var(--font-h); font-weight: 700; font-size: 15px; color: var(--c); letter-spacing: .04em; }
+.card-date { grid-area: date; font-size: 15px; color: var(--muted); }
+.card-emoji { grid-area: emoji; font-size: 44px; line-height: 1.1; }
+.card h3 { grid-area: title; font-size: 1.32rem; font-weight: 600; line-height: 1.2; }
+.card-open { background: none; border: 0; padding: 0; text-align: left; font: inherit; color: inherit; letter-spacing: inherit; }
+.card-open::after { content: ""; position: absolute; inset: 0; border-radius: var(--r); }
+.card-open:focus-visible { outline: none; }
+.card-open:focus-visible::after { outline: 3px solid var(--focus); outline-offset: 3px; }
+.card-sub { grid-area: sub; color: var(--muted); font-size: 16px; line-height: 1.5; }
+.card .tag { grid-area: tag; justify-self: start; align-self: end; margin-top: 6px; }
+.card-done { grid-area: done; align-self: end; font-size: 14px; font-weight: 600; color: var(--E); display: none; }
+.card.done .card-done { display: inline; }
+.tag {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-size: 14px; font-weight: 600; line-height: 1.25;
+  padding: 5px 12px 5px 6px; border-radius: 999px;
+  background: color-mix(in srgb, var(--c) 14%, transparent);
+  border: 1px solid color-mix(in srgb, var(--c) 40%, transparent);
+  color: var(--ink);
+}
+.tag .k { width: 22px; height: 22px; flex: none; border-radius: 50%; display: grid; place-items: center; font-size: 12px; font-weight: 700; background: var(--c); color: #0b0e1c; font-family: var(--font-h); }
+
+/* listă compactă */
+.grid.list { grid-template-columns: 1fr; gap: 8px; }
+.grid.list .card {
+  grid-template-columns: 3.2ch 2.2rem minmax(0, 1fr) auto 8.5rem;
+  grid-template-areas: "nr emoji title tag date";
+  align-items: center; padding: 12px 18px; gap: 14px;
+  border-left: 3px solid var(--c);
+}
+.grid.list .card::before, .grid.list .card-sub, .grid.list .card-done { display: none; }
+.grid.list .card-emoji { font-size: 26px; }
+.grid.list .card h3 { font-size: 1.08rem; }
+.grid.list .card .tag { margin: 0; align-self: center; }
+.grid.list .card-date { text-align: right; }
+.grid.list .card:hover { transform: translateX(4px); }
+.grid.list .card.done .card-nr::after { content: " ✓"; color: var(--E); }
+@media (max-width: 760px) {
+  .grid.list .card { grid-template-columns: 3.2ch 2rem minmax(0, 1fr); grid-template-areas: "nr emoji title" "nr emoji date"; row-gap: 2px; }
+  .grid.list .card .tag { display: none; }
+  .grid.list .card-date { text-align: left; font-size: 14px; }
+}
+.empty { text-align: center; padding: 48px 20px; color: var(--muted); }
+.empty[hidden] { display: none; }
+.empty .big { font-size: 48px; }
+
+/* ============ MODAL ============ */
+dialog.modal {
+  width: min(820px, calc(100vw - 24px));
+  max-height: calc(100dvh - 32px);
+  padding: 0; border: 1px solid color-mix(in srgb, var(--c) 45%, var(--line));
+  border-radius: 26px;
+  background: var(--bg-2); color: var(--ink);
+  box-shadow: 0 40px 120px -40px color-mix(in srgb, var(--c) 60%, transparent);
+  overflow: auto; overscroll-behavior: contain;
+}
+dialog.modal::backdrop { background: rgba(4, 6, 16, .62); -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px); }
+dialog.modal[open] { animation: modalIn .35s cubic-bezier(.2, .9, .3, 1.1); }
+@keyframes modalIn { from { opacity: 0; transform: translateY(24px) scale(.98); } }
+.m-inner { position: relative; }
+.m-head {
+  padding: 30px clamp(20px, 4vw, 40px) 24px;
+  background: radial-gradient(90% 120% at 0% 0%, color-mix(in srgb, var(--c) 24%, transparent), transparent 70%);
+  border-bottom: 1px solid var(--line);
+}
+.m-close { position: absolute; top: 16px; right: 16px; }
+.m-emoji { font-size: 58px; line-height: 1; margin-bottom: 12px; }
+.m-meta { display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: center; font-size: 15px; color: var(--muted); margin-bottom: 10px; padding-right: 50px; }
+.m-head h2 { font-size: clamp(1.8rem, 4.6vw, 2.7rem); font-weight: 700; letter-spacing: -.035em; margin-bottom: 8px; padding-right: 30px; }
+.m-head .sub { color: var(--muted); font-size: 18px; }
+.m-body { padding: 8px clamp(20px, 4vw, 40px) 24px; display: grid; gap: 4px; }
+.m-sec { padding: 20px 0; border-bottom: 1px solid var(--line); }
+.m-sec:last-child { border-bottom: 0; }
+.m-sec h3 { font-size: 15px; font-family: var(--font-b); font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin-bottom: 12px; }
+.cs-list, .act-list { margin: 0; padding: 0; list-style: none; display: grid; gap: 10px; }
+.cs-list li { display: grid; grid-template-columns: auto 1fr; gap: 12px; align-items: start; }
+.cs-code { font-family: var(--font-h); font-weight: 700; font-size: 15px; padding: 3px 10px; border-radius: 8px; background: color-mix(in srgb, var(--c) 18%, transparent); color: var(--ink); border: 1px solid color-mix(in srgb, var(--c) 45%, transparent); white-space: nowrap; }
+.act-list { counter-reset: a; }
+.act-list li { counter-increment: a; display: grid; grid-template-columns: 32px 1fr; gap: 12px; }
+.act-list li::before { content: counter(a); width: 30px; height: 30px; border-radius: 50%; display: grid; place-items: center; font-family: var(--font-h); font-weight: 700; font-size: 14px; border: 1px solid var(--c); color: var(--c); }
+.poll-q { font-family: var(--font-h); font-size: 1.25rem; font-weight: 600; margin-bottom: 14px; }
+.poll-opts { display: grid; gap: 8px; }
+.poll-opt {
+  position: relative; overflow: hidden;
+  display: flex; justify-content: space-between; align-items: center; gap: 12px;
+  width: 100%; text-align: left; min-height: 50px; padding: 12px 16px;
+  border-radius: 14px; border: 1px solid var(--line-2); background: var(--glass);
+  font-size: 16px; font-weight: 500;
+  transition: border-color .2s ease, transform .15s ease;
+}
+.poll-opt:hover { border-color: var(--c); }
+.poll-opt:active { transform: scale(.99); }
+.poll-opt .bar { position: absolute; inset: 0 auto 0 0; width: 0; background: color-mix(in srgb, var(--c) 26%, transparent); transition: width .8s cubic-bezier(.2, .8, .2, 1); z-index: 0; }
+.poll-opt span { position: relative; z-index: 1; }
+.poll-opt .pct { font-family: var(--font-h); font-weight: 700; font-variant-numeric: tabular-nums; opacity: 0; transition: opacity .3s ease; }
+.poll.voted .pct { opacity: 1; }
+.poll-foot { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; margin-top: 12px; font-size: 14px; color: var(--muted); }
+.m-foot {
+  position: sticky; bottom: 0;
+  display: flex; flex-wrap: wrap; gap: 10px; justify-content: space-between;
+  padding: 14px clamp(16px, 4vw, 40px);
+  background: color-mix(in srgb, var(--bg-2) 88%, transparent);
+  -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px);
+  border-top: 1px solid var(--line);
+}
+.m-foot .grp { display: flex; flex-wrap: wrap; gap: 8px; }
+@media (max-width: 560px) { .m-foot .grp { width: 100%; } .m-foot .grp .btn { flex: 1 1 auto; } }
+
+/* ============ PROIECTOR ============ */
+.proj {
+  --c: var(--A);
+  position: fixed; inset: 0; z-index: 400;
+  background: var(--bg); color: var(--ink);
+  display: grid; grid-template-rows: auto 1fr auto;
+  overflow: auto;
+}
+.proj[hidden] { display: none; }
+.proj::before { content: ""; position: fixed; inset: 0; pointer-events: none; background: radial-gradient(60% 60% at 80% 0%, color-mix(in srgb, var(--c) 30%, transparent), transparent 70%), radial-gradient(50% 50% at 0% 100%, color-mix(in srgb, var(--c) 16%, transparent), transparent 70%); }
+.proj-top, .proj-nav { position: relative; display: flex; align-items: center; gap: 12px; padding: 18px clamp(16px, 3vw, 40px); flex-wrap: wrap; }
+.proj-meta { font-size: 18px; color: var(--muted); margin-right: auto; }
+.timer { display: inline-flex; align-items: center; gap: 6px; padding: 4px 4px 4px 14px; border-radius: 999px; border: 1px solid var(--line-2); background: var(--glass); }
+.timer output { font-family: var(--font-h); font-weight: 600; font-size: 18px; font-variant-numeric: tabular-nums; min-width: 5ch; }
+.timer.low output { color: var(--B); }
+.timer .icon-btn { width: 36px; height: 36px; font-size: 15px; }
+.proj-body { position: relative; padding: 2vh clamp(20px, 6vw, 110px); display: flex; flex-direction: column; justify-content: center; }
+.proj-emoji { font-size: clamp(5rem, 14vw, 10rem); line-height: 1; }
+.proj h2 { font-size: clamp(2.6rem, 6.4vw, 6rem); font-weight: 700; letter-spacing: -.045em; line-height: .98; margin: 2vh 0; max-width: 18ch; }
+.proj-hook { font-family: var(--font-h); font-size: clamp(1.5rem, 3vw, 2.6rem); font-weight: 500; color: var(--c); line-height: 1.2; max-width: 30ch; }
+.proj-acts { list-style: none; margin: 4vh 0 0; padding: 0; display: grid; gap: 1.4vh; max-width: 70ch; counter-reset: pa; }
+.proj-acts li { counter-increment: pa; font-size: clamp(1.2rem, 2.1vw, 1.9rem); line-height: 1.3; display: grid; grid-template-columns: 2.2em 1fr; gap: .6em; opacity: 0; transform: translateY(14px); transition: opacity .5s ease, transform .5s ease; }
+.proj-acts li::before { content: counter(pa); width: 1.7em; height: 1.7em; border-radius: 50%; display: grid; place-items: center; background: var(--c); color: #0b0e1c; font-family: var(--font-h); font-weight: 700; font-size: .8em; margin-top: .1em; }
+.proj-acts li.show { opacity: 1; transform: none; }
+.proj-acts li[hidden] { display: none; }
+.proj-hint { margin-top: 3vh; color: var(--faint); font-size: 17px; }
+.proj-hint kbd { font-family: var(--font-h); padding: 2px 8px; border-radius: 6px; border: 1px solid var(--line-2); background: var(--glass-2); color: var(--ink); }
+.proj-nav { justify-content: space-between; }
+
+/* ============ PROGRES ============ */
+.prog { display: grid; gap: 20px; }
+@media (min-width: 900px) { .prog { grid-template-columns: 1fr 1.5fr; } }
+.ring-card { padding: 28px; display: grid; place-items: center; text-align: center; gap: 16px; }
+.ring { width: min(240px, 70vw); aspect-ratio: 1; position: relative; }
+.ring svg { width: 100%; height: 100%; transform: rotate(-90deg); }
+.ring circle { fill: none; stroke-width: 12; }
+.ring .bg { stroke: var(--line); }
+.ring .fg { stroke: url(#ringGrad); stroke-linecap: round; transition: stroke-dashoffset 1.2s cubic-bezier(.2, .8, .2, 1); }
+.ring-txt { position: absolute; inset: 0; display: grid; place-content: center; }
+.ring-txt b { font-family: var(--font-h); font-size: 3.4rem; line-height: 1; font-weight: 700; font-variant-numeric: tabular-nums; }
+.ring-txt span { color: var(--muted); font-size: 15px; }
+.ring-card p { color: var(--muted); font-size: 16px; max-width: 32ch; }
+.bars-card { padding: 28px; }
+.bars-card h3 { font-size: 1.35rem; margin-bottom: 6px; }
+.bars-card > p { color: var(--muted); font-size: 16px; margin-bottom: 22px; }
+.bars { display: grid; gap: 14px; margin: 0; padding: 0; list-style: none; }
+.bars li { display: grid; grid-template-columns: minmax(0, 1fr); gap: 6px; }
+.bars .lbl { display: flex; justify-content: space-between; gap: 12px; font-size: 16px; }
+.bars .lbl b { font-family: var(--font-h); font-variant-numeric: tabular-nums; }
+.bars .track { height: 14px; border-radius: 999px; background: var(--line); overflow: hidden; }
+.bars .fill { height: 100%; width: 0; border-radius: 999px; background: var(--c); transition: width 1.1s cubic-bezier(.2, .8, .2, 1); }
+
+/* ============ RESURSE ============ */
+.res { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 210px), 1fr)); gap: 14px; }
+.res-card { padding: 20px; display: grid; gap: 6px; text-decoration: none; align-content: start; transition: border-color .2s ease, transform .2s ease; }
+.res-card:hover { border-color: var(--line-2); transform: translateY(-2px); }
+.res-card .ico { font-size: 26px; }
+.res-card .num { font-family: var(--font-h); font-size: 2rem; font-weight: 700; line-height: 1.05; letter-spacing: -.02em; }
+.res-card .num.sm { font-size: 1.35rem; }
+.res-card h3 { font-size: 16px; font-family: var(--font-b); font-weight: 600; }
+.res-card p { font-size: 15px; color: var(--muted); line-height: 1.45; }
+
+/* ============ FOOTER ============ */
+footer { border-top: 1px solid var(--line); padding: 32px 0 48px; color: var(--muted); font-size: 15px; }
+footer .wrap { display: flex; flex-wrap: wrap; gap: 12px 24px; justify-content: space-between; align-items: center; }
+
+.print-only { display: none; }
+
+/* ============ MATERIALE ÎN FEREASTRA TEMEI ============ */
+.dz-name { font-family: var(--font-h); font-size: 1.25rem; font-weight: 600; margin-bottom: 6px; }
+.dz-time { display: inline-block; margin-left: 8px; padding: 2px 10px; border-radius: 999px; font-size: 13px; font-family: var(--font-b); letter-spacing: 0; text-transform: none; background: var(--glass-2); border: 1px solid var(--line-2); color: var(--ink); vertical-align: middle; }
+.mat-row { display: grid; gap: 12px; }
+@media (min-width: 640px) { .mat-row { grid-template-columns: 1fr 1fr; } }
+.mat {
+  display: grid; grid-template-columns: 52px 1fr; gap: 14px; align-items: center;
+  text-align: left; text-decoration: none; width: 100%;
+  padding: 16px; border-radius: 18px;
+  border: 1px solid color-mix(in srgb, var(--c) 40%, var(--line)); background: color-mix(in srgb, var(--c) 8%, transparent);
+  transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease;
+}
+.mat:hover { transform: translateY(-2px); border-color: var(--c); box-shadow: 0 14px 34px -20px var(--c); }
+.mat-ico { width: 52px; height: 52px; border-radius: 14px; display: grid; place-items: center; font-size: 26px; background: color-mix(in srgb, var(--c) 22%, transparent); }
+.mat b { display: block; font-family: var(--font-h); font-size: 17px; }
+.mat .t { display: block; font-size: 15px; line-height: 1.35; }
+.mat .s { display: block; font-size: 14px; color: var(--muted); margin-top: 2px; }
+
+/* ============ FIȘA DE LUCRU ============ */
+dialog.fisa { width: min(900px, calc(100vw - 24px)); }
+dialog.fisa.lat { width: min(1240px, calc(100vw - 24px)); }
+.f-body { padding: 8px clamp(18px, 4vw, 40px) 24px; }
+.f-note { padding: 12px 16px; border-radius: 14px; background: var(--glass-2); border: 1px dashed var(--line-2); font-size: 15px; margin: 18px 0 6px; }
+.f-id { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); padding: 18px 0; border-bottom: 1px solid var(--line); margin-bottom: 20px; }
+.f { display: grid; gap: 8px; margin: 0 0 22px; padding: 0; border: 0; min-width: 0; }
+.f-l { font-weight: 600; font-size: 16px; padding: 0; }
+.f-h { font-size: 14px; color: var(--muted); margin-top: -4px; }
+.f-sec { font-family: var(--font-h); font-size: 1.35rem; font-weight: 700; margin: 8px 0 14px; padding-top: 18px; border-top: 1px solid var(--line); }
+.f input[type="text"], .f input[type="number"], .f input[type="email"], .f input[type="tel"], .f textarea, .f select, .ft input {
+  width: 100%; min-height: 44px; padding: 10px 12px;
+  border-radius: 12px; border: 1px solid var(--line-2); background: var(--glass);
+  font-size: 16px; line-height: 1.4; color: var(--ink);
+  transition: border-color .15s ease, background .15s ease;
+}
+.f textarea { resize: vertical; min-height: 96px; }
+.f input:focus, .f textarea:focus, .f select:focus, .ft input:focus { outline: none; border-color: var(--c); background: var(--glass-2); box-shadow: 0 0 0 3px color-mix(in srgb, var(--c) 30%, transparent); }
+.f input::placeholder, .f textarea::placeholder { color: var(--faint); }
+.opts { display: grid; gap: 8px; }
+@media (min-width: 640px) { .opts.two { grid-template-columns: 1fr 1fr; } }
+.opt { display: flex; gap: 12px; align-items: flex-start; padding: 11px 14px; min-height: 46px; border-radius: 12px; border: 1px solid var(--line); background: var(--glass); cursor: pointer; font-size: 16px; line-height: 1.35; }
+.opt:hover { border-color: var(--c); }
+.opt input { width: 20px; height: 20px; margin: 1px 0 0; flex: none; accent-color: var(--c); }
+.opt:has(input:checked) { border-color: var(--c); background: color-mix(in srgb, var(--c) 14%, transparent); }
+.scale { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; }
+.sc-row { display: flex; flex-wrap: wrap; gap: 6px; }
+.sc-l { font-size: 14px; color: var(--muted); }
+.sc { position: relative; }
+.sc input { position: absolute; opacity: 0; inset: 0; margin: 0; cursor: pointer; }
+.sc span { display: grid; place-items: center; width: 44px; height: 44px; border-radius: 50%; border: 1px solid var(--line-2); font-family: var(--font-h); font-weight: 700; transition: background .15s ease, color .15s ease; }
+.sc input:checked + span { background: var(--c); border-color: var(--c); color: #0b0e1c; }
+.sc input:focus-visible + span { outline: 3px solid var(--focus); outline-offset: 2px; }
+.tbl-wrap { overflow-x: auto; margin: 0 -4px; padding: 0 4px 4px; }
+.ft { width: 100%; border-collapse: separate; border-spacing: 6px; min-width: 460px; margin: -6px; }
+.ft.wide { min-width: 720px; }
+.ft th { text-align: left; font-size: 14px; font-weight: 600; color: var(--muted); padding: 0 4px; vertical-align: bottom; }
+.ft tbody th { color: var(--ink); font-size: 15px; vertical-align: middle; min-width: 90px; }
+.ft input { min-height: 42px; padding: 8px 10px; }
+.tracker { display: grid; grid-template-columns: repeat(10, minmax(0, 1fr)); gap: 6px; }
+@media (max-width: 560px) { .tracker { grid-template-columns: repeat(6, minmax(0, 1fr)); } }
+.tracker label { position: relative; }
+.tracker input { position: absolute; opacity: 0; inset: 0; margin: 0; cursor: pointer; }
+.tracker span { display: grid; place-items: center; height: 44px; border-radius: 10px; border: 1px solid var(--line-2); font-size: 14px; font-weight: 600; }
+.tracker input:checked + span { background: var(--c); border-color: var(--c); color: #0b0e1c; }
+.tracker input:checked + span::after { content: " ✓"; }
+.tracker input:focus-visible + span { outline: 3px solid var(--focus); outline-offset: 2px; }
+.calc-in { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); }
+.calc-out { display: grid; gap: 10px; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); margin-top: 6px; }
+.calc-out div { padding: 14px; border-radius: 14px; background: color-mix(in srgb, var(--c) 12%, transparent); border: 1px solid color-mix(in srgb, var(--c) 35%, transparent); }
+.calc-out b { display: block; font-family: var(--font-h); font-size: 1.7rem; line-height: 1.1; font-variant-numeric: tabular-nums; }
+.calc-out span { font-size: 14px; color: var(--muted); }
+.buget { display: grid; gap: 16px; }
+@media (min-width: 720px) { .buget { grid-template-columns: 1fr 1fr; } }
+.buget h4 { font-family: var(--font-b); font-size: 15px; margin: 0 0 8px; color: var(--muted); text-transform: uppercase; letter-spacing: .06em; }
+.b-row { display: grid; grid-template-columns: 1fr 120px; gap: 8px; align-items: center; margin-bottom: 6px; font-size: 15px; }
+.b-row input { min-height: 40px; }
+.cv-builder { display: grid; gap: 24px; }
+@media (min-width: 1040px) { .cv-builder { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: start; } .cv-side { position: sticky; top: 12px; } }
+.cv-grid { display: grid; gap: 0 14px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+.cv-block { padding: 14px 16px 2px; border-radius: 14px; border: 1px solid var(--line); margin-bottom: 14px; }
+.cv-block > p { font-weight: 700; font-size: 15px; margin-bottom: 10px; color: var(--muted); }
+.cv-side .f-l { display: block; margin-bottom: 8px; }
+.paper { background: #fff; color: #111; border-radius: 14px; padding: 26px 24px; box-shadow: 0 20px 50px -30px rgba(0, 0, 0, .6); max-height: 76vh; overflow: auto; }
+.part-btns { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+.f-foot { justify-content: space-between; align-items: center; }
+.f-status { font-size: 14px; color: var(--muted); }
+.btn.warn { border-color: var(--B); color: var(--B); }
+
+/* documentul exportat / tipărit (aceleași clase ca în fișierul Word) */
+.doc { font-family: Calibri, Arial, sans-serif; font-size: 11pt; color: #111; line-height: 1.45; }
+.doc h1 { font-family: Calibri, Arial, sans-serif; font-size: 18pt; margin: 0 0 4pt; color: #0b2a5b; letter-spacing: 0; }
+.doc h3 { font-family: Calibri, Arial, sans-serif; font-size: 12pt; margin: 14pt 0 4pt; color: #0b2a5b; letter-spacing: 0; line-height: 1.3; }
+.doc p { margin: 0 0 6pt; }
+.doc .d-meta { font-size: 10pt; color: #444; margin-bottom: 10pt; }
+.doc .d-id { border: 1px solid #999; padding: 6pt 8pt; margin: 0 0 12pt; font-size: 10.5pt; }
+.doc table { border-collapse: collapse; width: 100%; margin: 2pt 0 8pt; }
+.doc th, .doc td { border: 1px solid #999; padding: 4pt 6pt; text-align: left; vertical-align: top; font-size: 10.5pt; }
+.doc th { background: #eef1f7; }
+.doc .muted { color: #777; }
+.doc ul { margin: 0 0 6pt; padding-left: 16pt; }
+.doc .cv-h { border-bottom: 3pt solid #0b3d91; padding-bottom: 6pt; margin-bottom: 8pt; }
+.doc .cv-name { font-size: 22pt; font-weight: bold; color: #0b3d91; margin: 0; line-height: 1.15; }
+.doc .cv-contact { font-size: 10pt; color: #333; margin: 2pt 0 0; }
+.doc .cv-s { font-family: Calibri, Arial, sans-serif; margin: 12pt 0 4pt; font-size: 11pt; text-transform: uppercase; letter-spacing: 1px; color: #0b3d91; border-bottom: 1px solid #9fb3d9; padding-bottom: 2pt; }
+.doc .cv-e { margin: 0 0 7pt; }
+.doc .per { color: #555; font-size: 10pt; }
+.doc .letter p { margin: 0 0 11pt; }
+.doc .empty-prev { color: #777; font-style: italic; }
+
+/* ============ MIȘCARE REDUSĂ ============ */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: .001ms !important; animation-iteration-count: 1 !important; transition-duration: .001ms !important; }
+  .reveal { opacity: 1; transform: none; }
+  .hero-bg { animation: none; }
+}
+
+/* ============ IMPRIMARE ============ */
+@media print {
+  @page { margin: 16mm 14mm; }
+  :root, :root[data-theme] { --ink: #000; --muted: #333; --bg: #fff; color-scheme: light; }
+  body { background: #fff !important; color: #000 !important; font-size: 11pt; line-height: 1.45; }
+  body::after, .nav, .hero, main > section, footer, dialog, .proj, .skip { display: none !important; }
+  .print-only { display: block !important; }
+  .pl h1 { font-size: 20pt; margin-bottom: 2pt; }
+  .pl .pl-meta { font-size: 10pt; margin-bottom: 12pt; }
+  .pl h2 { font-size: 13pt; margin: 14pt 0 6pt; padding-bottom: 3pt; border-bottom: 1.5pt solid #000; break-after: avoid; }
+  .pl-item { break-inside: avoid; padding: 6pt 0; border-bottom: .5pt solid #bbb; }
+  .pl-item h3 { font-size: 11.5pt; }
+  .pl-item .d { font-size: 9.5pt; color: #333; }
+  .pl-item p { font-size: 10pt; margin-top: 2pt; }
+  .pl-note { font-size: 9.5pt; font-style: italic; margin: 4pt 0; }
+  html.lock { overflow: visible !important; }
+  html.pf #printList { display: none !important; }
+  html:not(.pf) #printFisa { display: none !important; }
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#continut">Sari la conținut</a>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top" data-scroll="top"><span class="brand-dot" aria-hidden="true"></span>XI D</a>
+    <nav aria-label="Secțiuni">
+      <ul class="nav-links">
+        <li><a href="#saptamana" data-scroll="saptamana">Tema săptămânii</a></li>
+        <li><a href="#harta" data-scroll="harta">Harta anului</a></li>
+        <li><a href="#teme" data-scroll="teme">Toate temele</a></li>
+        <li><a href="#progres" data-scroll="progres">Progres</a></li>
+        <li><a href="#resurse" data-scroll="resurse">Resurse</a></li>
+      </ul>
+    </nav>
+    <button class="icon-btn" id="themeBtn" type="button" aria-label="Comută tema luminoasă / întunecată"><span aria-hidden="true">☀️</span></button>
+  </div>
+</header>
+
+<main id="continut">
+  <!-- 1. HERO -->
+  <section class="hero" id="top" aria-labelledby="heroTitle">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="wrap hero-grid">
+      <div>
+        <p class="kicker">Ora de dirigenție · joia</p>
+        <h1 id="heroTitle">Dirigenția <span class="xi">XI D</span></h1>
+        <p class="hero-sub">Adolescent în 2026: între <em>scroll</em>, AI și viitor.</p>
+        <ul class="meta" id="heroMeta"></ul>
+        <div class="counters" id="counters"></div>
+        <div class="hero-cta">
+          <button class="btn btn-primary" type="button" data-scroll="saptamana">Vezi tema săptămânii <span aria-hidden="true">→</span></button>
+          <button class="btn" type="button" data-scroll="teme">Toate temele</button>
+        </div>
+      </div>
+      <div class="notifs" id="notifs" aria-label="Următoarele teme"></div>
+    </div>
+  </section>
+
+  <!-- 2. TEMA SĂPTĂMÂNII -->
+  <section class="sec" id="saptamana" aria-labelledby="wkTitle">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div>
+          <p class="eyebrow">01 — Joia asta</p>
+          <h2 id="wkTitle">Tema săptămânii</h2>
+        </div>
+        <p id="todayLine"></p>
+      </div>
+      <div class="week glass reveal" id="week"></div>
+    </div>
+  </section>
+
+  <!-- 3. HARTA ANULUI -->
+  <section class="sec" id="harta" aria-labelledby="mapTitle">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div>
+          <p class="eyebrow">02 — 36 de săptămâni</p>
+          <h2 id="mapTitle">Harta anului</h2>
+        </div>
+        <p>Fiecare punct e o oră. Culoarea arată domeniul. Apasă pe un punct ca să deschizi tema.</p>
+      </div>
+      <div class="glass tl-card reveal">
+        <div class="tl-scroll">
+          <div class="tl-track" id="track"></div>
+        </div>
+        <ul class="tl-legend" id="legend"></ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. TOATE TEMELE -->
+  <section class="sec" id="teme" aria-labelledby="allTitle">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div>
+          <p class="eyebrow">03 — Tot anul</p>
+          <h2 id="allTitle">Toate temele</h2>
+        </div>
+        <p>Filtrează după domeniu sau modul ori caută un cuvânt. Linkul din bara de adrese păstrează filtrele, așa că îl poți trimite mai departe.</p>
+      </div>
+
+      <div class="filters glass" role="search" aria-label="Filtrează temele">
+        <div class="chips" id="chips" role="group" aria-label="Domenii"></div>
+        <div class="filters-row">
+          <label class="search">
+            <span class="sr-only">Caută în teme</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+            <input type="search" id="q" placeholder="Caută: AI, bani, somn, CV…" autocomplete="off">
+          </label>
+          <label class="sr-only" for="modSel">Modul</label>
+          <select class="select" id="modSel"></select>
+          <div class="views" role="group" aria-label="Mod de afișare">
+            <button type="button" data-view="grila" aria-pressed="true"><span aria-hidden="true">▦</span> Grilă</button>
+            <button type="button" data-view="lista" aria-pressed="false"><span aria-hidden="true">☰</span> Listă</button>
+          </div>
+        </div>
+        <div class="filters-row">
+          <p class="count" id="count" aria-live="polite"></p>
+          <button class="link-btn" type="button" id="resetF" hidden>Resetează filtrele</button>
+        </div>
+      </div>
+
+      <div class="grid" id="grid"></div>
+      <div class="empty" id="empty" hidden>
+        <div class="big" aria-hidden="true">🫥</div>
+        <p>Nicio temă nu se potrivește. Încearcă alt cuvânt sau resetează filtrele.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. PROGRES -->
+  <section class="sec" id="progres" aria-labelledby="progTitle">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div>
+          <p class="eyebrow">04 — Unde am ajuns</p>
+          <h2 id="progTitle">Progresul anului</h2>
+        </div>
+        <p>Dirigintele bifează orele realizate din fereastra fiecărei teme. Bifele rămân salvate în acest browser.</p>
+      </div>
+      <div class="prog">
+        <div class="glass ring-card reveal">
+          <div class="ring">
+            <svg viewBox="0 0 140 140" aria-hidden="true">
+              <defs>
+                <linearGradient id="ringGrad" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="var(--A)"/>
+                  <stop offset=".5" stop-color="var(--C)"/>
+                  <stop offset="1" stop-color="var(--E)"/>
+                </linearGradient>
+              </defs>
+              <circle class="bg" cx="70" cy="70" r="58"/>
+              <circle class="fg" id="ringFg" cx="70" cy="70" r="58"/>
+            </svg>
+            <div class="ring-txt"><b id="ringNum">0</b><span id="ringOf">din 33 de teme</span></div>
+          </div>
+          <p id="ringNote"></p>
+        </div>
+        <div class="glass bars-card reveal">
+          <h3>Ore pe domenii</h3>
+          <p>Câte ore de dirigenție are fiecare domeniu anul acesta.</p>
+          <ul class="bars" id="bars"></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. RESURSE -->
+  <section class="sec" id="resurse" aria-labelledby="resTitle">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div>
+          <p class="eyebrow">05 — Dacă ai nevoie</p>
+          <h2 id="resTitle">Resurse utile</h2>
+        </div>
+        <p>Nu trebuie să treci singur prin ceva greu. Aici găsești oameni care te pot ajuta.</p>
+      </div>
+      <div class="res reveal">
+        <a class="glass res-card" href="tel:119">
+          <span class="ico" aria-hidden="true">📞</span>
+          <span class="num">119</span>
+          <h3>Telefonul Copilului</h3>
+          <p>Apel gratuit. Pentru orice situație de abuz, neglijare sau când ai nevoie să vorbești cu cineva.</p>
+        </a>
+        <a class="glass res-card" href="tel:1911">
+          <span class="ico" aria-hidden="true">🛡️</span>
+          <span class="num">1911</span>
+          <h3>DNSC</h3>
+          <p>Directoratul Național de Securitate Cibernetică. Raportezi fraude, conturi sparte și atacuri online.</p>
+        </a>
+        <a class="glass res-card" href="https://oradenet.ro" target="_blank" rel="noopener">
+          <span class="ico" aria-hidden="true">🌐</span>
+          <span class="num sm">oradenet.ro</span>
+          <h3>Ora de Net</h3>
+          <p>Programul Salvați Copiii pentru siguranță online. Consiliere și raportare pentru cyberbullying sau conținut îngrijorător.</p>
+        </a>
+        <a class="glass res-card" href="tel:112">
+          <span class="ico" aria-hidden="true">🚨</span>
+          <span class="num">112</span>
+          <h3>Urgențe</h3>
+          <p>Când viața sau sănătatea cuiva e în pericol. Poliție, ambulanță, pompieri.</p>
+        </a>
+        <div class="glass res-card">
+          <span class="ico" aria-hidden="true">💬</span>
+          <span class="num sm">Cabinetul școlii</span>
+          <h3>Asistență psihopedagogică</h3>
+          <p>Profesorul consilier școlar din liceu te ascultă, fără să te judece. Poți merge singur sau cu un prieten.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>Liceul Teoretic „Panait Cerna” Brăila · Dirigenție 2026–2027 · prof. Ion Aurelia</span>
+    <button class="link-btn" type="button" id="printBtn">Tipărește lista temelor</button>
+  </div>
+</footer>
+
+<!-- 5. FEREASTRA DE DETALIU -->
+<dialog class="modal" id="modal" aria-labelledby="mTitle">
+  <div class="m-inner" id="mInner"></div>
+</dialog>
+
+<!-- 6. MOD PROIECTOR -->
+<div class="proj" id="proj" hidden role="dialog" aria-modal="true" aria-label="Mod proiector">
+  <div class="proj-top">
+    <span class="proj-meta" id="pMeta"></span>
+    <div class="timer" id="timer" role="timer" aria-label="Cronometrul orei">
+      <output id="tOut">50:00</output>
+      <button class="icon-btn" type="button" id="tToggle" aria-label="Pauză cronometru">⏸</button>
+      <button class="icon-btn" type="button" id="tReset" aria-label="Repornește cronometrul de la 50 de minute">↺</button>
+    </div>
+    <button class="icon-btn" type="button" id="pClose" aria-label="Închide modul proiector">✕</button>
+  </div>
+  <div class="proj-body">
+    <div class="proj-emoji" id="pEmoji" aria-hidden="true"></div>
+    <h2 id="pTitle"></h2>
+    <p class="proj-hook" id="pHook"></p>
+    <p class="proj-hint" id="pDz" style="font-size:clamp(1rem,1.6vw,1.4rem);color:var(--muted)"></p>
+    <ol class="proj-acts" id="pActs"></ol>
+    <p class="proj-hint" id="pHint">Apasă <kbd>Space</kbd> pentru activitatea următoare · <kbd>←</kbd> <kbd>→</kbd> schimbă tema · <kbd>Esc</kbd> ieșire</p>
+  </div>
+  <div class="proj-nav">
+    <button class="btn btn-sm" type="button" id="pPrev">← Tema anterioară</button>
+    <button class="btn btn-sm btn-primary" type="button" id="pNext">Activitatea următoare</button>
+    <button class="btn btn-sm" type="button" id="pNextT">Tema următoare →</button>
+  </div>
+</div>
+
+<!-- LISTĂ PENTRU IMPRIMARE -->
+<div class="print-only pl" id="printList"></div>
+<div class="print-only doc" id="printFisa"></div>
+
+<!-- FIȘA DE LUCRU -->
+<dialog class="modal fisa" id="fisaDlg" aria-labelledby="fTitle">
+  <div class="m-inner" id="fisaInner"></div>
+</dialog>
+
+<script>
+/* =====================================================================
+   DATELE PAGINII – modifică aici.
+   Câmpurile din planificare sunt preluate exact. Am adăugat doar:
+   emoji, carlig (întrebarea-cârlig) și sondaj pentru fiecare temă,
+   plus „calendar” (datele vacanțelor și ale săptămânilor speciale,
+   în format zz.ll.aaaa, ca să le poată citi pagina) și ora de început.
+   ===================================================================== */
+const DATA = {
+  "clasa": "a XI-a D, științe sociale",
+  "an": "2026–2027",
+  "diriginte": "prof. Ion Aurelia",
+  "ora": "joi, ora a 7-a, sala S17",
+  "ora_inceput": "14:00",   // începutul orei a 7-a (pentru numărătoarea inversă)
+  "durata_ora": 50,         // minute (cronometrul din modul proiector)
+  "domenii": {
+    "A": "Autocunoaștere și dezvoltare personală",
+    "B": "Comunicare și abilități sociale",
+    "C": "Managementul informațiilor și al învățării",
+    "D": "Planificarea carierei",
+    "E": "Calitatea stilului de viață",
+    "F": "Ore la dispoziția dirigintelui"
+  },
+  "domenii_scurt": {
+    "A": "Autocunoaștere", "B": "Comunicare", "C": "Informare și învățare",
+    "D": "Carieră", "E": "Stil de viață", "F": "Ora dirigintelui"
+  },
+  "competente": {
+    "1.1": "Analizarea aspirațiilor, a priorităților, a calităților personale, a punctelor tari și a scopurilor prin autoevaluare",
+    "1.2": "Reactualizarea planului de dezvoltare a resurselor personale, prin raportare la situația prezentă și la obiectivele de viitor",
+    "2.1": "Aplicarea principiilor unei comunicări interpersonale pozitive",
+    "2.2": "Evaluarea respectării drepturilor și a responsabilităților membrilor familiei",
+    "3.1": "Compararea resurselor de obținere a informațiilor referitoare la opțiunile educaționale, la muncă și carieră, din perspectiva relevanței acestora",
+    "3.2": "Analizarea relației dintre performanțele școlare și reușita în viața personală și profesională",
+    "4.1": "Analizarea consecințelor schimbărilor economice, sociale și tehnologice asupra profesiilor",
+    "4.2": "Evaluarea opțiunilor personale privind dezvoltarea personală și profesională",
+    "5.1": "Realizarea unui proiect de implicare comunitară vizând promovarea conceptului de calitate a vieții",
+    "5.2": "Exersarea unor abilități de promovare a voluntariatului"
+  },
+  "module": [
+    {
+      "titlu": "MODULUL 1 · 7 septembrie – 23 octombrie 2026",
+      "start": "07.09.2026", "sfarsit": "23.10.2026",
+      "teme": [
+        {
+          "nr": 1, "saptamana": "S1", "data": "10.09.2026", "domeniu": "F", "cs": "2.1",
+          "titlu": "„Start XI D”",
+          "subtitlu": "cine suntem acum, după vacanță? Regulamentul intern, Statutul elevului, regulile privind telefonul mobil la școală",
+          "activitati": "Joc de reintegrare „Două adevăruri și o minciună despre vara mea”; prezentarea ROI și a Statutului elevului; instructaj SSM, PSI și circulație rutieră (proces-verbal semnat)",
+          "evaluare": "Proces-verbal instructaj; observare",
+          "emoji": "🚀",
+          "carlig": "Dacă vara ta ar fi un film, ce titlu ar avea?",
+          "sondaj": { "intrebare": "Cu ce energie începi clasa a XI-a?", "variante": ["Gata de start 🚀", "Încă sunt în vacanță 🏖️", "Curios, dar obosit", "Depinde de orar"] }
+        },
+        {
+          "nr": 2, "saptamana": "S2", "data": "17.09.2026", "domeniu": "B", "cs": "2.1",
+          "titlu": "Pactul clasei",
+          "subtitlu": "alegerea consiliului clasei și regulile noastre de comunicare (în clasă și pe grupul de WhatsApp)",
+          "activitati": "Brainstorming „ce ne enervează pe grupul clasei”; redactarea în echipe a unui „pact” de 8–10 reguli; alegerea șefului clasei și a reprezentantului în Consiliul Școlar al Elevilor",
+          "evaluare": "Produs: Pactul clasei afișat",
+          "emoji": "🤝",
+          "carlig": "Care e mesajul de pe grupul clasei pe care ai fi preferat să nu-l citești niciodată?",
+          "sondaj": { "intrebare": "Cea mai importantă regulă pentru grupul clasei?", "variante": ["Fără mesaje după ora 22", "Fără capturi de ecran fără acord", "Doar info utile, meme-urile separat", "Respect, chiar și când nu suntem de acord"] }
+        },
+        {
+          "nr": 3, "saptamana": "S3", "data": "24.09.2026", "domeniu": "A", "cs": "1.1",
+          "titlu": "Eu, la 17 ani: harta valorilor mele",
+          "subtitlu": "ce contează pentru mine când nu mă vede nimeni?",
+          "activitati": "Exercițiu de ierarhizare a valorilor (licitația valorilor); discuție: valori declarate vs. valori trăite (ce postez vs. ce fac); jurnal reflexiv",
+          "evaluare": "Fișă de autoevaluare",
+          "emoji": "🧭",
+          "carlig": "Ce ai face azi dacă ai ști sigur că nu te vede și nu te judecă nimeni?",
+          "sondaj": { "intrebare": "Ce contează cel mai mult pentru tine acum?", "variante": ["Prietenii", "Libertatea", "Succesul", "Familia"] }
+        },
+        {
+          "nr": 4, "saptamana": "S4", "data": "01.10.2026", "domeniu": "A", "cs": "1.2",
+          "titlu": "Viața în scroll",
+          "subtitlu": "timpul de ecran, economia atenției și „brain rot”: cine îmi administrează timpul?",
+          "activitati": "Elevii își consultă anonim statisticile de utilizare din telefon (Screen Time / Digital Wellbeing); calcul „ore pe an”; analiza designului aplicațiilor (scroll infinit, notificări, streak-uri); plan personal „7 zile cu 1 oră mai puțin”",
+          "evaluare": "Plan personal de gestionare a timpului",
+          "emoji": "📱",
+          "carlig": "Câte ore ai stat ieri pe telefon? Ghicește înainte să verifici.",
+          "sondaj": { "intrebare": "Cât timp de ecran ai, de obicei, într-o zi?", "variante": ["Sub 3 ore", "3–5 ore", "5–7 ore", "Nu vreau să știu 🙈"] }
+        },
+        {
+          "nr": 5, "saptamana": "S5", "data": "08.10.2026", "domeniu": "A", "cs": "1.1; 2.1",
+          "titlu": "E ok să nu fii ok",
+          "subtitlu": "stres, anxietate, presiune; cum îmi dau seama că am nevoie de ajutor și unde îl caut (10 oct. – Ziua mondială a sănătății mintale)",
+          "activitati": "Studiu de caz; „termometrul emoțiilor”; tehnici simple de autoreglare (respirație, pauză digitală, somn); prezentarea cabinetului de asistență psihopedagogică și a CJRAE Brăila; invitat: profesorul consilier școlar",
+          "evaluare": "Observare; bilet de ieșire",
+          "emoji": "💙",
+          "carlig": "De ce e mai ușor să spui „am febră” decât „am anxietate”?",
+          "sondaj": { "intrebare": "Când ești copleșit, ce faci primul?", "variante": ["Vorbesc cu un prieten", "Mă retrag și tac", "Dau scroll", "Fac sport sau ies afară"] }
+        },
+        {
+          "nr": 6, "saptamana": "S6", "data": "15.10.2026", "domeniu": "E", "cs": "5.1",
+          "titlu": "Corpul meu nu e un gadget",
+          "subtitlu": "somn, energizante, vape și pungi cu nicotină",
+          "activitati": "Quiz mituri/realitate; analiza etichetelor (cofeină, nicotină); discuție despre marketingul care țintește adolescenții; în echipe: mini-campanie de 3 postări pentru colegi",
+          "evaluare": "Produs de grup: mini-campanie",
+          "emoji": "🔋",
+          "carlig": "Dacă ai avea un indicator de baterie pe frunte, la cât ar fi acum?",
+          "sondaj": { "intrebare": "Câte ore dormi, de obicei, într-o noapte de școală?", "variante": ["Sub 6", "6–7", "7–8", "Peste 8"] }
+        },
+        {
+          "nr": 7, "saptamana": "S7", "data": "22.10.2026", "domeniu": "F", "cs": "3.2",
+          "titlu": "Bilanț Modulul 1",
+          "subtitlu": "analiza situației școlare (note, absențe) și pregătirea ședinței cu părinții",
+          "activitati": "Analiza situației la învățătură și frecvență; autoevaluare „ce a mers / ce schimb”; stabilirea măsurilor de sprijin",
+          "evaluare": "Autoevaluare; fișa de analiză",
+          "emoji": "📊",
+          "carlig": "Dacă primele 7 săptămâni ar fi un nivel dintr-un joc, cu câte stele l-ai terminat?",
+          "sondaj": { "intrebare": "Cum a fost Modulul 1 pentru tine?", "variante": ["Peste așteptări", "Ok, fără surprize", "Mai greu decât credeam", "Încă mă încălzesc"] }
+        }
+      ],
+      "saptamani_speciale": []
+    },
+    {
+      "titlu": "MODULUL 2 · 2 noiembrie – 22 decembrie 2026",
+      "start": "02.11.2026", "sfarsit": "22.12.2026",
+      "teme": [
+        {
+          "nr": 8, "saptamana": "S8", "data": "05.11.2026", "domeniu": "C", "cs": "3.1",
+          "titlu": "TikTok, ChatGPT sau manualul?",
+          "subtitlu": "de unde mă informez și cum verific ce aflu",
+          "activitati": "Comparăm trei răspunsuri la aceeași întrebare (o căutare Google, un chatbot AI, un clip TikTok); criterii de evaluare a surselor (autor, dovezi, dată, scop); utilizarea etică a AI la teme – unde e limita dintre ajutor și plagiat",
+          "evaluare": "Fișă de verificare a surselor",
+          "emoji": "🔎",
+          "carlig": "Dacă un chatbot îți scrie tema, a cui e nota?",
+          "sondaj": { "intrebare": "Unde cauți primul răspuns la o întrebare?", "variante": ["Google", "Un chatbot AI", "TikTok sau YouTube", "Întreb pe cineva"] }
+        },
+        {
+          "nr": 9, "saptamana": "S9", "data": "12.11.2026", "domeniu": "C", "cs": "3.1",
+          "titlu": "Deepfake, fake news și bula algoritmică",
+          "subtitlu": "cum îmi alege algoritmul realitatea",
+          "activitati": "Joc „Real sau generat de AI?” (imagini și clipuri); tehnici de verificare (căutare inversă de imagini, surse multiple); experiment: comparăm pagina „Pentru tine” a doi colegi; resurse DNSC #SigurantaOnline",
+          "evaluare": "Quiz; observare",
+          "emoji": "🎭",
+          "carlig": "Ai putea jura că ultimul clip viral pe care l-ai văzut era real?",
+          "sondaj": { "intrebare": "Cât de sigur ești că recunoști un deepfake?", "variante": ["Foarte sigur", "Uneori", "Aproape deloc", "Cred că m-a păcălit deja unul"] }
+        },
+        {
+          "nr": 10, "saptamana": "S10", "data": "19.11.2026", "domeniu": "B", "cs": "2.2",
+          "titlu": "Drepturile mele, responsabilitățile mele",
+          "subtitlu": "acasă, la școală și online (20 nov. – Ziua internațională a drepturilor copilului)",
+          "activitati": "Negocierea regulilor din familie (program, bani de buzunar, ieșiri, telefon); dreptul la imagine și la date personale (GDPR pe înțelesul tuturor); joc de rol părinte–adolescent",
+          "evaluare": "Joc de rol; observare",
+          "emoji": "⚖️",
+          "carlig": "Au părinții tăi dreptul să-ți verifice telefonul?",
+          "sondaj": { "intrebare": "Cine ar trebui să decidă ora la care vii acasă?", "variante": ["Eu", "Părinții", "Negociem împreună", "Depinde de ocazie"] }
+        },
+        {
+          "nr": 11, "saptamana": "S11", "data": "26.11.2026", "domeniu": "D", "cs": "4.1",
+          "titlu": "Plec sau rămân?",
+          "subtitlu": "tinerii, diaspora și România de 1 Decembrie",
+          "activitati": "Dezbatere în format „colțuri” (plec / rămân / plec și mă întorc); date despre migrația tinerilor și piața muncii din județul Brăila; ce înseamnă apartenența la o comunitate",
+          "evaluare": "Argumentare orală",
+          "emoji": "✈️",
+          "carlig": "Unde te vezi la 30 de ani: în Brăila, în București sau în alt fus orar?",
+          "sondaj": { "intrebare": "După liceu…", "variante": ["Plec din țară", "Rămân în România", "Plec și mă întorc", "Încă nu știu"] }
+        },
+        {
+          "nr": 12, "saptamana": "S12", "data": "03.12.2026", "domeniu": "B", "cs": "2.1",
+          "titlu": "Relații sănătoase vs. relații toxice",
+          "subtitlu": "gelozie, control, parole cerute, locație partajată (campania „16 zile de activism împotriva violenței de gen”)",
+          "activitati": "Semafor relațional: comportamente verzi / galbene / roșii; analiza unor mesaje fictive; cum spun „nu” și cum îmi susțin un prieten; unde cer ajutor (Telefonul Copilului 119, consilierul școlar)",
+          "evaluare": "Fișă de lucru; bilet de ieșire",
+          "emoji": "🚦",
+          "carlig": "Când cineva îți cere parola, e dovadă de iubire sau de control?",
+          "sondaj": { "intrebare": "Locația partajată permanent cu partenerul este…", "variante": ["Normală, ne simțim în siguranță", "Ok, dacă e reciprocă și aleasă liber", "Un semnal de control", "Depinde de relație"] }
+        },
+        {
+          "nr": 13, "saptamana": "S13", "data": "10.12.2026", "domeniu": "B", "cs": "2.1",
+          "titlu": "Cyberbullying, hărțuire și șantaj online",
+          "subtitlu": "ce fac dacă mi se întâmplă mie sau unui coleg (10 dec. – Ziua drepturilor omului)",
+          "activitati": "Studii de caz; regula „nu șterge, fă captură, raportează, spune unui adult”; mecanisme de raportare pe platforme; resurse: Ora de Net (Salvați Copiii), DNSC – 1911, Telefonul Copilului 119",
+          "evaluare": "Plan de acțiune în echipă",
+          "emoji": "🛡️",
+          "carlig": "Mâine vezi o captură umilitoare cu un coleg. Ce faci în primele 5 minute?",
+          "sondaj": { "intrebare": "Dacă văd pe cineva hărțuit online, eu…", "variante": ["Raportez postarea", "Îi scriu victimei în privat", "Spun unui adult", "Sincer, nu știu ce aș face"] }
+        }
+      ],
+      "saptamani_speciale": [
+        "S14 (14–18.12.2026): Programul „Școala altfel” – activități planificate separat (vezi capitolul 5)"
+      ]
+    },
+    {
+      "titlu": "MODULUL 3 · 11 ianuarie – 19 februarie 2027",
+      "start": "11.01.2027", "sfarsit": "19.02.2027",
+      "teme": [
+        {
+          "nr": 14, "saptamana": "S16", "data": "14.01.2027", "domeniu": "A", "cs": "1.2",
+          "titlu": "Obiective 2027",
+          "subtitlu": "de ce nu țin rezoluțiile de Anul Nou și cum construiesc obiceiuri care rămân",
+          "activitati": "Obiective SMART; „habit tracker” pe 30 de zile; reactualizarea planului personal de dezvoltare (pornind de la bilanțul din Modulul 1)",
+          "evaluare": "Plan personal de dezvoltare actualizat",
+          "emoji": "🎯",
+          "carlig": "Câte dintre rezoluțiile tale de anul trecut au supraviețuit până în februarie?",
+          "sondaj": { "intrebare": "Obiectivul tău principal pentru 2027 ține de…", "variante": ["Școală", "Sănătate și sport", "Bani și job", "Relații și timp liber"] }
+        },
+        {
+          "nr": 15, "saptamana": "S17", "data": "21.01.2027", "domeniu": "B", "cs": "2.1",
+          "titlu": "Împreună, nu unul contra altuia",
+          "subtitlu": "conflicte în proiectele de grup și pe grupurile online; negociere și mediere (24 ian. – Unirea Principatelor)",
+          "activitati": "Simulare: proiect de grup cu roluri conflictuale; tehnica „Eu simt… când… aș vrea…”; paralelă: negocierea ca instrument al Unirii",
+          "evaluare": "Observare; autoevaluare",
+          "emoji": "🧩",
+          "carlig": "Ce e mai enervant într-un proiect de grup: cel care nu face nimic sau cel care vrea să facă tot?",
+          "sondaj": { "intrebare": "În proiectele de grup, de obicei eu sunt…", "variante": ["Liderul", "Cel care face tot", "Mediatorul", "Cel care apare la final"] }
+        },
+        {
+          "nr": 16, "saptamana": "S18", "data": "28.01.2027", "domeniu": "D", "cs": "4.1",
+          "titlu": "Meseriile anului 2035",
+          "subtitlu": "ce face inteligența artificială cu viitorul meu profesional?",
+          "activitati": "Analiza unor rapoarte despre viitorul muncii; clasificare: meserii care dispar / se transformă / apar; competențe greu de înlocuit (empatie, gândire critică, comunicare); fiecare elev testează un instrument AI pentru meseria visată",
+          "evaluare": "Fișă „profesia mea în 2035”",
+          "emoji": "🤖",
+          "carlig": "Poate un AI să-ți ia jobul visat înainte să apuci să-l ai?",
+          "sondaj": { "intrebare": "Pentru viitorul tău profesional, AI-ul e…", "variante": ["O oportunitate", "O amenințare", "Un instrument ca oricare altul", "Nu m-am gândit încă"] }
+        },
+        {
+          "nr": 17, "saptamana": "S19", "data": "04.02.2027", "domeniu": "D", "cs": "4.2; 3.1",
+          "titlu": "Științe sociale – și după?",
+          "subtitlu": "Drept, psihologie, sociologie, jurnalism, științe politice, administrație publică, relații internaționale",
+          "activitati": "Explorarea site-urilor facultăților (probe de admitere, discipline de Bac cerute, locuri la buget); invitați: absolvenți ai liceului (fizic sau online); tabel comparativ pe trasee",
+          "evaluare": "Tabel comparativ; portofoliu de carieră",
+          "emoji": "🎓",
+          "carlig": "Ce le răspunzi celor care spun că „la uman n-ai niciun viitor”?",
+          "sondaj": { "intrebare": "Ce traseu te atrage cel mai mult acum?", "variante": ["Drept", "Psihologie sau sociologie", "Jurnalism și comunicare", "Științe politice, administrație sau relații internaționale"] }
+        },
+        {
+          "nr": 18, "saptamana": "S20", "data": "11.02.2027", "domeniu": "C", "cs": "3.1; 4.2",
+          "titlu": "Amprenta mea digitală",
+          "subtitlu": "ce găsește despre mine un angajator sau o universitate peste 5 ani? (9 feb. 2027 – Ziua siguranței pe internet)",
+          "activitati": "Elevii își caută propriul nume online; audit al setărilor de confidențialitate; „curățenie digitală”; profil public vs. profil privat",
+          "evaluare": "Checklist de confidențialitate",
+          "emoji": "👣",
+          "carlig": "Ce ar afla despre tine un necunoscut după 10 minute de căutat pe internet?",
+          "sondaj": { "intrebare": "Conturile tale de social media sunt…", "variante": ["Toate private", "Unele publice", "Toate publice", "Nu știu sigur"] }
+        },
+        {
+          "nr": 19, "saptamana": "S21", "data": "18.02.2027", "domeniu": "F", "cs": "3.2",
+          "titlu": "Bilanț Modulul 3",
+          "subtitlu": "analiza situației școlare la jumătatea anului; consiliul clasei",
+          "activitati": "Analiza rezultatelor și a absențelor; recunoașterea progresului; măsuri de sprijin și de remediere",
+          "evaluare": "Fișa de analiză",
+          "emoji": "📈",
+          "carlig": "Ce progres ai făcut semestrul ăsta, fără să-l fi observat nimeni?",
+          "sondaj": { "intrebare": "Ce te-ar ajuta cel mai mult de acum încolo?", "variante": ["Mai multă organizare", "Sprijin la o materie", "Mai puțin stres", "Mai multă motivație"] }
+        }
+      ],
+      "saptamani_speciale": []
+    },
+    {
+      "titlu": "MODULUL 4 · 1 martie – 23 aprilie 2027",
+      "start": "01.03.2027", "sfarsit": "23.04.2027",
+      "teme": [
+        {
+          "nr": 20, "saptamana": "S22", "data": "04.03.2027", "domeniu": "D", "cs": "4.1",
+          "titlu": "Bani ușor din telefon?",
+          "subtitlu": "influenceri financiari, crypto, trading pe TikTok, „cumpără acum, plătește mai târziu” (Global Money Week)",
+          "activitati": "Analiza a trei reclame/clipuri „devino bogat rapid”; semnalele unei înșelătorii financiare; buget personal lunar; calculul costului real al unei achiziții în rate",
+          "evaluare": "Buget personal; quiz",
+          "emoji": "💸",
+          "carlig": "Dacă cineva chiar ar ști cum să se îmbogățească rapid, de ce ți-ar spune ție, pe TikTok?",
+          "sondaj": { "intrebare": "Primul tău salariu ar merge pe…", "variante": ["Economii", "Haine și gadgeturi", "Călătorii", "Investiții"] }
+        },
+        {
+          "nr": 21, "saptamana": "S23", "data": "11.03.2027", "domeniu": "E", "cs": "5.1",
+          "titlu": "Când jocul nu mai e joc",
+          "subtitlu": "pariuri sportive, cazinouri online, loot box-uri și skin-uri",
+          "activitati": "Discuție despre publicitatea la pariuri; matematica pariurilor (de ce câștigă mereu casa); semnale ale dependenței de jocuri; unde se poate cere ajutor",
+          "evaluare": "Observare; bilet de ieșire",
+          "emoji": "🎲",
+          "carlig": "Dacă e doar un joc, de ce costă bani adevărați?",
+          "sondaj": { "intrebare": "Pariurile printre tinerii pe care îi știi sunt…", "variante": ["O problemă serioasă", "Ceva normal, dacă e cu măsură", "Nu văd pe nimeni pariind", "Nu știu"] }
+        },
+        {
+          "nr": 22, "saptamana": "S24", "data": "18.03.2027", "domeniu": "D", "cs": "4.2",
+          "titlu": "Primul meu CV și primul interviu",
+          "subtitlu": "Europass, LinkedIn, jobul de vară sau internship-ul",
+          "activitati": "Redactarea CV-ului Europass; simulare de interviu în perechi (întrebări frecvente, limbaj nonverbal); scrisoarea de intenție în 5 fraze",
+          "evaluare": "CV Europass (portofoliu)",
+          "emoji": "💼",
+          "carlig": "Ce ai scrie azi în CV dacă n-ai avea voie să folosești cuvântul „responsabil”?",
+          "sondaj": { "intrebare": "La un interviu, cel mai tare m-ar stresa…", "variante": ["„Spune-mi despre tine”", "Să vorbesc despre defectele mele", "Discuția despre salariu", "Tăcerile ciudate"] }
+        },
+        {
+          "nr": 23, "saptamana": "S25", "data": "25.03.2027", "domeniu": "C", "cs": "3.2",
+          "titlu": "Note, Bac și presiune",
+          "subtitlu": "succesul școlar e același lucru cu reușita în viață?",
+          "activitati": "Dezbatere pornind de la povești de viață; metode de învățare eficientă (repetarea spațiată, testarea); planificarea învățării pentru anul terminal; gestionarea anxietății de examen",
+          "evaluare": "Plan de învățare personal",
+          "emoji": "📚",
+          "carlig": "Cunoști pe cineva cu note mari care nu e fericit? Dar pe cineva cu note mici care e?",
+          "sondaj": { "intrebare": "Un 10 măsoară, în primul rând…", "variante": ["Cât știi", "Cât ai muncit", "Cât noroc ai avut", "Cât de bine știi să înveți pentru test"] }
+        },
+        {
+          "nr": 24, "saptamana": "S26", "data": "01.04.2027", "domeniu": "E", "cs": "5.2",
+          "titlu": "De la like la implicare",
+          "subtitlu": "voluntariatul care contează (și care arată bine și în CV)",
+          "activitati": "Prezentarea ONG-urilor și a oportunităților de voluntariat din Brăila; drepturile voluntarului (contract, adeverință); alegerea temei pentru proiectul de implicare comunitară al clasei",
+          "evaluare": "Proiect: tema și planul de acțiune",
+          "emoji": "🙌",
+          "carlig": "Un like schimbă ceva? Dar o sâmbătă de voluntariat?",
+          "sondaj": { "intrebare": "M-aș implica cel mai ușor în…", "variante": ["Mediu și reciclare", "Sprijin pentru copii sau bătrâni", "Protecția animalelor", "Evenimente și cultură"] }
+        },
+        {
+          "nr": 25, "saptamana": "S27", "data": "08.04.2027", "domeniu": "E", "cs": "5.1",
+          "titlu": "Pregătiți pentru criză",
+          "subtitlu": "cutremur, incendiu, inundație, prim ajutor și apelul la 112 (7 apr. – Ziua mondială a sănătății)",
+          "activitati": "Ce conține un rucsac de urgență; aplicația DSU și alertele RO-ALERT; exercițiu practic de prim ajutor (invitat: Crucea Roșie / ISU Brăila); cum verific știrile în situații de criză",
+          "evaluare": "Exercițiu practic; observare",
+          "emoji": "🚨",
+          "carlig": "Dacă ar suna acum un RO-ALERT, ai ști exact ce să faci?",
+          "sondaj": { "intrebare": "Cât de pregătit te simți pentru o urgență?", "variante": ["Știu ce am de făcut", "Știu doar să sun la 112", "Cred că aș intra în panică", "N-am idee"] }
+        },
+        {
+          "nr": 26, "saptamana": "S28", "data": "15.04.2027", "domeniu": "F", "cs": "3.2",
+          "titlu": "Bilanț Modulul 4",
+          "subtitlu": "analiza situației școlare; pregătirea activităților din „Săptămâna verde”",
+          "activitati": "Analiza rezultatelor și a absențelor; împărțirea responsabilităților pentru „Săptămâna verde”",
+          "evaluare": "Fișa de analiză",
+          "emoji": "📋",
+          "carlig": "Mai sunt 9 săptămâni de școală. Ce vrei să reușești până atunci?",
+          "sondaj": { "intrebare": "În „Săptămâna verde” aș vrea…", "variante": ["Plantări și curățenie", "O ieșire în natură", "Un atelier de reciclare creativă", "O campanie online"] }
+        }
+      ],
+      "saptamani_speciale": [
+        "S29 (19–23.04.2027): Programul „Săptămâna verde” – activități planificate separat (vezi capitolul 5)"
+      ]
+    },
+    {
+      "titlu": "MODULUL 5 · 5 mai – 18 iunie 2027",
+      "start": "05.05.2027", "sfarsit": "18.06.2027",
+      "teme": [
+        {
+          "nr": 27, "saptamana": "S30", "data": "06.05.2027", "domeniu": "D", "cs": "4.2",
+          "titlu": "Europa e mai aproape decât crezi",
+          "subtitlu": "Erasmus+, mobilități, studii în UE și primul vot la 18 ani (9 mai – Ziua Europei)",
+          "activitati": "Prezentarea oportunităților Erasmus+ și a proiectelor europene ale școlii; mărturii ale participanților; ce înseamnă să fii cetățean european activ",
+          "evaluare": "Poster / fișă de oportunități",
+          "emoji": "🌍",
+          "carlig": "Dacă ai avea mâine 18 ani, te-ai duce la vot? De ce?",
+          "sondaj": { "intrebare": "Ce oportunitate europeană te atrage?", "variante": ["Erasmus+ la facultate", "Un schimb de tineri", "Voluntariat european", "Un job în alt stat UE"] }
+        },
+        {
+          "nr": 28, "saptamana": "S31", "data": "13.05.2027", "domeniu": "E", "cs": "5.1",
+          "titlu": "Presiunea grupului înainte de vară",
+          "subtitlu": "alcool, droguri „recreaționale”, petreceri și festivaluri",
+          "activitati": "Studiu de caz; tehnici de refuz asertiv; mituri despre substanțe „naturale” sau „inofensive”; ce fac dacă un prieten este în pericol (112); resurse ANA",
+          "evaluare": "Joc de rol; observare",
+          "emoji": "🙅",
+          "carlig": "Cât de greu e să spui „nu, mersi” când toată lumea din jur spune „da”?",
+          "sondaj": { "intrebare": "Cel mai greu îmi e să refuz când…", "variante": ["Insistă prietenii", "Toată lumea face la fel", "Mi-e teamă să nu par ciudat", "Nu-mi e greu să refuz"] }
+        },
+        {
+          "nr": 29, "saptamana": "S32", "data": "20.05.2027", "domeniu": "E", "cs": "5.1",
+          "titlu": "Proiectul nostru de implicare comunitară",
+          "subtitlu": "prezentare și evaluare",
+          "activitati": "Prezentarea rezultatelor proiectului început la S26 (fotografii, cifre, impact); feedback de la beneficiari; autoevaluarea echipelor",
+          "evaluare": "Evaluarea proiectului (grilă)",
+          "emoji": "🌱",
+          "carlig": "Ce s-a schimbat, concret, în comunitate datorită nouă?",
+          "sondaj": { "intrebare": "Cea mai mare reușită a proiectului a fost…", "variante": ["Impactul asupra oamenilor", "Cum am lucrat în echipă", "Ce am învățat", "Abia urmează"] }
+        },
+        {
+          "nr": 30, "saptamana": "S33", "data": "27.05.2027", "domeniu": "A", "cs": "1.1",
+          "titlu": "Filtre, corpuri „perfecte” și încredere în sine",
+          "subtitlu": "cum mă văd dincolo de cameră",
+          "activitati": "Analiza imaginilor editate (înainte/după); discuție despre comparația socială și algoritmi; exercițiu „punctele mele tari, văzute de ceilalți”",
+          "evaluare": "Jurnal reflexiv",
+          "emoji": "🪞",
+          "carlig": "Ai postat vreodată o poză fără niciun filtru? Cum te-ai simțit?",
+          "sondaj": { "intrebare": "Filtrele sunt…", "variante": ["Distracție inofensivă", "O presiune în plus", "O minciună frumoasă", "Depinde cine și cum le folosește"] }
+        },
+        {
+          "nr": 31, "saptamana": "S34", "data": "03.06.2027", "domeniu": "D", "cs": "4.2; 1.2",
+          "titlu": "Harta mea spre clasa a XII-a",
+          "subtitlu": "portofoliul de carieră, alegerea disciplinei la Bac 2028 și planul pentru anul terminal",
+          "activitati": "Completarea portofoliului de carieră; decizii: disciplina la alegere la Bac, pregătire pentru admitere, certificări (limbi străine, competențe digitale); stiluri decizionale",
+          "evaluare": "Portofoliu de carieră",
+          "emoji": "🗺️",
+          "carlig": "Peste un an ești în ultima zi de liceu. Ce vrei să fi hotărât până atunci?",
+          "sondaj": { "intrebare": "Cum stai cu decizia pentru Bac 2028?", "variante": ["Știu deja ce aleg", "Ezit între două variante", "Aleg după admitere", "Încă n-am idee"] }
+        },
+        {
+          "nr": 32, "saptamana": "S35", "data": "10.06.2027", "domeniu": "E", "cs": "5.1; 4.2",
+          "titlu": "Vară în siguranță",
+          "subtitlu": "plajă, drum, festivaluri, joburi sezoniere și Work & Travel (ce verific înainte să semnez)",
+          "activitati": "Reguli de siguranță (apă, trafic, căldură extremă); drepturile tânărului angajat (contract, program, vârstă); cum recunosc o ofertă de muncă înșelătoare",
+          "evaluare": "Checklist „vara mea în siguranță”",
+          "emoji": "🏖️",
+          "carlig": "O ofertă de job pe vară sună prea bine ca să fie adevărată. Ce verifici primul?",
+          "sondaj": { "intrebare": "Vara asta vreau în primul rând să…", "variante": ["Lucrez și câștig bani", "Călătoresc", "Mă odihnesc", "Învăț ceva nou"] }
+        },
+        {
+          "nr": 33, "saptamana": "S36", "data": "17.06.2027", "domeniu": "F", "cs": "3.2",
+          "titlu": "Bilanț anual",
+          "subtitlu": "situația școlară la final de an și „ce luăm cu noi în a XII-a”",
+          "activitati": "Analiza situației școlare anuale; feedback anonim pentru diriginte; scrisoare către „eu cel din clasa a XII-a”",
+          "evaluare": "Autoevaluare; chestionar de feedback",
+          "emoji": "🏁",
+          "carlig": "Ce i-ai spune elevului care intra în clasă în septembrie?",
+          "sondaj": { "intrebare": "Clasa a XI-a a fost…", "variante": ["Mai bună decât mă așteptam", "Exact cum credeam", "Grea, dar utilă", "Prea scurtă"] }
+        }
+      ],
+      "saptamani_speciale": []
+    }
+  ],
+  "pauze": [
+    "Vacanța de toamnă: 24 octombrie – 1 noiembrie 2026",
+    "S15 (21–22.12.2026) – fără oră de dirigenție în orar. Vacanța de iarnă: 23 decembrie 2026 – 10 ianuarie 2027",
+    "Vacanța mobilă (județul Brăila): 22–26 februarie 2027",
+    "Vacanța de primăvară: 24 aprilie – 4 mai 2027"
+  ],
+  /* ---------------------------------------------------------------
+     MATERIALE PE TEME: exercițiul de dezgheț, video TED-Ed și fișa.
+     Tipuri de câmpuri în fișe:
+       text, textarea, scala (max, stanga, dreapta), alegere (optiuni),
+       bife (optiuni), tabel (coloane + randuri SAU n rânduri goale),
+       tracker (30 de zile), ecran, buget, rate, cv, scrisoare
+     --------------------------------------------------------------- */
+  "materiale": {
+    "1": {
+      "dezghet": { "nume": "Vara în 3 emoji", "durata": "5 min", "cum": "Fiecare scrie pe tablă sau pe o foaie 3 emoji care îi rezumă vacanța. Colegii ghicesc povestea din spatele lor, apoi autorul o spune în două propoziții." },
+      "video": { "titlu": "3 tips to boost your confidence", "autor": "TED-Ed", "url": "https://ed.ted.com/lessons/3-tips-to-boost-your-confidence-ted-ed" },
+      "fisa": { "titlu": "Fișa de start", "campuri": [
+        { "tip": "text", "eticheta": "Cum vrei să te strige colegii și profesorii?" },
+        { "tip": "textarea", "eticheta": "Un lucru nou pe care l-ai făcut sau l-ai învățat vara asta" },
+        { "tip": "scala", "eticheta": "Cât de pregătit te simți pentru clasa a XI-a?", "max": 5, "stanga": "deloc", "dreapta": "complet" },
+        { "tip": "bife", "eticheta": "Ce am reținut din Regulamentul intern și din Statutul elevului", "optiuni": ["Știu regula despre telefonul mobil în timpul orelor", "Știu ce se întâmplă dacă adun absențe nemotivate", "Știu cui mă adresez dacă am o problemă la școală", "Știu care sunt drepturile mele ca elev", "Știu regulile de siguranță prezentate azi (SSM, PSI, circulație)"] },
+        { "tip": "textarea", "eticheta": "O întrebare pe care o am despre regulament" },
+        { "tip": "textarea", "eticheta": "Un obiectiv al meu pentru clasa a XI-a" }
+      ] }
+    },
+    "2": {
+      "dezghet": { "nume": "Telefonul fără fir", "durata": "5 min", "cum": "Un mesaj scurt, de genul celor de pe grupul clasei, trece șoptit prin 6–8 colegi. Comparăm ce a plecat cu ce a ajuns: de unde apar neînțelegerile, în clasă și pe WhatsApp?" },
+      "video": { "titlu": "How miscommunication happens (and how to avoid it)", "autor": "Katherine Hampsten", "url": "https://ed.ted.com/lessons/how-to-avoid-miscommunication-katherine-hampsten" },
+      "fisa": { "titlu": "Propunerea mea pentru Pactul clasei", "campuri": [
+        { "tip": "tabel", "eticheta": "Ce ne deranjează și ce regulă propun", "coloane": ["Ce ne deranjează (în clasă / pe grup)", "Regula pe care o propun"], "n": 4 },
+        { "tip": "alegere", "eticheta": "Cea mai importantă regulă din pact ar trebui să fie despre…", "optiuni": ["Respect, chiar și când nu suntem de acord", "Orele la care scriem pe grup", "Capturi de ecran și poze fără acord", "Informații utile vs. meme-uri"] },
+        { "tip": "text", "eticheta": "Propunerea mea pentru șeful clasei (și de ce)" },
+        { "tip": "text", "eticheta": "Propunerea mea pentru reprezentantul în Consiliul Școlar al Elevilor" },
+        { "tip": "textarea", "eticheta": "Ce pot face eu, concret, ca pactul să fie respectat?" }
+      ] }
+    },
+    "3": {
+      "dezghet": { "nume": "Ai prefera…?", "durata": "5 min", "cum": "Profesorul citește dileme rapide („Ai prefera să fii celebru sau respectat?”, „bogat sau liber?”). Elevii se mută în partea stângă sau dreaptă a clasei. Fără explicații, doar mișcare." },
+      "video": { "titlu": "Plato's allegory of the ring", "autor": "Alex Gendler", "url": "https://ed.ted.com/lessons/the-original-ring-of-power-alex-gendler" },
+      "fisa": { "titlu": "Fișă de autoevaluare: harta valorilor mele", "campuri": [
+        { "tip": "tabel", "eticheta": "Top 5 valori ale mele", "ajutor": "Idei: prietenie, libertate, onestitate, familie, succes, sănătate, creativitate, dreptate, bani, credință, aventură, recunoaștere, loialitate.", "coloane": ["Locul", "Valoarea", "De ce contează pentru mine"], "randuri": ["1", "2", "3", "4", "5"] },
+        { "tip": "tabel", "eticheta": "Valori declarate vs. valori trăite", "coloane": ["Valoarea", "Ce postez / ce spun", "Ce fac de fapt"], "n": 3 },
+        { "tip": "scala", "eticheta": "Cât de mult trăiesc după valorile mele?", "max": 5, "stanga": "aproape deloc", "dreapta": "în fiecare zi" },
+        { "tip": "textarea", "eticheta": "Jurnal reflexiv: ce contează pentru mine când nu mă vede nimeni?" }
+      ] }
+    },
+    "4": {
+      "dezghet": { "nume": "O oră în plus", "durata": "5 min", "cum": "În perechi, fiecare povestește în 60 de secunde ce ar face zilnic cu o oră în plus, fără telefon. Câteva perechi spun cea mai bună idee a partenerului." },
+      "video": { "titlu": "4 ways to fix your attention span", "autor": "Shannon Odell", "url": "https://ed.ted.com/lessons/4-ways-to-fix-your-attention-span-shannon-odell" },
+      "fisa": { "titlu": "Plan personal de gestionare a timpului", "campuri": [
+        { "tip": "ecran", "eticheta": "Calculatorul „ore pe an”", "ajutor": "Uită-te în Screen Time / Digital Wellbeing la media zilnică. Numărul rămâne doar la tine." },
+        { "tip": "tabel", "eticheta": "Top 3 aplicații", "coloane": ["Aplicația", "Minute pe zi", "Ce îmi dă / ce îmi ia"], "n": 3 },
+        { "tip": "bife", "eticheta": "Trucuri de design care mă țin în aplicație", "optiuni": ["Scroll infinit", "Notificări", "Streak-uri", "Autoplay", "Like-uri și reacții", "Recomandări „pentru tine”"] },
+        { "tip": "tabel", "eticheta": "Planul „7 zile cu 1 oră mai puțin”", "coloane": ["Ziua", "Ce fac în locul acelei ore", "Am reușit? (da / nu)"], "randuri": ["Luni", "Marți", "Miercuri", "Joi", "Vineri", "Sâmbătă", "Duminică"] },
+        { "tip": "textarea", "eticheta": "Ce setare schimb chiar azi în telefon?" }
+      ] }
+    },
+    "5": {
+      "dezghet": { "nume": "Prognoza meteo din mine", "durata": "5 min", "cum": "Fiecare își descrie starea ca pe o prognoză meteo („înnorat, cu înseninări spre seară”). Nu explicăm de ce și nu comentăm. Cine nu vrea, spune „pas”." },
+      "video": { "titlu": "How to calm your anxiety, from a neuroscientist", "autor": "Wendy Suzuki", "url": "https://ed.ted.com/lessons/how-to-calm-your-anxiety-from-a-neuroscientist-wendy-suzuki" },
+      "fisa": { "titlu": "Bilet de ieșire: termometrul emoțiilor", "nota": "Fișa e a ta. Nu e obligatoriu să o predai.", "campuri": [
+        { "tip": "scala", "eticheta": "Termometrul meu azi", "max": 10, "stanga": "liniștit", "dreapta": "copleșit" },
+        { "tip": "bife", "eticheta": "Semne că am nevoie de o pauză", "optiuni": ["Dorm prost", "Mă enervez repede", "Nu mă pot concentra", "Evit oamenii", "Mănânc prea mult sau prea puțin", "Mă doare capul sau stomacul"] },
+        { "tip": "bife", "eticheta": "Tehnici pe care le încerc", "optiuni": ["Respirație lentă (inspir 4, expir 6)", "Pauză digitală de 30 de minute", "Mișcare / plimbare", "Somn la oră fixă", "Vorbesc cu cineva"] },
+        { "tip": "textarea", "eticheta": "3 oameni cu care pot vorbi când nu sunt ok" },
+        { "tip": "text", "eticheta": "Unde găsesc cabinetul de consiliere din școală" },
+        { "tip": "textarea", "eticheta": "Un lucru pe care îl iau cu mine din ora de azi" }
+      ] }
+    },
+    "6": {
+      "dezghet": { "nume": "Bateria clasei", "durata": "3 min", "cum": "La numărătoarea „3, 2, 1”, fiecare arată cu degetele de la 0 la 5 cât de plină îi e bateria acum. Calculăm media clasei și o scriem pe tablă." },
+      "video": { "titlu": "What would happen if you didn't sleep?", "autor": "Claudia Aguirre", "url": "https://ed.ted.com/lessons/what-would-happen-if-you-didn-t-sleep-claudia-aguirre" },
+      "fisa": { "titlu": "Fișa mini-campaniei", "campuri": [
+        { "tip": "tabel", "eticheta": "Jurnalul somnului: ultimele 3 nopți", "coloane": ["Noaptea", "M-am culcat la", "M-am trezit la", "Ore dormite"], "randuri": ["1", "2", "3"] },
+        { "tip": "tabel", "eticheta": "Analiza etichetei", "coloane": ["Produsul", "Substanța", "Cantitatea", "Ce am aflat"], "n": 2 },
+        { "tip": "textarea", "eticheta": "Un exemplu de marketing care țintește adolescenții și trucul lui" },
+        { "tip": "tabel", "eticheta": "Cele 3 postări ale echipei", "coloane": ["Postarea", "Mesajul", "Imaginea / formatul"], "randuri": ["1", "2", "3"] },
+        { "tip": "text", "eticheta": "Hashtag-ul campaniei" }
+      ] }
+    },
+    "7": {
+      "dezghet": { "nume": "Un cuvânt, o mișcare", "durata": "4 min", "cum": "Pe rând, fiecare spune un cuvânt despre primele 7 săptămâni și face o mișcare potrivită. Toată clasa repetă cuvântul și mișcarea." },
+      "video": { "titlu": "How to practice effectively… for just about anything", "autor": "Annie Bosler, Don Greene", "url": "https://ed.ted.com/lessons/how-to-practice-effectively-for-just-about-anything-annie-bosler-and-don-greene" },
+      "fisa": { "titlu": "Fișa de analiză: Modulul 1", "campuri": [
+        { "tip": "tabel", "eticheta": "Situația mea la învățătură", "coloane": ["Materia", "Notele de până acum", "Ce vreau să îmbunătățesc"], "n": 5 },
+        { "tip": "text", "eticheta": "Absențe: motivate / nemotivate" },
+        { "tip": "tabel", "eticheta": "Ce a mers / ce schimb", "coloane": ["Ce a mers bine", "Ce schimb"], "n": 3 },
+        { "tip": "textarea", "eticheta": "Sprijinul de care am nevoie (de la profesori, colegi, părinți)" },
+        { "tip": "scala", "eticheta": "Cât de mulțumit sunt de Modulul 1?", "max": 5, "stanga": "deloc", "dreapta": "foarte" }
+      ] }
+    },
+    "8": {
+      "dezghet": { "nume": "Fapt sau opinie?", "durata": "5 min", "cum": "Profesorul citește 6 afirmații scurte („Brăila e pe Dunăre”, „Cea mai bună aplicație e TikTok”…). Elevii arată 👍 pentru fapt și 👎 pentru opinie. Discutăm doar cazurile în care clasa nu a fost de acord." },
+      "video": { "titlu": "How to choose your news", "autor": "Damon Brown", "url": "https://ed.ted.com/lessons/how-to-choose-your-news-damon-brown" },
+      "fisa": { "titlu": "Fișă de verificare a surselor", "campuri": [
+        { "tip": "text", "eticheta": "Întrebarea pe care am verificat-o" },
+        { "tip": "tabel", "eticheta": "Comparația celor trei surse", "coloane": ["Sursa", "Autor", "Dovezi", "Data", "Scop", "Încredere (1–5)"], "randuri": ["Căutare Google", "Chatbot AI", "Clip TikTok"] },
+        { "tip": "textarea", "eticheta": "Ce răspuns e cel mai de încredere și de ce?" },
+        { "tip": "bife", "eticheta": "Ce consider eu ajutor corect de la AI la teme", "optiuni": ["Îmi explică o noțiune pe care n-am înțeles-o", "Îmi dă idei de structură", "Îmi corectează greșelile de exprimare", "Scrie tema în locul meu", "Îmi rezumă o carte pe care n-am citit-o"] },
+        { "tip": "textarea", "eticheta": "Regula mea personală pentru folosirea AI la teme" }
+      ] }
+    },
+    "9": {
+      "dezghet": { "nume": "Știrea credibilă", "durata": "5 min", "cum": "Fiecare inventează într-o propoziție o știre falsă, dar credibilă, despre școală. Clasa votează cea mai credibilă. Întrebare: de ce am fi crezut-o?" },
+      "video": { "titlu": "How to spot fake AI photos", "autor": "Hany Farid", "url": "https://ed.ted.com/lessons/how-to-spot-fake-ai-photos-hany-farid" },
+      "fisa": { "titlu": "Quiz: Real sau generat de AI?", "campuri": [
+        { "tip": "tabel", "eticheta": "Imaginile și clipurile analizate", "coloane": ["Nr.", "Real sau AI? (părerea mea)", "Indiciul", "Răspunsul corect"], "randuri": ["1", "2", "3", "4", "5"] },
+        { "tip": "bife", "eticheta": "Tehnici de verificare pe care le știu să le folosesc", "optiuni": ["Căutare inversă de imagini", "Verific în 2–3 surse diferite", "Mă uit la mâini, text, umbre și reflexii", "Verific contul care a postat", "Caut data și sursa originală"] },
+        { "tip": "tabel", "eticheta": "Bula mea vs. bula colegului", "coloane": ["Ce apare în feedul meu", "Ce apare în feedul colegului"], "n": 5 },
+        { "tip": "textarea", "eticheta": "Ce nu îmi arată niciodată algoritmul?" }
+      ] }
+    },
+    "10": {
+      "dezghet": { "nume": "Drept sau privilegiu?", "durata": "5 min", "cum": "Profesorul spune rapid: educație, telefon, bani de buzunar, intimitate, opinie, vacanță în străinătate. Elevii arată 1 deget pentru drept și 2 pentru privilegiu. Unde nu suntem de acord?" },
+      "video": { "titlu": "What are the universal human rights?", "autor": "Benedetta Berti", "url": "https://ed.ted.com/lessons/what-are-the-universal-human-rights-benedetta-berti" },
+      "fisa": { "titlu": "Negocierea regulilor din familie", "campuri": [
+        { "tip": "tabel", "eticheta": "Regulile de negociat", "coloane": ["Regula", "Ce vreau eu", "Ce vor părinții", "Compromisul propus"], "randuri": ["Programul de venit acasă", "Banii de buzunar", "Ieșirile", "Telefonul"] },
+        { "tip": "bife", "eticheta": "Ce știu despre datele mele personale (GDPR)", "optiuni": ["Pozele mele nu pot fi publicate fără acordul meu", "Pot cere ștergerea datelor mele", "Pot afla ce date are o firmă despre mine", "Pentru unele aplicații, sub 16 ani e nevoie de acordul părinților"] },
+        { "tip": "textarea", "eticheta": "Jocul de rol: cel mai bun argument al meu" },
+        { "tip": "textarea", "eticheta": "O responsabilitate pe care mi-o asum în schimb" }
+      ] }
+    },
+    "11": {
+      "dezghet": { "nume": "Harta vie", "durata": "5 min", "cum": "Clasa devine o hartă: ușa e Brăila, geamul e Bucureștiul, fundul clasei e străinătatea. Fiecare se așază unde se vede peste 10 ani. Doi-trei elevi din fiecare zonă spun de ce." },
+      "video": { "titlu": "How do you decide where to go in a zombie apocalypse?", "autor": "David Hunter", "url": "https://ed.ted.com/lessons/how-do-you-decide-where-to-go-in-a-zombie-apocalypse-david-hunter" },
+      "fisa": { "titlu": "Argumentarea mea: plec sau rămân?", "campuri": [
+        { "tip": "alegere", "eticheta": "Poziția mea", "optiuni": ["Plec", "Rămân", "Plec și mă întorc"] },
+        { "tip": "tabel", "eticheta": "Argumentele mele", "coloane": ["Argumentul", "Dovada / exemplul"], "n": 3 },
+        { "tip": "tabel", "eticheta": "Ce mă împinge și ce mă ține", "coloane": ["Ce mă împinge să plec", "Ce mă ține aici"], "n": 3 },
+        { "tip": "textarea", "eticheta": "Cel mai puternic contraargument și răspunsul meu" },
+        { "tip": "textarea", "eticheta": "Ce înseamnă pentru mine să aparțin unei comunități?" }
+      ] }
+    },
+    "12": {
+      "dezghet": { "nume": "Prietenul ideal în 3 cuvinte", "durata": "5 min", "cum": "Fiecare scrie pe un bilet 3 cuvinte care descriu un prieten bun. Le citim cu voce tare și scriem pe tablă cuvintele care se repetă: acesta e „norul” clasei." },
+      "video": { "titlu": "The difference between healthy and unhealthy love", "autor": "Katie Hood", "url": "https://ed.ted.com/lessons/oyW0POMB" },
+      "fisa": { "titlu": "Fișa de lucru: semaforul relațional", "campuri": [
+        { "tip": "tabel", "eticheta": "Verde, galben sau roșu?", "coloane": ["Comportamentul", "Verde / galben / roșu", "De ce?"], "randuri": ["Îți cere parola", "Îți verifică locația tot timpul", "Te încurajează să ieși cu prietenii tăi", "Se supără dacă nu răspunzi imediat", "Îți respectă un „nu”", "Te critică în fața altora"] },
+        { "tip": "textarea", "eticheta": "Cum spun „nu” fără să mă scuz" },
+        { "tip": "textarea", "eticheta": "Ce îi spun unui prieten care e într-o relație toxică" },
+        { "tip": "bife", "eticheta": "Unde pot cere ajutor", "optiuni": ["Telefonul Copilului – 119", "Consilierul școlar", "Un adult de încredere", "112, dacă e un pericol imediat"] }
+      ] }
+    },
+    "13": {
+      "dezghet": { "nume": "Același mesaj, alt ton", "durata": "5 min", "cum": "Profesorul scrie pe tablă „Frumoasă poză 😂”. Trei voluntari îl citesc în trei feluri: sincer, ironic, răutăcios. Întrebare: cum știi, online, cu ce ton a fost scris?" },
+      "video": { "titlu": "The price of shame", "autor": "Monica Lewinsky", "url": "https://ed.ted.com/lessons/LXSyJ52i" },
+      "fisa": { "titlu": "Plan de acțiune în echipă", "campuri": [
+        { "tip": "text", "eticheta": "Cazul analizat (pe scurt)" },
+        { "tip": "tabel", "eticheta": "Regula celor 4 pași", "coloane": ["Pasul", "Cum fac, concret"], "randuri": ["1. Nu șterg", "2. Fac captură", "3. Raportez", "4. Spun unui adult"] },
+        { "tip": "tabel", "eticheta": "Unde și cum raportez", "coloane": ["Platforma", "Cum raportez"], "n": 3 },
+        { "tip": "textarea", "eticheta": "Ce fac dacă i se întâmplă unui coleg" },
+        { "tip": "bife", "eticheta": "Resurse pe care le știu", "optiuni": ["Ora de Net – oradenet.ro", "DNSC – 1911", "Telefonul Copilului – 119"] }
+      ] }
+    },
+    "14": {
+      "dezghet": { "nume": "Rezoluția absurdă", "durata": "5 min", "cum": "Fiecare spune o rezoluție de Anul Nou complet absurdă („să salut toți porumbeii din Brăila”). Votăm cea mai creativă, apoi ne întrebăm: de ce le abandonăm și pe cele serioase?" },
+      "video": { "titlu": "Why is it so hard to break a bad habit?", "autor": "TED-Ed", "url": "https://ed.ted.com/lessons/why-is-it-so-hard-to-break-a-bad-habit" },
+      "fisa": { "titlu": "Plan personal de dezvoltare actualizat", "campuri": [
+        { "tip": "text", "eticheta": "Obiectivul meu pentru 2027" },
+        { "tip": "tabel", "eticheta": "Obiectivul, verificat SMART", "coloane": ["Criteriul", "Obiectivul meu"], "randuri": ["Specific", "Măsurabil", "Accesibil (realist)", "Relevant", "Încadrat în timp"] },
+        { "tip": "text", "eticheta": "Obiceiul zilnic care mă apropie de obiectiv" },
+        { "tip": "tracker", "eticheta": "Habit tracker: 30 de zile", "ajutor": "Bifează în fiecare zi în care ai respectat obiceiul. Fișa se salvează singură." },
+        { "tip": "textarea", "eticheta": "Ce păstrez și ce schimb față de bilanțul din Modulul 1" }
+      ] }
+    },
+    "15": {
+      "dezghet": { "nume": "Numărăm până la 20", "durata": "5 min", "cum": "Clasa numără până la 20, câte un număr de persoană, fără ordine stabilită și fără semne. Dacă doi vorbesc deodată, o luăm de la capăt. Cum ne coordonăm fără un șef?" },
+      "video": { "titlu": "How to disagree productively and find common ground", "autor": "Julia Dhar", "url": "https://ed.ted.com/lessons/m18TCiU9" },
+      "fisa": { "titlu": "Autoevaluare: conflictul din grup", "campuri": [
+        { "tip": "text", "eticheta": "Rolul meu în simulare" },
+        { "tip": "textarea", "eticheta": "Ce a declanșat conflictul?" },
+        { "tip": "tabel", "eticheta": "Tehnica „Eu simt… când… aș vrea…”", "coloane": ["", "Mesajul meu"], "randuri": ["Eu simt…", "când…", "aș vrea…"] },
+        { "tip": "scala", "eticheta": "Cât de bine am ascultat", "max": 5, "stanga": "slab", "dreapta": "foarte bine" },
+        { "tip": "scala", "eticheta": "Cât de bine am negociat", "max": 5, "stanga": "slab", "dreapta": "foarte bine" },
+        { "tip": "textarea", "eticheta": "Ce ne învață Unirea din 1859 despre negociere?" }
+      ] }
+    },
+    "16": {
+      "dezghet": { "nume": "Meseria din 2035", "durata": "5 min", "cum": "Fiecare inventează o meserie care ar putea exista în 2035 („terapeut pentru roboți”, „designer de amintiri”) și o mimează 10 secunde. Clasa ghicește." },
+      "video": { "titlu": "How will AI change the world?", "autor": "Stuart Russell", "url": "https://ed.ted.com/lessons/things-are-going-to-get-weird" },
+      "fisa": { "titlu": "Fișa „Profesia mea în 2035”", "campuri": [
+        { "tip": "text", "eticheta": "Meseria mea visată" },
+        { "tip": "alegere", "eticheta": "În 2035, meseria mea va…", "optiuni": ["dispărea", "se transforma", "rămâne cam la fel", "apărea abia atunci"] },
+        { "tip": "tabel", "eticheta": "Ce poate face AI și ce poate face doar un om", "coloane": ["AI poate face", "Doar un om poate face"], "n": 3 },
+        { "tip": "text", "eticheta": "Instrumentul AI pe care l-am testat" },
+        { "tip": "textarea", "eticheta": "Ce a făcut bine instrumentul și unde a greșit" },
+        { "tip": "bife", "eticheta": "Competențe greu de înlocuit pe care le am deja", "optiuni": ["Empatie", "Gândire critică", "Comunicare", "Creativitate", "Lucru în echipă", "Adaptabilitate"] }
+      ] }
+    },
+    "17": {
+      "dezghet": { "nume": "Ghicește facultatea", "durata": "5 min", "cum": "Profesorul descrie în 3 propoziții o zi obișnuită din viața unui student („azi am analizat un proces…”). Elevii ghicesc specializarea. Facem 4–5 runde." },
+      "video": { "titlu": "2 questions to uncover your passion — and turn it into a career", "autor": "Noeline Kirabo", "url": "https://ed.ted.com/lessons/2-questions-to-uncover-your-passion-and-turn-it-into-a-career-noeline-kirabo" },
+      "fisa": { "titlu": "Tabel comparativ pe trasee", "campuri": [
+        { "tip": "tabel", "eticheta": "Facultățile pe care le-am explorat", "coloane": ["Facultatea / specializarea", "Orașul", "Proba de admitere", "Materia de Bac cerută", "Locuri la buget"], "n": 3 },
+        { "tip": "textarea", "eticheta": "Ce am aflat de la absolvenți" },
+        { "tip": "alegere", "eticheta": "Traseul care mă atrage acum", "optiuni": ["Drept", "Psihologie", "Sociologie", "Jurnalism", "Științe politice", "Administrație publică", "Relații internaționale", "Altul"] },
+        { "tip": "textarea", "eticheta": "Pasul următor pe care îl fac (și până când)" }
+      ] }
+    },
+    "18": {
+      "dezghet": { "nume": "Detectivul online", "durata": "5 min", "cum": "Profesorul arată 3 postări ale unui personaj inventat. Clasa deduce cât mai multe: vârsta, orașul, școala, programul. Câte a aflat un străin din doar 3 postări?" },
+      "video": { "titlu": "Is safety worth the loss of privacy?", "autor": "Michael Vazquez, Sarah Stroud", "url": "https://ed.ted.com/lessons/is-safety-worth-the-loss-of-privacy-michael-vazquez-and-sarah-stroud" },
+      "fisa": { "titlu": "Checklist de confidențialitate", "campuri": [
+        { "tip": "tabel", "eticheta": "Ce am găsit căutându-mi numele", "coloane": ["Ce am găsit", "Unde", "Păstrez / șterg"], "n": 3 },
+        { "tip": "bife", "eticheta": "Setări verificate", "optiuni": ["Cont privat pe rețelele pe care le folosesc", "Locația oprită la postări", "Cine mă poate eticheta", "Cine îmi vede lista de prieteni", "Autentificare în doi pași", "Parole diferite pentru conturile importante", "Aplicații conectate la conturi, verificate"] },
+        { "tip": "textarea", "eticheta": "Ce ar vedea despre mine o universitate sau un angajator peste 5 ani?" },
+        { "tip": "textarea", "eticheta": "Curățenia digitală: 3 lucruri pe care le fac săptămâna asta" }
+      ] }
+    },
+    "19": {
+      "dezghet": { "nume": "Progresul invizibil", "durata": "5 min", "cum": "Fiecare trage la sorți numele unui coleg și îi scrie pe un bilet un progres pe care l-a observat la el semestrul acesta. Biletele se dau la final de oră." },
+      "video": { "titlu": "Why you procrastinate even when it feels bad", "autor": "TED-Ed", "url": "https://ed.ted.com/lessons/why-you-procrastinate-even-when-it-feels-bad" },
+      "fisa": { "titlu": "Fișa de analiză: jumătatea anului", "campuri": [
+        { "tip": "tabel", "eticheta": "Situația mea la învățătură", "coloane": ["Materia", "Media", "Tendința (↑ ↓ =)"], "n": 6 },
+        { "tip": "text", "eticheta": "Absențe: motivate / nemotivate" },
+        { "tip": "textarea", "eticheta": "Progresul de care sunt mândru" },
+        { "tip": "tabel", "eticheta": "Măsuri de sprijin și remediere", "coloane": ["Materia", "Ce fac", "Până când"], "n": 3 }
+      ] }
+    },
+    "20": {
+      "dezghet": { "nume": "Cât costă?", "durata": "5 min", "cum": "Profesorul arată 5 produse: o pizza, un abonament de streaming, o pereche de adidași, un telefon luat în rate, un bilet la festival. Elevii ghicesc prețul; cel mai apropiat primește un punct." },
+      "video": { "titlu": "How to spot a pyramid scheme", "autor": "Stacie Bosley", "url": "https://ed.ted.com/lessons/how-to-spot-a-pyramid-scheme-stacie-bosley" },
+      "fisa": { "titlu": "Buget personal și costul real al ratelor", "campuri": [
+        { "tip": "buget", "eticheta": "Bugetul meu lunar (lei)" },
+        { "tip": "rate", "eticheta": "Costul real al unei achiziții în rate", "ajutor": "Alege un produs dintr-o reclamă „cumpără acum, plătește mai târziu”." },
+        { "tip": "bife", "eticheta": "Semnalele unei înșelătorii financiare", "optiuni": ["Câștig garantat și rapid", "Presiune să decizi acum", "Îți cere să aduci prieteni", "Plată în crypto sau cu carduri cadou", "Doar mărturii de la „oameni ca tine”", "Firma nu poate fi verificată"] },
+        { "tip": "textarea", "eticheta": "Analiza unui clip „devino bogat rapid”: ce promite și ce ascunde" }
+      ] }
+    },
+    "21": {
+      "dezghet": { "nume": "Aruncă moneda", "durata": "5 min", "cum": "Fiecare aruncă o monedă de 10 ori și notează rezultatele. Câți au avut 4 la rând? Cine a simțit că „urmează sigur” altceva? Așa arată capcana jucătorului." },
+      "video": { "titlu": "The clever trick used by sports betting apps", "autor": "Shannon Odell", "url": "https://ed.ted.com/lessons/the-clever-trick-used-by-sports-betting-apps-shannon-odell" },
+      "fisa": { "titlu": "Bilet de ieșire: matematica pariurilor", "campuri": [
+        { "tip": "textarea", "eticheta": "De ce câștigă mereu casa? Explicația mea în 3 propoziții" },
+        { "tip": "textarea", "eticheta": "O reclamă la pariuri pe care am văzut-o și trucul ei" },
+        { "tip": "bife", "eticheta": "Semnale ale dependenței de jocuri", "optiuni": ["Pariez ca să recuperez ce am pierdut", "Ascund cât am pariat sau cât am cheltuit", "Împrumut bani pentru jocuri", "Mă enervez când nu pot juca", "Cheltui pe skin-uri și loot box-uri mai mult decât îmi propun"] },
+        { "tip": "text", "eticheta": "Unde se poate cere ajutor" }
+      ] }
+    },
+    "22": {
+      "dezghet": { "nume": "Reclama de 15 secunde", "durata": "5 min", "cum": "Fiecare se „vinde” în 15 secunde, ca într-o reclamă, cu 3 calități și un exemplu. Colegii notează cea mai convingătoare frază. Asta merge în CV!" },
+      "video": { "titlu": "Your body language shapes who you are", "autor": "Amy Cuddy", "url": "https://ed.ted.com/lessons/your-body-language-shapes-who-you-are-amy-cuddy" },
+      "fisa": { "titlu": "CV Europass, scrisoare de intenție și interviu", "lat": true, "campuri": [
+        { "tip": "cv", "eticheta": "CV-ul meu (model Europass)" },
+        { "tip": "scrisoare", "eticheta": "Scrisoarea de intenție în 5 fraze" },
+        { "tip": "tabel", "eticheta": "Simularea de interviu: feedback de la partener", "coloane": ["Criteriul", "Nota (1–5)", "Observații"], "randuri": ["Contact vizual", "Postură și gesturi", "Claritatea răspunsurilor", "Exemple concrete", "Întrebări puse la final"] }
+      ] }
+    },
+    "23": {
+      "dezghet": { "nume": "Trucul meu ciudat de învățat", "durata": "5 min", "cum": "Fiecare spune cel mai ciudat truc pe care îl folosește ca să învețe (cântece, bilețele pe oglindă, explicat pisicii). Votăm trucul pe care l-am încerca și noi." },
+      "video": { "titlu": "3 tips on how to study effectively", "autor": "TED-Ed", "url": "https://ed.ted.com/lessons/3-tips-on-how-to-study-effectively" },
+      "fisa": { "titlu": "Plan de învățare personal", "campuri": [
+        { "tip": "tabel", "eticheta": "Materiile de Bac", "coloane": ["Materia", "Unde sunt acum (1–10)", "Metoda (repetare spațiată / testare)", "Ore pe săptămână"], "n": 3 },
+        { "tip": "tabel", "eticheta": "Săptămâna mea de învățare", "coloane": ["Ziua", "Ce învăț", "Cât timp"], "randuri": ["Luni", "Marți", "Miercuri", "Joi", "Vineri", "Sâmbătă", "Duminică"] },
+        { "tip": "bife", "eticheta": "Ce fac cu anxietatea de examen", "optiuni": ["Respir lent înainte să încep", "Simulez examenul acasă, cu cronometru", "Dorm bine în noaptea dinainte", "Îmi pregătesc lucrurile cu o seară înainte", "Vorbesc cu cineva despre ce simt"] },
+        { "tip": "textarea", "eticheta": "Pentru mine, reușita în viață înseamnă…" }
+      ] }
+    },
+    "24": {
+      "dezghet": { "nume": "Lanțul faptelor bune", "durata": "5 min", "cum": "Pe rând, fiecare spune o faptă bună pe care a primit-o sau a făcut-o recent, oricât de mică. Profesorul le notează pe tablă ca pe un lanț. Câte verigi are clasa?" },
+      "video": { "titlu": "Helping others makes us happier — but it matters how we do it", "autor": "Elizabeth Dunn", "url": "https://ed.ted.com/lessons/G6OhrUdU" },
+      "fisa": { "titlu": "Proiectul clasei: tema și planul de acțiune", "campuri": [
+        { "tip": "text", "eticheta": "Tema proiectului" },
+        { "tip": "text", "eticheta": "Beneficiarii (cui îl dedicăm)" },
+        { "tip": "text", "eticheta": "ONG-ul sau instituția parteneră (dacă există)" },
+        { "tip": "tabel", "eticheta": "Planul de acțiune", "coloane": ["Activitatea", "Responsabil", "Termen", "Resurse necesare"], "n": 5 },
+        { "tip": "textarea", "eticheta": "Cum măsurăm impactul? (cifre, fotografii, feedback)" },
+        { "tip": "bife", "eticheta": "Drepturile voluntarului pe care le cunosc", "optiuni": ["Contract de voluntariat", "Certificat sau adeverință de voluntariat", "Program potrivit cu școala", "Condiții de siguranță"] }
+      ] }
+    },
+    "25": {
+      "dezghet": { "nume": "Unde te adăpostești?", "durata": "4 min", "cum": "Profesorul spune un loc („în bucătărie”, „în lift”, „pe stradă”, „în sala S17”) și strigă „Cutremur!”. În 3 secunde, elevii arată ce ar face. Corectăm pe loc." },
+      "video": { "titlu": "Why do buildings fall in earthquakes?", "autor": "Vicki V. May", "url": "https://ed.ted.com/lessons/why-do-buildings-fall-in-earthquakes-vicki-v-may" },
+      "fisa": { "titlu": "Planul meu de urgență", "campuri": [
+        { "tip": "bife", "eticheta": "Rucsacul meu de urgență conține", "optiuni": ["Apă", "Alimente care nu se strică", "Lanternă și baterii", "Trusă de prim ajutor", "Medicamentele mele", "Copii după acte", "Powerbank și cablu", "Fluier", "Bani cash", "Haine groase / pătură"] },
+        { "tip": "text", "eticheta": "Locul de întâlnire al familiei după o urgență" },
+        { "tip": "tabel", "eticheta": "Numere importante", "coloane": ["Cine", "Numărul"], "randuri": ["Urgențe", "Părinte 1", "Părinte 2", "O rudă sau un vecin"] },
+        { "tip": "bife", "eticheta": "Știu să…", "optiuni": ["sun la 112 și să spun clar adresa", "fac compresii toracice", "pun o persoană în poziția laterală de siguranță", "opresc o sângerare", "citesc un mesaj RO-ALERT și să urmez instrucțiunile"] },
+        { "tip": "textarea", "eticheta": "Cum verific o știre în timpul unei crize" }
+      ] }
+    },
+    "26": {
+      "dezghet": { "nume": "Linia modulului", "durata": "4 min", "cum": "Elevii se așază în linie, de la „a fost foarte greu” (ușa) la „a fost ușor” (geamul). Fără cuvinte. Apoi câte un voluntar de la fiecare capăt spune o frază." },
+      "video": { "titlu": "What really happens to the plastic you throw away", "autor": "Emma Bryce", "url": "https://ed.ted.com/lessons/what-really-happens-to-the-plastic-you-throw-away-emma-bryce" },
+      "fisa": { "titlu": "Fișa de analiză și planul pentru Săptămâna verde", "campuri": [
+        { "tip": "tabel", "eticheta": "Situația mea la învățătură", "coloane": ["Materia", "Media", "Tendința (↑ ↓ =)"], "n": 6 },
+        { "tip": "text", "eticheta": "Absențe: motivate / nemotivate" },
+        { "tip": "tabel", "eticheta": "Săptămâna verde: cine ce face", "coloane": ["Activitatea", "Echipa / responsabilul", "De ce avem nevoie"], "n": 4 },
+        { "tip": "textarea", "eticheta": "Ce vreau să reușesc în ultimele 9 săptămâni de școală" }
+      ] }
+    },
+    "27": {
+      "dezghet": { "nume": "Mulțumesc în 10 limbi", "durata": "5 min", "cum": "În echipe, aveți 2 minute să scrieți „mulțumesc” în cât mai multe limbi din UE. Câștigă echipa cu cele mai multe limbi corecte." },
+      "video": { "titlu": "Which voting system is the best?", "autor": "Alex Gendler", "url": "https://ed.ted.com/lessons/which-voting-system-is-the-best-alex-gendler" },
+      "fisa": { "titlu": "Fișă de oportunități europene", "campuri": [
+        { "tip": "tabel", "eticheta": "Oportunitățile care mă interesează", "coloane": ["Oportunitatea", "Cine poate participa", "Când și cum aplic", "Link"], "n": 3 },
+        { "tip": "textarea", "eticheta": "Întrebări pentru colegii care au participat la proiecte Erasmus+" },
+        { "tip": "alegere", "eticheta": "La 18 ani, voi merge la vot?", "optiuni": ["Da, sigur", "Probabil", "Nu știu încă", "Nu"] },
+        { "tip": "textarea", "eticheta": "Pentru mine, un cetățean european activ…" }
+      ] }
+    },
+    "28": {
+      "dezghet": { "nume": "Toată lumea se ridică", "durata": "3 min", "cum": "Profesorul le cere în secret la 3 elevi să se ridice în picioare, fără motiv. Câți colegi îi urmează în 30 de secunde? Discutăm 2 minute: de ce ne luăm după grup?" },
+      "video": { "titlu": "How do drugs affect the brain?", "autor": "Sara Garofalo", "url": "https://ed.ted.com/lessons/how-do-drugs-affect-the-brain-sara-garofalo" },
+      "fisa": { "titlu": "Joc de rol: refuzul asertiv", "campuri": [
+        { "tip": "tabel", "eticheta": "Ce spun ca să refuz", "coloane": ["Situația", "Ce spun"], "randuri": ["La o petrecere mi se oferă alcool", "Un prieten îmi oferă o „pastilă naturală”", "Grupul vrea să plece cu mașina cu un șofer care a băut"] },
+        { "tip": "bife", "eticheta": "Tehnici de refuz pe care le folosesc", "optiuni": ["Spun „Nu, mersi” calm, de câte ori e nevoie", "Schimb subiectul", "Propun altceva", "Plec", "Am pregătită o scuză"] },
+        { "tip": "textarea", "eticheta": "Mituri despre substanțele „naturale” sau „inofensive”: ce am aflat" },
+        { "tip": "bife", "eticheta": "Dacă un prieten e în pericol, eu…", "optiuni": ["sun la 112", "nu îl las singur", "îl pun în poziția laterală de siguranță", "le spun medicilor ce a consumat"] }
+      ] }
+    },
+    "29": {
+      "dezghet": { "nume": "Cifra misterioasă", "durata": "5 min", "cum": "Fiecare echipă scrie pe tablă o singură cifră din proiect. Celelalte echipe ghicesc ce reprezintă (oameni ajutați? ore? kilograme?)." },
+      "video": { "titlu": "How to start a movement", "autor": "Derek Sivers", "url": "https://ed.ted.com/best_of_web/TLg3vHGd" },
+      "fisa": { "titlu": "Evaluarea proiectului (grilă)", "campuri": [
+        { "tip": "tabel", "eticheta": "Rezultatele proiectului", "coloane": ["Indicatorul", "Cifra"], "randuri": ["Beneficiari", "Voluntari implicați", "Ore de voluntariat", "Alt rezultat"] },
+        { "tip": "tabel", "eticheta": "Grila de evaluare a echipei", "coloane": ["Criteriul", "Nota (1–5)", "Observații"], "randuri": ["Planificare", "Implicarea fiecăruia", "Impact", "Prezentare"] },
+        { "tip": "textarea", "eticheta": "Feedback de la beneficiari" },
+        { "tip": "textarea", "eticheta": "Ce aș face altfel data viitoare" }
+      ] }
+    },
+    "30": {
+      "dezghet": { "nume": "Complimentul fără oglindă", "durata": "5 min", "cum": "Fiecare îi face colegului din dreapta un compliment care nu are legătură cu aspectul fizic. Regula: concret, sincer, fără „ești drăguț”." },
+      "video": { "titlu": "Looks aren't everything. Believe me, I'm a model.", "autor": "Cameron Russell", "url": "https://ed.ted.com/lessons/looks-aren-t-everything-believe-me-i-m-a-model-cameron-russell" },
+      "fisa": { "titlu": "Jurnal reflexiv: dincolo de cameră", "campuri": [
+        { "tip": "tabel", "eticheta": "Înainte și după editare", "coloane": ["Imaginea analizată", "Ce s-a modificat"], "n": 3 },
+        { "tip": "scala", "eticheta": "Cât de des mă compar cu alții online?", "max": 5, "stanga": "rar", "dreapta": "tot timpul" },
+        { "tip": "tabel", "eticheta": "Punctele mele tari, văzute de ceilalți", "coloane": ["Colegul", "Ce vede la mine"], "n": 3 },
+        { "tip": "textarea", "eticheta": "Cum mă văd eu, dincolo de cameră" }
+      ] }
+    },
+    "31": {
+      "dezghet": { "nume": "SMS din 2028", "durata": "5 min", "cum": "Ai un minut să-ți scrii un SMS de la tine cel din vara lui 2028, după Bac. Câțiva voluntari îl citesc cu voce tare." },
+      "video": { "titlu": "How to make smart decisions more easily", "autor": "TED-Ed", "url": "https://ed.ted.com/lessons/how-to-make-smart-decisions-more-easily" },
+      "fisa": { "titlu": "Portofoliu de carieră: harta spre clasa a XII-a", "campuri": [
+        { "tip": "alegere", "eticheta": "Disciplina la alegere pe care o am în vedere la Bac 2028", "optiuni": ["Logică, argumentare și comunicare", "Psihologie", "Economie", "Sociologie", "Filosofie", "Geografie", "Încă nu știu"] },
+        { "tip": "text", "eticheta": "Facultatea sau traseul țintă" },
+        { "tip": "tabel", "eticheta": "Certificări pe care le vreau", "coloane": ["Certificarea", "Când", "Cum mă pregătesc"], "n": 3 },
+        { "tip": "alegere", "eticheta": "Stilul meu decizional", "optiuni": ["Rațional: analizez tot", "Intuitiv: simt ce e bine", "Dependent: cer părerea altora", "Amân decizia"] },
+        { "tip": "tabel", "eticheta": "Planul pentru clasa a XII-a", "coloane": ["Perioada", "Ce fac"], "randuri": ["Septembrie–decembrie", "Ianuarie–martie", "Aprilie–iunie"] }
+      ] }
+    },
+    "32": {
+      "dezghet": { "nume": "Pericolele verii, pe timp", "durata": "5 min", "cum": "Echipele au un minut să scrie pe tablă cât mai multe pericole ale verii. Apoi fiecare echipă alege unul și spune cum se poate evita." },
+      "video": { "titlu": "How do heat waves affect your body?", "autor": "Carolyn Beans", "url": "https://ed.ted.com/lessons/how-do-heat-waves-affect-your-body-carolyn-beans" },
+      "fisa": { "titlu": "Checklist „vara mea în siguranță”", "campuri": [
+        { "tip": "bife", "eticheta": "Siguranța mea în vacanță", "optiuni": ["Nu intru în apă în zone nesupravegheate", "Beau apă des când e caniculă", "Evit soarele între orele 12 și 16", "Port cască pe bicicletă sau trotinetă", "Am un plan de întoarcere de la festival", "Spun cuiva unde sunt și cu cine"] },
+        { "tip": "bife", "eticheta": "Înainte să semnez un contract de muncă", "optiuni": ["Am primit contractul în scris și l-am citit", "Știu programul, salariul și locul de muncă", "Firma există și are recenzii reale", "Nu mi se cer bani ca să fiu angajat", "Nu îmi las actele sau pașaportul nimănui", "Părinții știu toate detaliile"] },
+        { "tip": "textarea", "eticheta": "Oferta de muncă analizată și semnalele de alarmă" },
+        { "tip": "text", "eticheta": "Numărul pe care îl sun în caz de urgență oriunde în UE" }
+      ] }
+    },
+    "33": {
+      "dezghet": { "nume": "Fotografia anului", "durata": "5 min", "cum": "Fiecare descrie un moment al anului ca pe o fotografie: cine apare, unde, ce se întâmplă. Fără nume de colegi puși într-o lumină proastă." },
+      "video": { "titlu": "What makes a good life? Lessons from the longest study on happiness", "autor": "Robert Waldinger", "url": "https://ed.ted.com/lessons/zt8LPHB1" },
+      "fisa": { "titlu": "Chestionar de feedback și scrisoare pentru clasa a XII-a", "anonim": true, "nota": "Fișa e anonimă: nu îți scrie numele. Scrisoarea către tine o păstrezi tu.", "campuri": [
+        { "tip": "scala", "eticheta": "Cât de utile au fost orele de dirigenție anul acesta?", "max": 5, "stanga": "deloc", "dreapta": "foarte" },
+        { "tip": "text", "eticheta": "Tema mea preferată" },
+        { "tip": "text", "eticheta": "Tema care m-a ajutat cel mai mult" },
+        { "tip": "textarea", "eticheta": "Ce ar fi bine să schimbe dirigintele în clasa a XII-a?" },
+        { "tip": "scala", "eticheta": "Autoevaluare: cât de mult m-am implicat anul acesta?", "max": 5, "stanga": "puțin", "dreapta": "foarte mult" },
+        { "tip": "textarea", "eticheta": "Scrisoare către „eu cel din clasa a XII-a”", "randuri_text": 8 }
+      ] }
+    }
+  },
+  // Aceleași perioade, în format pe care îl poate calcula pagina.
+  "calendar": {
+    "inceput": "07.09.2026",
+    "sfarsit": "18.06.2027",
+    "pauze": [
+      { "nume": "Vacanța de toamnă", "scurt": "Vacanță", "de": "24.10.2026", "pana": "01.11.2026", "emoji": "🍂" },
+      { "nume": "S15 – fără oră de dirigenție în orar", "scurt": "S15", "de": "21.12.2026", "pana": "22.12.2026", "emoji": "📅" },
+      { "nume": "Vacanța de iarnă", "scurt": "Vacanță", "de": "23.12.2026", "pana": "10.01.2027", "emoji": "❄️" },
+      { "nume": "Vacanța mobilă (județul Brăila)", "scurt": "Vacanță", "de": "22.02.2027", "pana": "26.02.2027", "emoji": "⛷️" },
+      { "nume": "Vacanța de primăvară", "scurt": "Vacanță", "de": "24.04.2027", "pana": "04.05.2027", "emoji": "🌷" }
+    ],
+    "speciale": [
+      { "nume": "Școala altfel", "scurt": "Școala altfel", "saptamana": "S14", "de": "14.12.2026", "pana": "18.12.2026", "emoji": "🏫" },
+      { "nume": "Săptămâna verde", "scurt": "Săpt. verde", "saptamana": "S29", "de": "19.04.2027", "pana": "23.04.2027", "emoji": "🌿" }
+    ]
+  }
+};
+
+(function () {
+  "use strict";
+
+  /* ---------- utilitare ---------- */
+  const $ = (s, r = document) => r.querySelector(s);
+  const $$ = (s, r = document) => Array.from(r.querySelectorAll(s));
+  const esc = s => String(s).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+  const norm = s => String(s).normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
+  const store = {
+    get(k, d) { try { const v = localStorage.getItem(k); return v == null ? d : JSON.parse(v); } catch (e) { return d; } },
+    set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) { /* stocare indisponibilă */ } }
+  };
+  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const pad = n => String(n).padStart(2, "0");
+  const parseD = s => { const [d, m, y] = s.split(".").map(Number); return new Date(y, m - 1, d); };
+  const dayStart = d => new Date(d.getFullYear(), d.getMonth(), d.getDate());
+  const fmtLong = d => d.toLocaleDateString("ro-RO", { weekday: "long", day: "numeric", month: "long", year: "numeric" });
+  const fmtDay = d => d.toLocaleDateString("ro-RO", { weekday: "long", day: "numeric", month: "long" });
+  const fmtShort = d => d.toLocaleDateString("ro-RO", { day: "numeric", month: "short" });
+  const teme = n => n === 1 ? "o temă" : (n % 100 === 0 || n % 100 >= 20) ? n + " de teme" : n + " teme";
+  const cap = s => s.charAt(0).toUpperCase() + s.slice(1);
+
+  // ?azi=2026-12-15 în adresă simulează altă zi (util pentru test)
+  let offset = 0;
+  try {
+    const q = new URLSearchParams(location.search).get("azi");
+    if (q && /^\d{4}-\d{2}-\d{2}(T\d{2}:\d{2})?$/.test(q)) {
+      const real = new Date();
+      const [dPart, tPart] = q.split("T");
+      const [y, m, d] = dPart.split("-").map(Number);
+      const [hh, mm] = tPart ? tPart.split(":").map(Number) : [real.getHours(), real.getMinutes()];
+      offset = new Date(y, m - 1, d, hh, mm, real.getSeconds()) - real;
+    }
+  } catch (e) {}
+  const now = () => new Date(Date.now() + offset);
+
+  /* ---------- date derivate ---------- */
+  const DOMS = Object.keys(DATA.domenii);
+  const TEME = [];
+  DATA.module.forEach((m, i) => m.teme.forEach(t => {
+    TEME.push(Object.assign({}, t, {
+      modul: i + 1,
+      d: parseD(t.data),
+      acts: t.activitati.split(/;\s+/),
+      codes: t.cs.split(/;\s*/),
+      q: norm([t.titlu, t.subtitlu, t.activitati].join(" ")),
+      mat: (DATA.materiale && DATA.materiale[t.nr]) || {}
+    }));
+  }));
+  const byNr = nr => TEME.find(t => t.nr === nr);
+  const idxOf = nr => TEME.findIndex(t => t.nr === nr);
+  const modName = i => DATA.module[i].titlu.replace(/^MODULUL/, "Modulul");
+  const Y0 = parseD(DATA.calendar.inceput), Y1 = parseD(DATA.calendar.sfarsit);
+  Y1.setHours(23, 59);
+  const pct = d => Math.max(0, Math.min(100, (d - Y0) / (Y1 - Y0) * 100));
+  const [H0, M0] = DATA.ora_inceput.split(":").map(Number);
+  const classStart = t => { const s = new Date(t.d); s.setHours(H0, M0, 0, 0); return s; };
+
+  let done = new Set(store.get("xid-done", []).filter(n => byNr(n)));
+  const saveDone = () => store.set("xid-done", Array.from(done));
+
+  /* ---------- temă luminoasă / întunecată ---------- */
+  const themeBtn = $("#themeBtn");
+  const mqDark = window.matchMedia("(prefers-color-scheme: dark)");
+  const effTheme = () => document.documentElement.getAttribute("data-theme") || (mqDark.matches ? "dark" : "light");
+  const paintThemeBtn = () => {
+    const t = effTheme();
+    themeBtn.firstElementChild.textContent = t === "dark" ? "☀️" : "🌙";
+    themeBtn.setAttribute("aria-label", t === "dark" ? "Treci la tema luminoasă" : "Treci la tema întunecată");
+    const meta = $('meta[name="theme-color"]');
+    if (meta) meta.content = getComputedStyle(document.documentElement).getPropertyValue("--bg").trim();
+  };
+  themeBtn.addEventListener("click", () => {
+    const next = effTheme() === "dark" ? "light" : "dark";
+    document.documentElement.setAttribute("data-theme", next);
+    store.set("xid-theme", next);
+    paintThemeBtn();
+  });
+  if (mqDark.addEventListener) mqDark.addEventListener("change", paintThemeBtn);
+  paintThemeBtn();
+
+  /* ---------- derulare lină pe secțiuni ---------- */
+  document.addEventListener("click", e => {
+    const a = e.target.closest("[data-scroll]");
+    if (!a) return;
+    const el = document.getElementById(a.dataset.scroll);
+    if (!el) return;
+    e.preventDefault();
+    el.scrollIntoView({ behavior: reduceMotion ? "auto" : "smooth", block: "start" });
+  });
+
+  /* ---------- HERO ---------- */
+  $("#heroMeta").innerHTML = [
+    ["Clasa", DATA.clasa], ["An școlar", DATA.an], ["Diriginte", DATA.diriginte], ["Ora", DATA.ora]
+  ].map(([k, v]) => `<li><span class="sr-only">${k}: </span><b>${esc(v)}</b></li>`).join("");
+
+  const counts = [[TEME.length, "de teme"], [DATA.module.length, "module"], [DOMS.length, "domenii"]];
+  $("#counters").innerHTML = counts.map(([n, l]) =>
+    `<div class="counter glass"><b data-count="${n}">${reduceMotion ? n : 0}</b><span>${l}</span></div>`).join("");
+  if (!reduceMotion) {
+    const t0 = performance.now(), dur = 1400;
+    const step = t => {
+      const p = Math.min(1, (t - t0) / dur), e = 1 - Math.pow(1 - p, 3);
+      $$("[data-count]").forEach(el => { el.textContent = Math.round(e * +el.dataset.count); });
+      if (p < 1) requestAnimationFrame(step);
+    };
+    requestAnimationFrame(step);
+  }
+
+  /* ---------- starea zilei ---------- */
+  function status() {
+    const z = dayStart(now());
+    const inR = p => z >= parseD(p.de) && z <= parseD(p.pana);
+    return {
+      z,
+      pauza: DATA.calendar.pauze.find(inR),
+      special: DATA.calendar.speciale.find(inR),
+      next: TEME.find(t => t.d >= z),
+      gata: z > TEME[TEME.length - 1].d
+    };
+  }
+
+  function renderNotifs() {
+    const st = status();
+    const start = st.next ? idxOf(st.next.nr) : TEME.length;
+    const list = TEME.slice(start, start + 3);
+    const box = $("#notifs");
+    if (!list.length) { box.innerHTML = `<p class="notifs-label">Anul s-a încheiat 🎉</p>`; return; }
+    box.innerHTML = `<p class="notifs-label" aria-hidden="true">Notificări · Următoarele ore</p>` + list.map((t, i) => `
+      <button class="notif" type="button" data-open="${t.nr}" style="--c:var(--${t.domeniu})">
+        <span class="notif-ico" aria-hidden="true">${t.emoji}</span>
+        <span>
+          <span class="notif-top"><b>${i === 0 ? "Joia asta" : "Dirigenția XI D"}</b><span>${esc(fmtShort(t.d))}</span></span>
+          <span class="notif-title">${esc(t.titlu)}</span>
+        </span>
+      </button>`).join("");
+  }
+
+  /* ---------- TEMA SĂPTĂMÂNII ---------- */
+  const week = $("#week");
+  let cdTimer = null;
+  function renderWeek() {
+    const st = status();
+    $("#todayLine").textContent = "Azi este " + fmtLong(st.z) + ".";
+    clearInterval(cdTimer);
+    if (st.gata || !st.next) {
+      week.style.setProperty("--c", "var(--E)");
+      week.innerHTML = `<div class="week-end">
+        <div class="week-emoji" aria-hidden="true">🎉</div>
+        <p class="big">Anul s-a încheiat 🎉</p>
+        <p class="sub" style="margin:12px auto 0">33 de teme, un an întreg împreună. Ne vedem în clasa a XII-a!</p>
+      </div>`;
+      return;
+    }
+    const t = st.next;
+    week.style.setProperty("--c", `var(--${t.domeniu})`);
+    let msg = "";
+    if (st.pauza) {
+      msg = `<span aria-hidden="true" style="font-size:22px">${st.pauza.emoji}</span><span><b>Acum e pauză: ${esc(st.pauza.nume)}</b> (${esc(fmtShort(parseD(st.pauza.de)))} – ${esc(fmtShort(parseD(st.pauza.pana)))}). Odihnește-te! Ne revedem la ora de mai jos.</span>`;
+    } else if (st.special) {
+      msg = `<span aria-hidden="true" style="font-size:22px">${st.special.emoji}</span><span><b>Săptămâna „${esc(st.special.nume)}” (${esc(st.special.saptamana)})</b>: activitățile sunt planificate separat, așa că joi nu avem oră de dirigenție. Următoarea oră:</span>`;
+    }
+    week.innerHTML = `
+      <div class="week-status" ${msg ? "" : "hidden"}>${msg}</div>
+      <div>
+        <div class="week-emoji" aria-hidden="true">${t.emoji}</div>
+        <p class="eyebrow" style="margin:0">Tema ${t.nr} din ${TEME.length} · ${esc(t.saptamana)} · ${esc(fmtDay(t.d))}</p>
+        <h3>${esc(t.titlu)}</h3>
+        <p class="sub">${esc(cap(t.subtitlu))}</p>
+        <p class="hook"><small>Întrebarea-cârlig</small>${esc(t.carlig)}</p>
+      </div>
+      <div>
+        <p class="cd-label" id="cdLabel"></p>
+        <div class="countdown" id="cd" role="timer" aria-label="Timp rămas până la oră">
+          <div><b data-u="z">0</b><span>zile</span></div>
+          <div><b data-u="h">00</b><span>ore</span></div>
+          <div><b data-u="m">00</b><span>minute</span></div>
+          <div><b data-u="s">00</b><span>secunde</span></div>
+        </div>
+        <div class="week-actions">
+          <button class="btn btn-primary" type="button" data-open="${t.nr}">Deschide tema</button>
+          <button class="btn" type="button" data-proj="${t.nr}"><span aria-hidden="true">📽️</span> Mod proiector</button>
+        </div>
+      </div>`;
+    const start = classStart(t), end = new Date(start.getTime() + DATA.durata_ora * 60000);
+    const lbl = $("#cdLabel"), cd = $("#cd");
+    const tick = () => {
+      const n = now();
+      if (n < start) {
+        let s = Math.floor((start - n) / 1000);
+        const z = Math.floor(s / 86400); s -= z * 86400;
+        const h = Math.floor(s / 3600); s -= h * 3600;
+        const m = Math.floor(s / 60); s -= m * 60;
+        $('[data-u="z"]', cd).textContent = z;
+        $('[data-u="h"]', cd).textContent = pad(h);
+        $('[data-u="m"]', cd).textContent = pad(m);
+        $('[data-u="s"]', cd).textContent = pad(s);
+        lbl.innerHTML = `Până joi, <b>${esc(fmtShort(t.d))}</b>, la ora <b>${esc(DATA.ora_inceput)}</b>, mai sunt:`;
+        cd.hidden = false;
+      } else if (n < end) {
+        lbl.innerHTML = `<b>🔴 Ora e acum!</b> Sala S17, ne vedem acolo.`;
+        cd.hidden = true;
+      } else {
+        lbl.innerHTML = `Ora de azi s-a încheiat. Mulțumim! 👋`;
+        cd.hidden = true;
+      }
+    };
+    tick();
+    cdTimer = setInterval(tick, 1000);
+  }
+
+  /* ---------- HARTA ANULUI ---------- */
+  function renderTrack() {
+    const z = dayStart(now());
+    const months = ["sep", "oct", "nov", "dec", "ian", "feb", "mar", "apr", "mai", "iun"];
+    let html = `<div class="tl-line" aria-hidden="true"></div>`;
+    DATA.module.forEach((m, i) => {
+      const s = pct(parseD(m.start)), e = pct(parseD(m.sfarsit));
+      html += `<div class="tl-seg" style="--s:${s}%;--w:${e - s}%" title="${esc(modName(i))}"><span>Modulul ${i + 1}</span></div>`;
+    });
+    DATA.calendar.pauze.forEach(p => {
+      const s = pct(parseD(p.de)), e = pct(new Date(parseD(p.pana).getTime() + 86400000));
+      html += `<div class="tl-block pause" style="--s:${s}%;--w:${e - s}%" title="${esc(p.nume)}" aria-hidden="true">${esc(p.scurt)}</div>`;
+    });
+    DATA.calendar.speciale.forEach(p => {
+      const s = pct(parseD(p.de)), e = pct(new Date(parseD(p.pana).getTime() + 86400000));
+      html += `<div class="tl-block special" style="--s:${s}%;--w:${e - s}%" title="${esc(p.nume + " (" + p.saptamana + ")")}" aria-hidden="true">${esc(p.scurt)}</div>`;
+    });
+    months.forEach((mn, i) => {
+      const d = i === 0 ? Y0 : new Date(2026, 8 + i, 1);
+      html += `<span class="tl-month" style="--p:${pct(d)}%" aria-hidden="true">${mn}</span>`;
+    });
+    TEME.forEach(t => {
+      const p = pct(t.d);
+      const edge = p < 8 ? " edge-l" : p > 92 ? " edge-r" : "";
+      html += `<button class="tl-dot${edge}${done.has(t.nr) ? " done" : ""}${t.d < z ? " past" : ""}" type="button" data-open="${t.nr}" data-dot="${t.nr}"
+        style="--p:${p}%;--c:var(--${t.domeniu})" aria-label="Tema ${t.nr}, ${esc(fmtShort(t.d))}: ${esc(t.titlu)}">
+        <span class="tl-tip" aria-hidden="true"><b>${t.nr} · ${esc(fmtShort(t.d))}</b>${t.emoji} ${esc(t.titlu)}</span></button>`;
+    });
+    if (z >= Y0 && z <= Y1) html += `<div class="tl-today" style="--p:${pct(new Date(z.getTime() + 43200000))}%" aria-hidden="true"><span>Azi</span></div>`;
+    $("#track").innerHTML = html;
+
+    $("#legend").innerHTML = DOMS.map(k => `<li><i style="--c:var(--${k})"></i>${k} · ${esc(DATA.domenii_scurt[k])}</li>`).join("") +
+      `<li><i class="sq pause"></i>Vacanță / fără oră</li><li><i class="sq special"></i>Săptămână specială</li>`;
+  }
+
+  /* ---------- CARDURI ---------- */
+  const grid = $("#grid");
+  grid.innerHTML = TEME.map(t => `
+    <article class="card reveal${done.has(t.nr) ? " done" : ""}" data-nr="${t.nr}" style="--c:var(--${t.domeniu})">
+      <span class="card-nr">${pad(t.nr)}</span>
+      <span class="card-date">${esc(fmtShort(t.d))} · ${esc(t.saptamana)}</span>
+      <span class="card-emoji" aria-hidden="true">${t.emoji}</span>
+      <h3><button class="card-open" type="button" data-open="${t.nr}">${esc(t.titlu)}</button></h3>
+      <p class="card-sub">${esc(cap(t.subtitlu))}</p>
+      <span class="tag"><span class="k" aria-hidden="true">${t.domeniu}</span><span>${esc(DATA.domenii_scurt[t.domeniu])}</span></span>
+      <span class="card-done">✓ realizată</span>
+    </article>`).join("");
+
+  /* ---------- FILTRE ---------- */
+  const state = { dom: new Set(), modul: "", q: "", vedere: "grila", tema: 0, fisa: 0 };
+  const chips = $("#chips"), qIn = $("#q"), modSel = $("#modSel");
+  chips.innerHTML = DOMS.map(k => `<button class="chip" type="button" data-dom="${k}" aria-pressed="false" style="--c:var(--${k})" title="${esc(DATA.domenii[k])}"><span class="k" aria-hidden="true">${k}</span>${esc(DATA.domenii_scurt[k])}</button>`).join("");
+  modSel.innerHTML = `<option value="">Toate modulele</option>` + DATA.module.map((m, i) => `<option value="${i + 1}">${esc(modName(i))}</option>`).join("");
+
+  function syncControls() {
+    $$(".chip", chips).forEach(c => c.setAttribute("aria-pressed", state.dom.has(c.dataset.dom)));
+    modSel.value = state.modul;
+    if (qIn.value !== state.q) qIn.value = state.q;
+    $$(".views button").forEach(b => b.setAttribute("aria-pressed", b.dataset.view === state.vedere));
+    grid.classList.toggle("list", state.vedere === "lista");
+  }
+
+  function applyFilters() {
+    const q = norm(state.q.trim());
+    let n = 0;
+    TEME.forEach(t => {
+      const ok = (!state.dom.size || state.dom.has(t.domeniu)) &&
+                 (!state.modul || t.modul === +state.modul) &&
+                 (!q || t.q.includes(q));
+      const card = grid.querySelector(`[data-nr="${t.nr}"]`);
+      card.hidden = !ok;
+      if (ok) { n++; card.classList.add("in"); }
+    });
+    const active = state.dom.size || state.modul || q;
+    $("#count").innerHTML = n ? `<b>${n}</b> ${n === 1 ? "temă" : (n >= 20 ? "de teme" : "teme")}${active ? " găsite" : " în total"}` : "Nicio temă găsită";
+    $("#resetF").hidden = !active;
+    $("#empty").hidden = n > 0;
+    writeHash();
+  }
+
+  /* hash-ul din adresă: #domeniu=A,D&modul=2&cauta=ai&vedere=lista&tema=4 */
+  let lastHash = null;
+  function writeHash() {
+    const p = [];
+    if (state.dom.size) p.push("domeniu=" + Array.from(state.dom).sort().join(","));
+    if (state.modul) p.push("modul=" + state.modul);
+    if (state.q.trim()) p.push("cauta=" + encodeURIComponent(state.q.trim()));
+    if (state.vedere === "lista") p.push("vedere=lista");
+    if (state.tema) p.push("tema=" + state.tema);
+    if (state.fisa) p.push("fisa=" + state.fisa);
+    const h = p.join("&");
+    if (h === lastHash) return;
+    lastHash = h;
+    try { history.replaceState(null, "", location.href.split("#")[0] + (h ? "#" + h : "")); } catch (e) {}
+  }
+  function readHash() {
+    const raw = location.hash.slice(1);
+    if (raw && raw.indexOf("=") === -1) return false; // ancoră simplă, ex. #teme
+    const h = new URLSearchParams(raw);
+    state.dom = new Set((h.get("domeniu") || "").toUpperCase().split(",").filter(k => DATA.domenii[k]));
+    const m = h.get("modul") || "";
+    state.modul = /^[1-9]$/.test(m) && +m <= DATA.module.length ? m : "";
+    state.q = h.get("cauta") || "";
+    state.vedere = h.get("vedere") === "lista" ? "lista" : "grila";
+    const tn = +h.get("tema"), fn = +h.get("fisa");
+    syncControls();
+    applyFilters();
+    if (fn && byNr(fn) && byNr(fn).mat.fisa) openFisa(fn);
+    else if (tn && byNr(tn)) openModal(tn);
+    else {
+      if (modal.open) modal.close();
+      if (fisaDlg.open) fisaDlg.close();
+    }
+    return true;
+  }
+
+  chips.addEventListener("click", e => {
+    const c = e.target.closest(".chip"); if (!c) return;
+    const k = c.dataset.dom;
+    state.dom.has(k) ? state.dom.delete(k) : state.dom.add(k);
+    syncControls(); applyFilters();
+  });
+  modSel.addEventListener("change", () => { state.modul = modSel.value; applyFilters(); });
+  qIn.addEventListener("input", () => { state.q = qIn.value; applyFilters(); });
+  $$(".views button").forEach(b => b.addEventListener("click", () => { state.vedere = b.dataset.view; syncControls(); writeHash(); }));
+  $("#resetF").addEventListener("click", () => {
+    state.dom.clear(); state.modul = ""; state.q = "";
+    syncControls(); applyFilters(); qIn.focus();
+  });
+  window.addEventListener("hashchange", () => {
+    if (location.hash.slice(1) === lastHash) return;
+    readHash();
+  });
+
+  /* ---------- FEREASTRA DE DETALIU ---------- */
+  const modal = $("#modal"), mInner = $("#mInner");
+  let current = 0;
+
+  function pollHTML(t) {
+    const votes = store.get("xid-poll-" + t.nr, null);
+    const total = votes ? votes.reduce((a, b) => a + b, 0) : 0;
+    return `
+      <div class="poll${total ? " voted" : ""}" data-poll="${t.nr}">
+        <p class="poll-q" id="pollQ">${esc(t.sondaj.intrebare)}</p>
+        <div class="poll-opts" role="group" aria-labelledby="pollQ">
+          ${t.sondaj.variante.map((v, i) => {
+            const p = total ? Math.round(votes[i] / total * 100) : 0;
+            return `<button class="poll-opt" type="button" data-vote="${i}" aria-label="${esc(v)}${total ? `, ${p}%` : ""}">
+              <span class="bar" data-w="${p}"></span><span>${esc(v)}</span><span class="pct">${p}%</span></button>`;
+          }).join("")}
+        </div>
+        <div class="poll-foot">
+          <span>${total ? `${total} ${total === 1 ? "vot" : total >= 20 ? "de voturi" : "voturi"} pe acest dispozitiv` : "Fără răspuns corect. Fiecare apăsare înseamnă un vot, ca să poți strânge voturile clasei."}</span>
+          ${total ? `<button class="link-btn" type="button" data-poll-reset>Resetează sondajul</button>` : ""}
+        </div>
+      </div>`;
+  }
+  function animateBars(root) {
+    const bars = $$(".bar", root);
+    requestAnimationFrame(() => requestAnimationFrame(() => bars.forEach(b => { b.style.width = b.dataset.w + "%"; })));
+  }
+
+  function renderModal(t) {
+    const i = idxOf(t.nr), prev = TEME[i - 1], next = TEME[i + 1];
+    modal.style.setProperty("--c", `var(--${t.domeniu})`);
+    mInner.innerHTML = `
+      <div class="m-head">
+        <button class="icon-btn m-close" type="button" data-close aria-label="Închide fereastra">✕</button>
+        <div class="m-emoji" aria-hidden="true">${t.emoji}</div>
+        <div class="m-meta">
+          <span>Tema ${t.nr} din ${TEME.length}</span>
+          <span>${esc(cap(fmtLong(t.d)))}</span>
+          <span>Săptămâna ${esc(t.saptamana)}</span>
+          <span>Modulul ${t.modul}</span>
+        </div>
+        <h2 id="mTitle">${esc(t.titlu)}</h2>
+        <p class="sub">${esc(cap(t.subtitlu))}</p>
+        <p style="margin-top:14px"><span class="tag"><span class="k" aria-hidden="true">${t.domeniu}</span><span>Domeniul ${t.domeniu}: ${esc(DATA.domenii[t.domeniu])}</span></span></p>
+      </div>
+      <div class="m-body">
+        <div class="m-sec">
+          <p class="hook" style="margin:0"><small>Întrebarea-cârlig</small>${esc(t.carlig)}</p>
+        </div>
+        ${t.mat.dezghet ? `<div class="m-sec">
+          <h3><span aria-hidden="true">🧊</span> Exercițiu de dezgheț <span class="dz-time">${esc(t.mat.dezghet.durata)}</span></h3>
+          <p class="dz-name">${esc(t.mat.dezghet.nume)}</p>
+          <p>${esc(t.mat.dezghet.cum)}</p>
+        </div>` : ""}
+        <div class="m-sec">
+          <h3>Competențe specifice</h3>
+          <ul class="cs-list">${t.codes.map(c => `<li><span class="cs-code">CS ${esc(c)}</span><span>${esc(DATA.competente[c] || "")}</span></li>`).join("")}</ul>
+        </div>
+        <div class="m-sec">
+          <h3>Activități</h3>
+          <ol class="act-list">${t.acts.map(a => `<li><span>${esc(cap(a))}</span></li>`).join("")}</ol>
+        </div>
+        <div class="m-sec">
+          <h3>Evaluare</h3>
+          <p>${esc(t.evaluare)}</p>
+        </div>
+        ${t.mat.fisa || t.mat.video ? `<div class="m-sec">
+          <h3>Materiale</h3>
+          <div class="mat-row">
+            ${t.mat.fisa ? `<button class="mat" type="button" data-fisa="${t.nr}">
+              <span class="mat-ico" aria-hidden="true">📝</span>
+              <span><b>Fișa de lucru</b><span class="t">${esc(t.mat.fisa.titlu)}</span><span class="s">Completezi în pagină și o descarci</span></span>
+            </button>` : ""}
+            ${t.mat.video ? `<a class="mat" href="${esc(t.mat.video.url)}" target="_blank" rel="noopener">
+              <span class="mat-ico" aria-hidden="true">▶️</span>
+              <span><b>Video TED-Ed</b><span class="t">${esc(t.mat.video.titlu)}</span><span class="s">${esc(t.mat.video.autor)} · în engleză, cu subtitrări · se deschide într-un tab nou</span></span>
+            </a>` : ""}
+          </div>
+        </div>` : ""}
+        <div class="m-sec">
+          <h3>Tu ce crezi?</h3>
+          ${pollHTML(t)}
+        </div>
+      </div>
+      <div class="m-foot">
+        <div class="grp">
+          <button class="btn btn-sm" type="button" data-go="-1" ${prev ? "" : "disabled"} aria-label="Tema anterioară">← Tema anterioară</button>
+          <button class="btn btn-sm" type="button" data-go="1" ${next ? "" : "disabled"} aria-label="Tema următoare">Tema următoare →</button>
+        </div>
+        <div class="grp">
+          <button class="btn btn-sm" type="button" data-proj="${t.nr}"><span aria-hidden="true">📽️</span> Mod proiector</button>
+          <button class="btn btn-sm" type="button" data-done="${t.nr}" aria-pressed="${done.has(t.nr)}">${done.has(t.nr) ? "✓ Realizată" : "Marchează ca realizată"}</button>
+        </div>
+      </div>`;
+    modal.scrollTop = 0;
+    animateBars(mInner);
+  }
+
+  function openModal(nr) {
+    const t = byNr(nr); if (!t) return;
+    current = nr;
+    renderModal(t);
+    if (!modal.open) {
+      try { modal.showModal(); } catch (e) { modal.setAttribute("open", ""); }
+      document.documentElement.classList.add("lock");
+    }
+    state.tema = nr; writeHash();
+  }
+  function go(dir) {
+    const i = idxOf(current) + dir;
+    if (i >= 0 && i < TEME.length) openModal(TEME[i].nr);
+  }
+  modal.addEventListener("close", () => {
+    const other = fisaDlg.open || !proj.hidden;
+    if (!other) document.documentElement.classList.remove("lock");
+    state.tema = 0; writeHash();
+    const back = document.querySelector(`.card-open[data-open="${current}"]`);
+    if (back && !other) back.focus({ preventScroll: true });
+  });
+  modal.addEventListener("click", e => {
+    if (e.target === modal) { modal.close(); return; }
+    if (e.target.closest("[data-close]")) { modal.close(); return; }
+    const g = e.target.closest("[data-go]");
+    if (g) { go(+g.dataset.go); return; }
+    const v = e.target.closest("[data-vote]");
+    if (v) {
+      const t = byNr(current);
+      const votes = store.get("xid-poll-" + t.nr, null) || t.sondaj.variante.map(() => 0);
+      votes[+v.dataset.vote]++;
+      store.set("xid-poll-" + t.nr, votes);
+      const box = $(".poll", mInner);
+      const old = $$(".bar", box).map(b => b.style.width);
+      box.outerHTML = pollHTML(t);
+      const nb = $(".poll", mInner);
+      $$(".bar", nb).forEach((b, i) => { b.style.width = old[i] || "0%"; });
+      animateBars(nb);
+      const again = $(`[data-vote="${v.dataset.vote}"]`, nb); if (again) again.focus();
+      return;
+    }
+    if (e.target.closest("[data-poll-reset]")) {
+      const t = byNr(current);
+      try { localStorage.removeItem("xid-poll-" + t.nr); } catch (err) {}
+      $(".poll", mInner).outerHTML = pollHTML(t);
+      return;
+    }
+    const d = e.target.closest("[data-done]");
+    if (d) { toggleDone(+d.dataset.done); d.setAttribute("aria-pressed", done.has(current)); d.textContent = done.has(current) ? "✓ Realizată" : "Marchează ca realizată"; }
+  });
+
+  function toggleDone(nr) {
+    done.has(nr) ? done.delete(nr) : done.add(nr);
+    saveDone();
+    const card = grid.querySelector(`[data-nr="${nr}"]`); if (card) card.classList.toggle("done", done.has(nr));
+    const dot = document.querySelector(`[data-dot="${nr}"]`); if (dot) dot.classList.toggle("done", done.has(nr));
+    renderRing();
+  }
+
+  // deschiderea temelor de oriunde
+  document.addEventListener("click", e => {
+    const o = e.target.closest("[data-open]");
+    if (o && !modal.contains(o)) { openModal(+o.dataset.open); return; }
+    const p = e.target.closest("[data-proj]");
+    if (p) { openProj(+p.dataset.proj); return; }
+    const f = e.target.closest("[data-fisa]");
+    if (f) openFisa(+f.dataset.fisa);
+  });
+
+  /* ---------- MOD PROIECTOR ---------- */
+  const proj = $("#proj"), pActs = $("#pActs");
+  let pNr = 0, shown = 0, wasFs = false;
+  const T_TOTAL = DATA.durata_ora * 60;
+  let tLeft = T_TOTAL, tRun = false, tInt = null;
+
+  function paintTimer() {
+    const out = $("#tOut");
+    if (tLeft <= 0) out.textContent = "Gata! 🔔";
+    else out.textContent = pad(Math.floor(tLeft / 60)) + ":" + pad(tLeft % 60);
+    $("#timer").classList.toggle("low", tLeft > 0 && tLeft <= 300);
+    const b = $("#tToggle");
+    b.textContent = tRun ? "⏸" : "▶";
+    b.setAttribute("aria-label", tRun ? "Pauză cronometru" : "Pornește cronometrul");
+  }
+  function timerRun(on) {
+    tRun = on && tLeft > 0;
+    clearInterval(tInt);
+    if (tRun) tInt = setInterval(() => { tLeft--; if (tLeft <= 0) { tLeft = 0; timerRun(false); } paintTimer(); }, 1000);
+    paintTimer();
+  }
+  $("#tToggle").addEventListener("click", () => timerRun(!tRun));
+  $("#tReset").addEventListener("click", () => { tLeft = T_TOTAL; timerRun(true); });
+
+  function renderProj(nr) {
+    const t = byNr(nr); pNr = nr; shown = 0;
+    proj.style.setProperty("--c", `var(--${t.domeniu})`);
+    $("#pMeta").textContent = `Tema ${t.nr} · ${cap(fmtDay(t.d))} · ${DATA.domenii_scurt[t.domeniu]}`;
+    $("#pEmoji").textContent = t.emoji;
+    $("#pTitle").textContent = t.titlu;
+    $("#pHook").textContent = t.carlig;
+    $("#pDz").textContent = t.mat.dezghet ? `🧊 Dezgheț (${t.mat.dezghet.durata}): ${t.mat.dezghet.nume}` : "";
+    pActs.innerHTML = t.acts.map(a => `<li hidden>${esc(cap(a))}</li>`).join("");
+    const i = idxOf(nr);
+    $("#pPrev").disabled = i === 0;
+    $("#pNextT").disabled = i === TEME.length - 1;
+    updateHint();
+  }
+  function updateHint() {
+    const total = pActs.children.length;
+    $("#pNext").disabled = shown >= total;
+    $("#pNext").textContent = shown >= total ? "Toate activitățile sunt afișate" : `Activitatea ${shown + 1} din ${total}`;
+  }
+  function reveal() {
+    const li = pActs.children[shown]; if (!li) return;
+    li.hidden = false;
+    requestAnimationFrame(() => requestAnimationFrame(() => li.classList.add("show")));
+    shown++; updateHint();
+  }
+  function openProj(nr) {
+    if (modal.open) modal.close();
+    renderProj(nr);
+    proj.hidden = false;
+    document.documentElement.classList.add("lock");
+    if (!tRun && tLeft === T_TOTAL) timerRun(true); else paintTimer();
+    wasFs = false;
+    const req = proj.requestFullscreen || proj.webkitRequestFullscreen;
+    if (req) {
+      try {
+        const r = req.call(proj);
+        if (r && r.then) r.then(() => { wasFs = true; }).catch(() => {});
+        else wasFs = true;
+      } catch (e) {}
+    }
+    $("#pClose").focus();
+  }
+  function closeProj() {
+    if (proj.hidden) return;
+    proj.hidden = true;
+    document.documentElement.classList.remove("lock");
+    const fsEl = document.fullscreenElement || document.webkitFullscreenElement;
+    if (fsEl) { try { (document.exitFullscreen || document.webkitExitFullscreen).call(document).catch(() => {}); } catch (e) {} }
+    const back = document.querySelector(`.card-open[data-open="${pNr}"]`);
+    if (back) back.focus({ preventScroll: true });
+  }
+  const onFs = () => { if (!(document.fullscreenElement || document.webkitFullscreenElement) && wasFs) { wasFs = false; closeProj(); } };
+  document.addEventListener("fullscreenchange", onFs);
+  document.addEventListener("webkitfullscreenchange", onFs);
+  $("#pClose").addEventListener("click", closeProj);
+  $("#pNext").addEventListener("click", reveal);
+  $("#pPrev").addEventListener("click", () => { const i = idxOf(pNr); if (i > 0) renderProj(TEME[i - 1].nr); });
+  $("#pNextT").addEventListener("click", () => { const i = idxOf(pNr); if (i < TEME.length - 1) renderProj(TEME[i + 1].nr); });
+
+  /* ---------- tastatură ---------- */
+  const typing = el => el && (el.tagName === "INPUT" || el.tagName === "TEXTAREA" || el.tagName === "SELECT" || el.isContentEditable);
+  document.addEventListener("keydown", e => {
+    if (!proj.hidden) {
+      if (e.key === " " || e.code === "Space") { e.preventDefault(); reveal(); }
+      else if (e.key === "ArrowRight") { e.preventDefault(); $("#pNextT").click(); }
+      else if (e.key === "ArrowLeft") { e.preventDefault(); $("#pPrev").click(); }
+      else if (e.key === "Escape") { e.preventDefault(); closeProj(); }
+      return;
+    }
+    if (modal.open && !typing(e.target)) {
+      if (e.key === "ArrowRight") { e.preventDefault(); go(1); }
+      else if (e.key === "ArrowLeft") { e.preventDefault(); go(-1); }
+    }
+  });
+
+  /* ---------- PROGRES ---------- */
+  const R = 58, CIRC = 2 * Math.PI * R;
+  const ringFg = $("#ringFg");
+  ringFg.style.strokeDasharray = CIRC;
+  ringFg.style.strokeDashoffset = CIRC;
+  let ringSeen = false;
+  function renderRing() {
+    const n = done.size, tot = TEME.length;
+    $("#ringNum").textContent = n;
+    $("#ringOf").textContent = "din " + teme(tot).replace(/^\d+ /, tot + " ");
+    $("#ringNote").textContent = n === 0 ? "Nicio oră bifată încă. Deschide o temă și apasă „Marchează ca realizată”."
+      : n === tot ? "Toate temele au fost realizate. Bravo, XI D! 🎉"
+      : `Am parcurs ${Math.round(n / tot * 100)}% din an. Mai avem ${teme(tot - n)}.`;
+    if (ringSeen) ringFg.style.strokeDashoffset = CIRC * (1 - n / tot);
+  }
+  const counts2 = DOMS.map(k => TEME.filter(t => t.domeniu === k).length);
+  const maxC = Math.max.apply(null, counts2);
+  $("#bars").innerHTML = DOMS.map((k, i) => `
+    <li style="--c:var(--${k})">
+      <span class="lbl"><span><b style="color:var(--c)">${k}</b> · ${esc(DATA.domenii[k])}</span><b>${counts2[i]} ${counts2[i] === 1 ? "oră" : "ore"}</b></span>
+      <span class="track" aria-hidden="true"><span class="fill" data-w="${counts2[i] / maxC * 100}"></span></span>
+    </li>`).join("");
+  renderRing();
+
+  /* ---------- apariție la scroll ---------- */
+  const onSeen = el => {
+    el.classList.add("in");
+    if (el.classList.contains("ring-card")) { ringSeen = true; renderRing(); }
+    if (el.classList.contains("bars-card")) $$(".fill", el).forEach(f => { f.style.width = f.dataset.w + "%"; });
+  };
+  if ("IntersectionObserver" in window && !reduceMotion) {
+    const io = new IntersectionObserver(es => es.forEach(en => {
+      if (en.isIntersecting) { onSeen(en.target); io.unobserve(en.target); }
+    }), { threshold: .12, rootMargin: "0px 0px -40px 0px" });
+    $$(".reveal").forEach(el => io.observe(el));
+  } else {
+    $$(".reveal").forEach(onSeen);
+  }
+
+  /* ---------- LISTA PENTRU IMPRIMARE ---------- */
+  $("#printList").innerHTML = `
+    <h1>Dirigenția XI D · ${esc(DATA.an)}</h1>
+    <p class="pl-meta">Clasa ${esc(DATA.clasa)} · ${esc(DATA.diriginte)} · ${esc(DATA.ora)} · Liceul Teoretic „Panait Cerna” Brăila</p>` +
+    DATA.module.map((m, i) => `
+      <h2>${esc(modName(i))}</h2>
+      ${TEME.filter(t => t.modul === i + 1).map(t => `
+        <div class="pl-item">
+          <h3>${t.nr}. ${esc(t.titlu)}</h3>
+          <div class="d">${esc(t.data)} · ${esc(t.saptamana)} · Domeniul ${t.domeniu} (${esc(DATA.domenii[t.domeniu])}) · CS ${esc(t.cs)}</div>
+          <p>${esc(cap(t.subtitlu))}</p>
+          <p><b>Activități:</b> ${esc(t.activitati)}</p>
+          <p><b>Evaluare:</b> ${esc(t.evaluare)}</p>
+          ${t.mat.dezghet ? `<p><b>Dezgheț:</b> ${esc(t.mat.dezghet.nume)} – ${esc(t.mat.dezghet.cum)}</p>` : ""}
+          ${t.mat.fisa ? `<p><b>Fișa:</b> ${esc(t.mat.fisa.titlu)}</p>` : ""}
+          ${t.mat.video ? `<p><b>Video TED-Ed:</b> ${esc(t.mat.video.titlu)} (${esc(t.mat.video.autor)}) – ${esc(t.mat.video.url)}</p>` : ""}
+        </div>`).join("")}
+      ${m.saptamani_speciale.map(s => `<p class="pl-note">${esc(s)}</p>`).join("")}`).join("") +
+    `<h2>Vacanțe</h2>${DATA.pauze.map(p => `<p class="pl-note">${esc(p)}</p>`).join("")}`;
+  $("#printBtn").addEventListener("click", () => window.print());
+
+  /* =====================================================================
+     FIȘELE DE LUCRU: completare în pagină, salvare automată, descărcare
+     ===================================================================== */
+  const fisaDlg = $("#fisaDlg"), fisaInner = $("#fisaInner");
+  let fisaNr = 0, saveT = null;
+  const num = v => { const n = parseFloat(String(v == null ? "" : v).replace(/\s/g, "").replace(",", ".")); return isFinite(n) ? n : 0; };
+  const fmtN = (n, d = 1) => n.toLocaleString("ro-RO", { maximumFractionDigits: d });
+  const nl = s => esc(s).replace(/\n/g, "<br>");
+  const slug = s => norm(s).replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "").slice(0, 40);
+  const NIVELURI = ["A1", "A2", "B1", "B2", "C1", "C2"];
+  const BUGET = {
+    v: ["Bani de buzunar", "Job, meditații sau cadouri în bani", "Altele"],
+    c: ["Mâncare și gustări în oraș", "Transport", "Abonamente (telefon, streaming, jocuri)", "Haine și încălțăminte", "Ieșiri cu prietenii", "Economii", "Altele"]
+  };
+
+  /* ---- formularul ---- */
+  const inp = (k, label, ph = "", type = "text", cls = "") =>
+    `<label class="f ${cls}"><span class="f-l">${label}</span><input type="${type}" data-k="${k}" placeholder="${esc(ph)}"${type === "number" ? ' inputmode="decimal" step="any" min="0"' : ""}></label>`;
+  const txa = (k, label, ph = "", rows = 3) =>
+    `<label class="f"><span class="f-l">${label}</span><textarea rows="${rows}" data-k="${k}" placeholder="${esc(ph)}"></textarea></label>`;
+
+  function fieldHTML(f, i) {
+    const id = "f" + i, L = esc(f.eticheta || ""), H = f.ajutor ? `<span class="f-h">${esc(f.ajutor)}</span>` : "";
+    switch (f.tip) {
+      case "text":
+        return `<label class="f"><span class="f-l">${L}</span>${H}<input type="text" data-k="${id}"></label>`;
+      case "textarea":
+        return `<label class="f"><span class="f-l">${L}</span>${H}<textarea rows="${f.randuri_text || 4}" data-k="${id}"></textarea></label>`;
+      case "scala": {
+        let s = "";
+        for (let v = 1; v <= (f.max || 5); v++) s += `<label class="sc"><input type="radio" name="${id}" value="${v}" data-k="${id}" aria-label="${v} din ${f.max || 5}"><span aria-hidden="true">${v}</span></label>`;
+        return `<fieldset class="f"><legend class="f-l">${L}</legend>${H}<div class="scale">${f.stanga ? `<span class="sc-l">${esc(f.stanga)}</span>` : ""}<div class="sc-row">${s}</div>${f.dreapta ? `<span class="sc-l">${esc(f.dreapta)}</span>` : ""}</div></fieldset>`;
+      }
+      case "alegere":
+      case "bife": {
+        const type = f.tip === "alegere" ? "radio" : "checkbox";
+        return `<fieldset class="f"><legend class="f-l">${L}</legend>${H}<div class="opts${f.optiuni.length > 4 ? " two" : ""}">${f.optiuni.map(o =>
+          `<label class="opt"><input type="${type}" name="${id}" value="${esc(o)}" data-k="${id}"><span>${esc(o)}</span></label>`).join("")}</div></fieldset>`;
+      }
+      case "tabel": {
+        const rows = f.randuri || Array(f.n || 3).fill("");
+        const inCols = f.randuri ? f.coloane.slice(1) : f.coloane;
+        return `<div class="f"><span class="f-l">${L}</span>${H}<div class="tbl-wrap"><table class="ft${f.coloane.length > 3 ? " wide" : ""}">
+          <thead><tr>${f.coloane.map(c => `<th scope="col">${esc(c)}</th>`).join("")}</tr></thead>
+          <tbody>${rows.map((rl, r) => `<tr>${f.randuri ? `<th scope="row">${esc(rl)}</th>` : ""}${inCols.map((c, ci) =>
+            `<td><input type="text" data-k="${id}.${r}.${ci}" aria-label="${esc((rl ? rl + " – " : "Rândul " + (r + 1) + " – ") + (c || "răspuns"))}"></td>`).join("")}</tr>`).join("")}</tbody>
+        </table></div></div>`;
+      }
+      case "tracker": {
+        let s = "";
+        for (let d = 1; d <= 30; d++) s += `<label><input type="checkbox" value="${d}" data-k="${id}" aria-label="Ziua ${d}"><span aria-hidden="true">${d}</span></label>`;
+        return `<fieldset class="f"><legend class="f-l">${L}</legend>${H}<div class="tracker">${s}</div><p class="f-h" data-out="${id}"></p></fieldset>`;
+      }
+      case "ecran":
+        return `<div class="f"><span class="f-l">${L}</span>${H}
+          <div class="calc-in">${inp(id + ".min", "Minute pe zi (media)", "ex. 240", "number")}</div>
+          <div class="calc-out" data-out="${id}"></div></div>`;
+      case "buget":
+        return `<div class="f"><span class="f-l">${L}</span>${H}<div class="buget">
+          <div><h4>Venituri</h4>${BUGET.v.map((l, j) => `<label class="b-row"><span>${esc(l)}</span><input type="number" inputmode="decimal" min="0" step="any" data-k="${id}.v${j}" placeholder="0"></label>`).join("")}</div>
+          <div><h4>Cheltuieli</h4>${BUGET.c.map((l, j) => `<label class="b-row"><span>${esc(l)}</span><input type="number" inputmode="decimal" min="0" step="any" data-k="${id}.c${j}" placeholder="0"></label>`).join("")}</div>
+        </div><div class="calc-out" data-out="${id}"></div></div>`;
+      case "rate":
+        return `<div class="f"><span class="f-l">${L}</span>${H}
+          <div class="calc-in">
+            ${inp(id + ".produs", "Produsul", "ex. telefon")}
+            ${inp(id + ".pret", "Prețul plătit integral (lei)", "", "number")}
+            ${inp(id + ".avans", "Avans (lei)", "0", "number")}
+            ${inp(id + ".nr", "Număr de rate", "", "number")}
+            ${inp(id + ".rata", "Valoarea unei rate (lei)", "", "number")}
+          </div><div class="calc-out" data-out="${id}"></div></div>`;
+      case "cv": return cvForm(id, L);
+      case "scrisoare": return letterForm(id, L);
+      default: return "";
+    }
+  }
+
+  function cvForm(id, L) {
+    const k = s => id + "." + s;
+    const edu = [1, 2].map(n => `<div class="cv-block"><p>Educație ${n}</p><div class="cv-grid">
+        ${inp(k("e" + n + ".per"), "Perioada", n === 1 ? "ex. 2023 – prezent" : "ex. 2015 – 2023")}
+        ${inp(k("e" + n + ".inst"), "Instituția și orașul", n === 1 ? "ex. Liceul Teoretic „Panait Cerna”, Brăila" : "")}</div>
+        ${inp(k("e" + n + ".det"), "Specializare / detalii", n === 1 ? "ex. profil umanist, științe sociale" : "")}</div>`).join("");
+    const exp = [1, 2, 3].map(n => `<div class="cv-block"><p>Experiență ${n} (voluntariat, job de vară, proiect, club)</p><div class="cv-grid">
+        ${inp(k("x" + n + ".per"), "Perioada", "ex. iulie – august 2026")}
+        ${inp(k("x" + n + ".org"), "Organizația / locul", "")}
+        ${inp(k("x" + n + ".rol"), "Rolul", "voluntar, animator, casier…")}</div>
+        ${txa(k("x" + n + ".desc"), "Ce am făcut concret", "Am organizat…, am coordonat…, am învățat…", 2)}</div>`).join("");
+    const lang = [1, 2, 3].map(n => `<div class="cv-grid">
+        ${inp(k("l" + n + ".lb"), "Limba străină " + n, n === 1 ? "ex. engleză" : "")}
+        <label class="f"><span class="f-l">Nivel (CECRL)</span><select data-k="${k("l" + n + ".niv")}"><option value="">Alege</option>${NIVELURI.map(x => `<option>${x}</option>`).join("")}</select></label></div>`).join("");
+    return `<p class="f-sec">${L}</p>
+      <div class="cv-builder">
+        <div>
+          <div class="cv-block"><p>Date de contact</p><div class="cv-grid">
+            ${inp(k("prenume"), "Prenume")}${inp(k("nume"), "Nume")}
+            ${inp(k("oras"), "Orașul", "ex. Brăila")}${inp(k("tel"), "Telefon", "07xx xxx xxx", "tel")}
+            ${inp(k("email"), "E-mail", "nume@exemplu.ro", "email")}${inp(k("link"), "LinkedIn / portofoliu (opțional)")}
+          </div>
+          <p class="f-h" style="margin:-6px 0 12px">Nu trece CNP-ul, adresa completă sau poza: nu sunt necesare într-un CV.</p></div>
+          ${txa(k("profil"), "Despre mine (2–3 fraze)", "Sunt un elev de 17 ani, organizat și curios, interesat de…")}
+          ${edu}${exp}
+          <div class="cv-block"><p>Limbi</p>${inp(k("lm"), "Limba maternă", "ex. română")}${lang}</div>
+          ${txa(k("dig"), "Competențe digitale", "Office, Canva, editare video, programare…")}
+          ${txa(k("com"), "Comunicare și lucru în echipă", "ex. am moderat dezbateri în clasă…")}
+          ${txa(k("org"), "Organizare și conducere", "ex. am coordonat echipa la proiectul…")}
+          ${txa(k("cert"), "Certificări, concursuri, premii", "ex. Cambridge B2 First (2026)")}
+          ${txa(k("hobby"), "Hobby-uri și interese", "")}
+        </div>
+        <div class="cv-side">
+          <span class="f-l">Previzualizare CV</span>
+          <div class="paper doc" data-out="${id}"></div>
+          <div class="part-btns">
+            <button class="btn btn-sm btn-primary" type="button" data-dl-part="${id}">⬇ Descarcă CV-ul (Word)</button>
+            <button class="btn btn-sm" type="button" data-pdf-part="${id}">🖨 CV-ul ca PDF</button>
+          </div>
+        </div>
+      </div>`;
+  }
+
+  function letterForm(id, L) {
+    const k = s => id + "." + s;
+    return `<p class="f-sec">${L}</p>
+      <div class="cv-builder">
+        <div>
+          <div class="cv-grid">
+            ${inp(k("catre"), "Către (organizația)", "ex. Hotel Dunărea / Asociația…")}
+            ${inp(k("post"), "Postul sau programul", "ex. internship de vară, recepție")}
+          </div>
+          ${inp(k("formula"), "Formula de adresare", "Stimată doamnă / Stimate domnule,")}
+          ${txa(k("s1"), "Fraza 1: cine sunt și pentru ce aplic", "Mă numesc … și sunt elev în clasa a XI-a la Liceul Teoretic „Panait Cerna” din Brăila. Vă scriu pentru …", 3)}
+          ${txa(k("s2"), "Fraza 2: de ce această organizație", "Organizația dumneavoastră mă interesează pentru că …", 3)}
+          ${txa(k("s3"), "Fraza 3: ce pot oferi", "Pot aduce în echipă … (calități, competențe, experiență)", 3)}
+          ${txa(k("s4"), "Fraza 4: un exemplu concret", "De exemplu, …", 3)}
+          ${txa(k("s5"), "Fraza 5: încheierea", "Vă mulțumesc pentru timpul acordat și aș fi bucuros să vă prezint mai multe într-un interviu.", 3)}
+          <p class="f-h">Numele, orașul și datele de contact se iau automat din CV.</p>
+        </div>
+        <div class="cv-side">
+          <span class="f-l">Previzualizare scrisoare</span>
+          <div class="paper doc" data-out="${id}"></div>
+          <div class="part-btns">
+            <button class="btn btn-sm btn-primary" type="button" data-dl-part="${id}">⬇ Descarcă scrisoarea (Word)</button>
+            <button class="btn btn-sm" type="button" data-pdf-part="${id}">🖨 Scrisoarea ca PDF</button>
+          </div>
+        </div>
+      </div>`;
+  }
+
+  /* ---- salvare / citire ---- */
+  function collect() {
+    const o = {};
+    $$("[data-k]", fisaInner).forEach(el => {
+      const k = el.dataset.k;
+      if (el.type === "checkbox") { o[k] = o[k] || []; if (el.checked) o[k].push(el.value); }
+      else if (el.type === "radio") { if (el.checked) o[k] = el.value; }
+      else if (el.value !== "") o[k] = el.value;
+    });
+    return o;
+  }
+  function restore(o) {
+    $$("[data-k]", fisaInner).forEach(el => {
+      const v = o[el.dataset.k];
+      if (el.type === "checkbox") el.checked = Array.isArray(v) && v.indexOf(el.value) !== -1;
+      else if (el.type === "radio") el.checked = v === el.value;
+      else el.value = v == null ? "" : v;
+    });
+  }
+
+  /* ---- calcule ---- */
+  function calcEcran(v, id) {
+    const m = num(v[id + ".min"]);
+    return { m, sapt: m * 7 / 60, an: m * 365 / 60, zile: m * 365 / 60 / 24, treaz: m / (16 * 60) * 100 };
+  }
+  function calcBuget(v, id) {
+    const venit = BUGET.v.reduce((s, _, j) => s + num(v[id + ".v" + j]), 0);
+    const chelt = BUGET.c.reduce((s, _, j) => s + num(v[id + ".c" + j]), 0);
+    return { venit, chelt, sold: venit - chelt };
+  }
+  function calcRate(v, id) {
+    const pret = num(v[id + ".pret"]), total = num(v[id + ".avans"]) + num(v[id + ".nr"]) * num(v[id + ".rata"]);
+    return { pret, total, dif: total - pret, pct: pret ? (total - pret) / pret * 100 : 0 };
+  }
+  const box = (val, lbl) => `<div><b>${val}</b><span>${lbl}</span></div>`;
+
+  /* ---- documente (previzualizare, Word, PDF) ---- */
+  function cvDoc(v, id) {
+    const g = s => (v[id + "." + s] || "").trim();
+    const name = [g("prenume"), g("nume")].filter(Boolean).join(" ");
+    const contact = [g("oras"), g("tel"), g("email"), g("link")].filter(Boolean).map(esc).join(" · ");
+    const sec = (t, body) => body ? `<h3 class="cv-s">${t}</h3>${body}` : "";
+    const edu = [1, 2].map(n => (g("e" + n + ".inst") || g("e" + n + ".det")) ?
+      `<div class="cv-e"><span class="per">${esc(g("e" + n + ".per"))}</span><br><b>${esc(g("e" + n + ".inst"))}</b>${g("e" + n + ".det") ? "<br>" + esc(g("e" + n + ".det")) : ""}</div>` : "").join("");
+    const exp = [1, 2, 3].map(n => (g("x" + n + ".org") || g("x" + n + ".rol")) ?
+      `<div class="cv-e"><span class="per">${esc(g("x" + n + ".per"))}</span><br><b>${esc([g("x" + n + ".rol"), g("x" + n + ".org")].filter(Boolean).join(" – "))}</b>${g("x" + n + ".desc") ? "<br>" + nl(g("x" + n + ".desc")) : ""}</div>` : "").join("");
+    const langs = [1, 2, 3].filter(n => g("l" + n + ".lb"));
+    const lang = (g("lm") ? `<p><b>Limba maternă:</b> ${esc(g("lm"))}</p>` : "") + (langs.length ?
+      `<table><tr><th>Limba străină</th><th>Nivel (CECRL)</th></tr>${langs.map(n => `<tr><td>${esc(g("l" + n + ".lb"))}</td><td>${esc(g("l" + n + ".niv") || "–")}</td></tr>`).join("")}</table>` : "");
+    const para = s => g(s) ? `<p>${nl(g(s))}</p>` : "";
+    const body = sec("Despre mine", para("profil")) + sec("Educație și formare", edu) + sec("Experiență", exp) +
+      sec("Competențe lingvistice", lang) + sec("Competențe digitale", para("dig")) +
+      sec("Comunicare și lucru în echipă", para("com")) + sec("Organizare și conducere", para("org")) +
+      sec("Certificări, concursuri, premii", para("cert")) + sec("Hobby-uri și interese", para("hobby"));
+    if (!name && !body) return `<p class="empty-prev">Completează formularul și CV-ul apare aici, pe măsură ce scrii.</p>`;
+    return `<div class="cv-h"><p class="cv-name">${esc(name || "Prenume Nume")}</p>${contact ? `<p class="cv-contact">${contact}</p>` : ""}</div>${body}`;
+  }
+  function cvIdOf(t) { const i = t.mat.fisa.campuri.findIndex(f => f.tip === "cv"); return i < 0 ? null : "f" + i; }
+  function letterDoc(v, id, t) {
+    const g = s => (v[id + "." + s] || "").trim();
+    const cv = cvIdOf(t), c = s => cv ? (v[cv + "." + s] || "").trim() : "";
+    const name = [c("prenume"), c("nume")].filter(Boolean).join(" ") || (v._nume || "").trim();
+    const oras = c("oras") || "Brăila";
+    const s = [1, 2, 3, 4, 5].map(n => g("s" + n));
+    if (!s.some(Boolean) && !g("catre")) return `<p class="empty-prev">Scrie cele 5 fraze și scrisoarea se așază singură aici.</p>`;
+    return `<div class="letter">
+      <p>${esc(name || "Prenume Nume")}<br>${[oras, c("tel"), c("email")].filter(Boolean).map(esc).join(" · ")}</p>
+      <p>${esc(oras)}, ${esc(v._data || now().toLocaleDateString("ro-RO"))}</p>
+      ${g("catre") ? `<p>Către: <b>${esc(g("catre"))}</b></p>` : ""}
+      ${g("post") ? `<p><b>Subiect:</b> Scrisoare de intenție – ${esc(g("post"))}</p>` : ""}
+      <p>${esc(g("formula") || "Stimată doamnă / Stimate domnule,")}</p>
+      ${[[s[0], s[1]], [s[2], s[3]], [s[4]]].map(p => p.filter(Boolean).length ? `<p>${p.filter(Boolean).map(nl).join(" ")}</p>` : "").join("")}
+      <p>Cu stimă,<br>${esc(name || "Prenume Nume")}</p></div>`;
+  }
+
+  function answerHTML(f, i, v, t) {
+    const id = "f" + i, L = `<h3>${esc(f.eticheta || "")}</h3>`, none = `<p class="muted">—</p>`;
+    switch (f.tip) {
+      case "text": case "textarea": return L + (v[id] ? `<p>${nl(v[id])}</p>` : none);
+      case "scala": return L + (v[id] ? `<p><b>${esc(v[id])}</b> din ${f.max || 5}${f.stanga ? ` <span class="muted">(1 = ${esc(f.stanga)}, ${f.max || 5} = ${esc(f.dreapta || "")})</span>` : ""}</p>` : none);
+      case "alegere": return L + (v[id] ? `<p>${esc(v[id])}</p>` : none);
+      case "bife": { const a = v[id] || []; return L + `<ul>${f.optiuni.map(o => `<li>${a.indexOf(o) !== -1 ? "☑" : "☐"} ${esc(o)}</li>`).join("")}</ul>`; }
+      case "tabel": {
+        const rows = f.randuri || Array(f.n || 3).fill(""), inCols = f.randuri ? f.coloane.slice(1) : f.coloane;
+        return L + `<table><tr>${f.coloane.map(c => `<th>${esc(c)}</th>`).join("")}</tr>${rows.map((rl, r) =>
+          `<tr>${f.randuri ? `<th>${esc(rl)}</th>` : ""}${inCols.map((_, ci) => `<td>${nl(v[id + "." + r + "." + ci] || "")}&nbsp;</td>`).join("")}</tr>`).join("")}</table>`;
+      }
+      case "tracker": {
+        const a = (v[id] || []).map(Number);
+        let cells = ""; for (let d = 1; d <= 30; d++) cells += `<td style="text-align:center">${d}<br>${a.indexOf(d) !== -1 ? "✓" : ""}</td>` + (d % 10 === 0 && d < 30 ? "</tr><tr>" : "");
+        return L + `<p>Zile bifate: <b>${a.length} din 30</b></p><table><tr>${cells}</tr></table>`;
+      }
+      case "ecran": { const c = calcEcran(v, id); return L + (c.m ? `<p>Media zilnică: <b>${fmtN(c.m, 0)} minute</b></p><ul><li>${fmtN(c.sapt)} ore pe săptămână</li><li>${fmtN(c.an, 0)} ore pe an</li><li>${fmtN(c.zile)} zile întregi pe an</li><li>${fmtN(c.treaz, 0)}% din timpul în care sunt treaz</li></ul>` : none); }
+      case "buget": {
+        const c = calcBuget(v, id), row = (l, k) => `<tr><td>${esc(l)}</td><td>${fmtN(num(v[k]), 2)} lei</td></tr>`;
+        return L + `<table><tr><th>Venituri</th><th>Lei</th></tr>${BUGET.v.map((l, j) => row(l, id + ".v" + j)).join("")}<tr><th>Total venituri</th><th>${fmtN(c.venit, 2)} lei</th></tr></table>
+          <table><tr><th>Cheltuieli</th><th>Lei</th></tr>${BUGET.c.map((l, j) => row(l, id + ".c" + j)).join("")}<tr><th>Total cheltuieli</th><th>${fmtN(c.chelt, 2)} lei</th></tr></table>
+          <p><b>Sold lunar: ${fmtN(c.sold, 2)} lei</b> ${c.sold < 0 ? "(cheltuiesc mai mult decât am)" : ""}</p>`;
+      }
+      case "rate": {
+        const c = calcRate(v, id);
+        return L + `<table><tr><th>Produsul</th><td>${esc(v[id + ".produs"] || "")}</td></tr><tr><th>Preț integral</th><td>${fmtN(c.pret, 2)} lei</td></tr>
+          <tr><th>Avans + rate</th><td>${fmtN(num(v[id + ".avans"]), 2)} lei + ${fmtN(num(v[id + ".nr"]), 0)} × ${fmtN(num(v[id + ".rata"]), 2)} lei</td></tr>
+          <tr><th>Total plătit</th><td><b>${fmtN(c.total, 2)} lei</b></td></tr><tr><th>Cost suplimentar</th><td><b>${fmtN(c.dif, 2)} lei (${fmtN(c.pct)}%)</b></td></tr></table>`;
+      }
+      case "cv": return `<h3>${esc(f.eticheta)}</h3>` + cvDoc(v, id);
+      case "scrisoare": return `<h3>${esc(f.eticheta)}</h3>` + letterDoc(v, id, t);
+      default: return "";
+    }
+  }
+
+  function fisaDoc(t, v) {
+    const F = t.mat.fisa;
+    const id = F.anonim ? "<p><i>Fișă anonimă</i></p>" :
+      `<div class="d-id"><b>Nume și prenume:</b> ${esc(v._nume || "")}&nbsp;&nbsp; <b>Clasa:</b> ${esc(v._clasa || "")}&nbsp;&nbsp; <b>Data:</b> ${esc(v._data || "")}</div>`;
+    return `<h1>${esc(F.titlu)}</h1>
+      <p class="d-meta">Dirigenția XI D · ${esc(DATA.an)} · Tema ${t.nr}: ${esc(t.titlu)} · ${esc(t.data)}</p>${id}
+      ${F.campuri.map((f, i) => answerHTML(f, i, v, t)).join("")}`;
+  }
+
+  function wordFile(title, body) {
+    return `<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns="http://www.w3.org/TR/REC-html40">
+<head><meta charset="utf-8"><title>${esc(title)}</title>
+<!--[if gte mso 9]><xml><w:WordDocument><w:View>Print</w:View><w:Zoom>100</w:Zoom></w:WordDocument></xml><![endif]-->
+<style>@page{margin:2cm}${DOC_CSS}</style></head><body><div class="doc">${body}</div></body></html>`;
+  }
+  // stilurile .doc din pagină, refolosite în fișierul Word
+  const DOC_CSS = (() => {
+    try {
+      return Array.from(document.styleSheets).flatMap(s => { try { return Array.from(s.cssRules); } catch (e) { return []; } })
+        .filter(r => r.selectorText && /^\.doc\b/.test(r.selectorText)).map(r => r.cssText).join("\n");
+    } catch (e) { return ""; }
+  })();
+  function download(name, html) {
+    const blob = new Blob(["﻿", html], { type: "application/msword" });
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = name;
+    document.body.appendChild(a);
+    a.click();
+    setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 1500);
+  }
+  function printDoc(body) {
+    $("#printFisa").innerHTML = body;
+    document.documentElement.classList.add("pf");
+    const done = () => { document.documentElement.classList.remove("pf"); window.removeEventListener("afterprint", done); };
+    window.addEventListener("afterprint", done);
+    window.print();
+    setTimeout(done, 1500);
+  }
+  function fileBase(v) { return v._nume ? "-" + slug(v._nume) : ""; }
+
+  /* ---- deschidere și randare ---- */
+  function renderFisa(t) {
+    const F = t.mat.fisa, elev = store.get("xid-elev", {});
+    fisaDlg.style.setProperty("--c", `var(--${t.domeniu})`);
+    fisaDlg.classList.toggle("lat", !!F.lat);
+    fisaInner.innerHTML = `
+      <div class="m-head">
+        <button class="icon-btn m-close" type="button" data-fclose aria-label="Închide fișa">✕</button>
+        <div class="m-meta"><span>📝 Fișa temei ${t.nr}</span><span>${esc(t.titlu)}</span></div>
+        <h2 id="fTitle">${esc(F.titlu)}</h2>
+        <p class="sub">Completează direct aici. Răspunsurile se salvează automat în acest browser; la final descarcă fișa în calculator.</p>
+      </div>
+      <form class="f-body" id="fisaForm" autocomplete="off" onsubmit="return false">
+        ${F.nota ? `<p class="f-note">${esc(F.nota)}</p>` : ""}
+        ${F.anonim ? "" : `<div class="f-id">
+          ${inp("_nume", "Nume și prenume", "ex. Popescu Ana")}
+          ${inp("_clasa", "Clasa")}
+          ${inp("_data", "Data")}
+        </div>`}
+        ${F.campuri.map(fieldHTML).join("")}
+      </form>
+      <div class="m-foot f-foot">
+        <span class="f-status" id="fStatus" aria-live="polite"></span>
+        <div class="grp">
+          <button class="btn btn-sm" type="button" data-fback="${t.nr}">← Înapoi la temă</button>
+          <button class="btn btn-sm" type="button" data-flink>🔗 Copiază linkul fișei</button>
+          <button class="btn btn-sm" type="button" data-fclear>Golește fișa</button>
+          <button class="btn btn-sm" type="button" data-fpdf>🖨 Salvează PDF</button>
+          <button class="btn btn-sm btn-primary" type="button" data-fdl>⬇ Descarcă fișa (Word)</button>
+        </div>
+      </div>`;
+    const saved = store.get("xid-fisa-" + t.nr, {});
+    if (!F.anonim) {
+      if (saved._nume == null && elev.nume) saved._nume = elev.nume;
+      if (saved._clasa == null) saved._clasa = elev.clasa || "XI D";
+      if (saved._data == null) saved._data = now().toLocaleDateString("ro-RO");
+    }
+    restore(saved);
+    recalc();
+    $("#fStatus").textContent = Object.keys(saved).some(k => k[0] !== "_") ? "Răspunsurile tale de data trecută au fost încărcate." : "";
+  }
+
+  function recalc() {
+    const t = byNr(fisaNr); if (!t) return;
+    const v = collect();
+    t.mat.fisa.campuri.forEach((f, i) => {
+      const id = "f" + i, out = fisaInner.querySelector(`[data-out="${id}"]`);
+      if (!out) return;
+      if (f.tip === "ecran") {
+        const c = calcEcran(v, id);
+        out.innerHTML = box(fmtN(c.sapt), "ore pe săptămână") + box(fmtN(c.an, 0), "ore pe an") + box(fmtN(c.zile), "zile întregi pe an") + box(fmtN(c.treaz, 0) + "%", "din timpul în care ești treaz");
+      } else if (f.tip === "buget") {
+        const c = calcBuget(v, id);
+        out.innerHTML = box(fmtN(c.venit, 2) + " lei", "venituri") + box(fmtN(c.chelt, 2) + " lei", "cheltuieli") + box(fmtN(c.sold, 2) + " lei", c.sold < 0 ? "sold: cheltui mai mult decât ai!" : "sold (rămân sau economisesc)");
+      } else if (f.tip === "rate") {
+        const c = calcRate(v, id);
+        out.innerHTML = box(fmtN(c.total, 2) + " lei", "plătești în total") + box(fmtN(c.dif, 2) + " lei", "în plus față de prețul integral") + box(fmtN(c.pct) + "%", "cât te costă „plătește mai târziu”");
+      } else if (f.tip === "tracker") {
+        out.textContent = `Zile bifate: ${(v[id] || []).length} din 30`;
+      } else if (f.tip === "cv") {
+        out.innerHTML = cvDoc(v, id);
+      } else if (f.tip === "scrisoare") {
+        out.innerHTML = letterDoc(v, id, t);
+      }
+    });
+  }
+
+  function saveFisa() {
+    const v = collect();
+    store.set("xid-fisa-" + fisaNr, v);
+    if (v._nume || v._clasa) store.set("xid-elev", { nume: v._nume || "", clasa: v._clasa || "" });
+    const d = new Date();
+    $("#fStatus").textContent = `Salvat automat ✓ ${pad(d.getHours())}:${pad(d.getMinutes())}`;
+  }
+
+  function openFisa(nr) {
+    const t = byNr(nr); if (!t || !t.mat.fisa) return;
+    if (modal.open) modal.close();
+    fisaNr = nr;
+    renderFisa(t);
+    if (!fisaDlg.open) {
+      try { fisaDlg.showModal(); } catch (e) { fisaDlg.setAttribute("open", ""); }
+    }
+    document.documentElement.classList.add("lock");
+    fisaDlg.scrollTop = 0;
+    state.fisa = nr; writeHash();
+  }
+
+  fisaInner.addEventListener("input", () => { recalc(); clearTimeout(saveT); saveT = setTimeout(saveFisa, 300); });
+  fisaInner.addEventListener("change", () => { recalc(); saveFisa(); });
+  fisaDlg.addEventListener("close", () => {
+    clearTimeout(saveT);
+    if (fisaNr && fisaInner.querySelector("[data-k]")) saveFisa();
+    if (!modal.open && proj.hidden) document.documentElement.classList.remove("lock");
+    state.fisa = 0; writeHash();
+  });
+  let clearArm = null;
+  fisaInner.addEventListener("click", e => {
+    const t = byNr(fisaNr); if (!t) return;
+    const v = () => collect();
+    if (e.target.closest("[data-fclose]")) { fisaDlg.close(); return; }
+    const back = e.target.closest("[data-fback]");
+    if (back) { fisaDlg.close(); openModal(fisaNr); return; }
+    if (e.target.closest("[data-fdl]")) {
+      const vals = v();
+      download(`Fisa-${pad(t.nr)}-${slug(t.mat.fisa.titlu)}${t.mat.fisa.anonim ? "" : fileBase(vals)}.doc`, wordFile(t.mat.fisa.titlu, fisaDoc(t, vals)));
+      $("#fStatus").textContent = "Fișa a fost descărcată ✓ (o găsești în folderul Descărcări)";
+      return;
+    }
+    if (e.target.closest("[data-fpdf]")) { printDoc(fisaDoc(t, v())); return; }
+    const part = e.target.closest("[data-dl-part], [data-pdf-part]");
+    if (part) {
+      const id = part.dataset.dlPart || part.dataset.pdfPart, vals = v();
+      const f = t.mat.fisa.campuri[+id.slice(1)];
+      const isCv = f.tip === "cv";
+      const body = isCv ? cvDoc(vals, id) : letterDoc(vals, id, t);
+      if (part.dataset.dlPart) {
+        const who = isCv ? [vals[id + ".prenume"], vals[id + ".nume"]].filter(Boolean).join(" ") : "";
+        download(`${isCv ? "CV-Europass" : "Scrisoare-de-intentie"}${who ? "-" + slug(who) : fileBase(vals)}.doc`, wordFile(isCv ? "CV" : "Scrisoare de intenție", body));
+        $("#fStatus").textContent = (isCv ? "CV-ul" : "Scrisoarea") + " a fost descărcat" + (isCv ? "" : "ă") + " ✓";
+      } else printDoc(body);
+      return;
+    }
+    if (e.target.closest("[data-flink]")) {
+      const url = location.href.split("#")[0] + "#fisa=" + t.nr;
+      const msg = location.protocol === "file:" ? "Link copiat. Atenție: funcționează pentru elevi după ce publici pagina online." : "Linkul fișei a fost copiat ✓ Trimite-l elevilor.";
+      const ok = () => { $("#fStatus").textContent = msg; };
+      try { navigator.clipboard.writeText(url).then(ok, () => { $("#fStatus").textContent = url; }); } catch (err) { $("#fStatus").textContent = url; }
+      return;
+    }
+    const clr = e.target.closest("[data-fclear]");
+    if (clr) {
+      if (clearArm) {
+        clearTimeout(clearArm); clearArm = null;
+        try { localStorage.removeItem("xid-fisa-" + t.nr); } catch (err) {}
+        renderFisa(t);
+        $("#fStatus").textContent = "Fișa a fost golită.";
+      } else {
+        clr.textContent = "Sigur? Apasă din nou";
+        clr.classList.add("warn");
+        clearArm = setTimeout(() => { clearArm = null; clr.textContent = "Golește fișa"; clr.classList.remove("warn"); }, 3000);
+      }
+    }
+  });
+
+  /* ---------- pornire ---------- */
+  renderNotifs();
+  renderWeek();
+  renderTrack();
+  syncControls();
+  if (!readHash()) applyFilters();
+
+  // la miezul nopții (sau când revii în tab) se recalculează tema săptămânii
+  let lastDay = dayStart(now()).getTime();
+  document.addEventListener("visibilitychange", () => {
+    if (document.hidden) return;
+    const d = dayStart(now()).getTime();
+    if (d !== lastDay) { lastDay = d; renderNotifs(); renderWeek(); renderTrack(); }
+  });
+})();
+</script>
+</body>
+</html>
