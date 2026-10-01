@@ -9,6 +9,7 @@
 <meta name="format-detection" content="telephone=no">
 <script>
   // aplică tema salvată înainte de randare, ca să nu clipească pagina
+  document.documentElement.classList.add("js"); // animațiile de apariție rulează doar cu JavaScript
   (function () {
     try {
       var t = JSON.parse(localStorage.getItem("xid-theme"));
@@ -739,6 +740,8 @@ dialog.fisa.lat { width: min(1240px, calc(100vw - 24px)); }
   html:not(.pf) #printFisa { display: none !important; }
 }
 </style>
+<link rel="stylesheet" href="css/animatii.css">
+<script src="js/animatii.js" defer></script>
 </head>
 <body>
 <a class="skip" href="#continut">Sari la conținut</a>
@@ -763,6 +766,7 @@ dialog.fisa.lat { width: min(1240px, calc(100vw - 24px)); }
   <!-- 1. HERO -->
   <section class="hero" id="top" aria-labelledby="heroTitle">
     <div class="hero-bg" aria-hidden="true"></div>
+    <div class="hero-shapes" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
     <div class="wrap hero-grid">
       <div>
         <p class="kicker">Ora de dirigenție · joia</p>
@@ -1877,9 +1881,9 @@ const DATA = {
   $("#counters").innerHTML = counts.map(([n, l]) =>
     `<div class="counter glass"><b data-count="${n}">${reduceMotion ? n : 0}</b><span>${l}</span></div>`).join("");
   if (!reduceMotion) {
-    const t0 = performance.now(), dur = 1400;
+    const t0 = performance.now() + 450, dur = 600; // pornește când apar cifrele
     const step = t => {
-      const p = Math.min(1, (t - t0) / dur), e = 1 - Math.pow(1 - p, 3);
+      const p = Math.max(0, Math.min(1, (t - t0) / dur)), e = 1 - Math.pow(1 - p, 3);
       $$("[data-count]").forEach(el => { el.textContent = Math.round(e * +el.dataset.count); });
       if (p < 1) requestAnimationFrame(step);
     };

@@ -1,0 +1,180 @@
+/* =====================================================================
+   ANIMAȚII – Dirigenția XI D
+   Strat separat peste stilurile din index.html. Dacă ștergi legătura
+   spre acest fișier (și spre js/animatii.js), pagina revine la aspectul
+   de dinainte. Durate scurte (0,3–0,6 s); fără mișcare pentru cine are
+   activată setarea „reducerea mișcării”.
+   ===================================================================== */
+
+:root {
+  --a-ease: cubic-bezier(.2, .8, .2, 1);
+  --a-dur: .5s;
+}
+
+/* ---------- intrarea în pagină ---------- */
+body { animation: a-fade .4s ease-out both; }
+@keyframes a-fade { from { opacity: 0; } }
+@keyframes a-rise { from { opacity: 0; transform: translateY(22px); } }
+
+/* ---------- apariție la scroll ----------
+   Conținutul se ascunde doar când JavaScript rulează (clasa .js pe <html>),
+   ca pagina să rămână completă și fără JavaScript. */
+.reveal { opacity: 1; transform: none; }
+:where(.js) .reveal { transition: opacity var(--a-dur) ease, transform var(--a-dur) var(--a-ease); }
+.js .reveal:not(.in) { opacity: 0; transform: translateY(24px); }
+.js .a-hide { opacity: 0; transform: translateY(20px); }
+.a-show { transition: opacity var(--a-dur) ease, transform var(--a-dur) var(--a-ease); }
+
+/* cardurile își păstrează efectele de hover rapide */
+.card { transition: transform .3s ease, box-shadow .3s ease, border-color .3s ease, opacity .3s ease; }
+
+/* ---------- HERO: titlu animat și fundal în mișcare ---------- */
+.hero .kicker,
+.hero h1,
+.hero-sub,
+.hero .meta,
+.hero-cta { animation: a-rise .6s var(--a-ease) backwards; }
+.hero .kicker   { animation-delay: .05s; }
+.hero h1        { animation-delay: .12s; }
+.hero-sub       { animation-delay: .3s; }
+.hero .meta     { animation-delay: .4s; }
+.hero-cta       { animation-delay: .7s; }
+
+.hero h1 .xi {
+  display: inline-block;
+  background-size: 220% 100%;
+  animation: a-rise .6s var(--a-ease) .3s backwards, a-shine 7s ease-in-out 1s infinite alternate;
+}
+@keyframes a-shine { to { background-position: 100% 0; } }
+
+.counter { animation: a-rise .5s var(--a-ease) backwards; }
+.counter:nth-child(1) { animation-delay: .5s; }
+.counter:nth-child(2) { animation-delay: .58s; }
+.counter:nth-child(3) { animation-delay: .66s; }
+
+/* forme care plutesc lent în spatele titlului */
+.hero-shapes { position: absolute; inset: 0; z-index: -1; pointer-events: none; overflow: hidden; }
+.hero-shapes i {
+  position: absolute; display: block; border-radius: 50%;
+  opacity: .5;
+  animation: a-float 18s ease-in-out infinite alternate;
+}
+.hero-shapes i:nth-child(1) { width: 140px; height: 140px; left: 6%;  top: 14%; border: 2px solid color-mix(in srgb, var(--A) 60%, transparent); }
+.hero-shapes i:nth-child(2) { width: 70px;  height: 70px;  left: 46%; top: 8%;  background: color-mix(in srgb, var(--C) 30%, transparent); filter: blur(2px); animation-duration: 22s; animation-delay: -6s; }
+.hero-shapes i:nth-child(3) { width: 220px; height: 220px; right: -60px; bottom: 6%; border: 2px dashed color-mix(in srgb, var(--D) 45%, transparent); animation-duration: 26s; animation-delay: -10s; }
+.hero-shapes i:nth-child(4) { width: 36px;  height: 36px;  left: 30%; bottom: 14%; background: color-mix(in srgb, var(--B) 45%, transparent); animation-duration: 15s; animation-delay: -3s; }
+@keyframes a-float {
+  0%   { transform: translate(0, 0) rotate(0deg); }
+  50%  { transform: translate(18px, -22px) rotate(40deg); }
+  100% { transform: translate(-14px, 12px) rotate(80deg); }
+}
+@media (max-width: 700px) {
+  .hero-shapes i:nth-child(1) { width: 90px; height: 90px; }
+  .hero-shapes i:nth-child(3) { width: 140px; height: 140px; }
+}
+
+/* notificările din hero: apariție mai scurtă */
+.notif { animation-duration: .5s; animation-delay: .35s; }
+.notif:nth-child(3) { animation-delay: .45s; }
+.notif:nth-child(4) { animation-delay: .55s; }
+
+/* ---------- BANDA cu următoarele teme ---------- */
+.ticker {
+  position: relative;
+  overflow: hidden;
+  border-block: 1px solid var(--line);
+  background: color-mix(in srgb, var(--bg-2) 55%, transparent);
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
+  mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
+  animation: a-fade .5s ease .7s backwards;
+}
+.ticker-track {
+  display: flex; width: max-content;
+  animation: a-marquee var(--t-dur, 40s) linear infinite;
+}
+.ticker:hover .ticker-track,
+.ticker:focus-within .ticker-track { animation-play-state: paused; }
+.ticker-list { display: flex; flex-shrink: 0; margin: 0; padding: 0; list-style: none; }
+.ticker-item {
+  display: inline-flex; align-items: center; gap: 10px;
+  padding: 12px 28px; border: 0; background: none;
+  font-size: 15px; white-space: nowrap; color: var(--muted);
+  border-radius: 999px;
+  transition: color .2s ease;
+}
+.ticker-item b { color: var(--ink); font-weight: 600; }
+.ticker-item .d { color: var(--c); font-weight: 600; }
+.ticker-item:hover { color: var(--ink); }
+.ticker-list li { display: flex; align-items: center; }
+.ticker-list li + li::before { content: "✦"; color: var(--faint); font-size: 12px; }
+.ticker-list::after { content: "✦"; align-self: center; color: var(--faint); font-size: 12px; }
+@keyframes a-marquee { to { transform: translateX(-50%); } }
+
+/* ---------- HOVER: ridicare, umbră, scalare 1.03 ---------- */
+@media (hover: hover) {
+  .btn { transition: transform .3s var(--a-ease), background .3s ease, border-color .3s ease, box-shadow .3s ease; }
+  .btn:hover { transform: translateY(-3px) scale(1.03); box-shadow: 0 12px 28px -14px rgba(0, 0, 0, .55); }
+  .btn-primary:hover { box-shadow: 0 14px 34px -12px var(--A); }
+
+  .card:hover, .card:focus-within { transform: translateY(-6px) scale(1.03); }
+  .grid.list .card:hover, .grid.list .card:focus-within { transform: translateX(4px); }
+
+  .notif:hover { transform: translateY(-4px) scale(1.03); }
+
+  .week { transition: opacity var(--a-dur) ease, transform .4s var(--a-ease), box-shadow .4s ease; }
+  .week:hover { transform: translateY(-4px); box-shadow: 0 26px 60px -34px var(--c); }
+
+  .res-card { transition: transform .3s var(--a-ease), border-color .3s ease, box-shadow .3s ease; }
+  .res-card:hover { transform: translateY(-5px) scale(1.03); border-color: var(--line-2); box-shadow: 0 20px 44px -26px rgba(0, 0, 0, .6); }
+
+  .counter { transition: transform .3s var(--a-ease), border-color .3s ease; }
+  .counter:hover { transform: translateY(-3px) scale(1.03); border-color: var(--line-2); }
+
+  .chip { transition: transform .25s var(--a-ease), background .2s ease, border-color .2s ease; }
+  .chip:hover { transform: translateY(-2px) scale(1.03); }
+}
+
+/* ---------- PROGRES: bare eșalonate, inel mai rapid ---------- */
+.ring .fg { transition-duration: .6s; }
+.bars .fill { transition-duration: .6s; }
+.bars li:nth-child(2) .fill { transition-delay: .07s; }
+.bars li:nth-child(3) .fill { transition-delay: .14s; }
+.bars li:nth-child(4) .fill { transition-delay: .21s; }
+.bars li:nth-child(5) .fill { transition-delay: .28s; }
+.bars li:nth-child(6) .fill { transition-delay: .35s; }
+
+/* ---------- butonul „înapoi sus” ---------- */
+.to-top {
+  position: fixed; z-index: 60;
+  right: max(16px, env(safe-area-inset-right));
+  bottom: max(16px, env(safe-area-inset-bottom));
+  width: 48px; height: 48px; border-radius: 50%;
+  display: grid; place-items: center;
+  border: 1px solid var(--line-2);
+  background: color-mix(in srgb, var(--bg-2) 82%, transparent);
+  -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px);
+  color: var(--ink); font-size: 20px; line-height: 1;
+  box-shadow: 0 12px 30px -14px rgba(0, 0, 0, .6);
+  opacity: 0; visibility: hidden; transform: translateY(16px) scale(.9);
+  transition: opacity .3s ease, transform .3s var(--a-ease), visibility 0s linear .3s, border-color .2s ease;
+}
+.to-top.on { opacity: 1; visibility: visible; transform: none; transition: opacity .3s ease, transform .3s var(--a-ease), visibility 0s, border-color .2s ease; }
+.to-top:hover { border-color: var(--ink); transform: translateY(-3px) scale(1.05); }
+html.lock .to-top { display: none; }
+
+/* ---------- mișcare redusă: totul static ---------- */
+@media (prefers-reduced-motion: reduce) {
+  body, .ticker { animation: none; }
+  .js .reveal:not(.in), .js .a-hide { opacity: 1; transform: none; }
+  .hero-shapes i, .hero h1 .xi { animation: none; }
+  .ticker { -webkit-mask-image: none; mask-image: none; overflow-x: auto; }
+  .ticker-track { animation: none; }
+  .ticker-list[aria-hidden="true"] { display: none; }
+  .to-top, .to-top.on { transition: none; }
+}
+
+/* ---------- imprimare ---------- */
+@media print {
+  .ticker, .to-top, .hero-shapes { display: none !important; }
+  body { animation: none; }
+}
